@@ -3,9 +3,15 @@ layout: page
 title: About Me
 permalink: /about/
 ---
+## 김지우(Kim Jeewoo)
+Jeonbuk Nation University. Statistics
+GitHub(https://github.com/stahangryum)
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+---
 
+## Interest
+Statistics
+Data Science
 
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+## Contact
+stahangryum@gmail.com
