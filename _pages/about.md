@@ -12,11 +12,6 @@ Jeonbuk Nation University. Statistics
 [LinkedIn](www.linkedin.com/in/stahangryum)
 
 ---
-'''
-## Interest
-Statistics
 
-Data Science
-'''
 ## Contact
 stahangryum@gmail.com
