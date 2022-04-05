@@ -5,6 +5,7 @@ permalink: /about/
 ---
 ## 김지우(Kim Jeewoo)
 Jeonbuk Nation University. Statistics
+
 GitHub(https://github.com/stahangryum)
 
 ---
