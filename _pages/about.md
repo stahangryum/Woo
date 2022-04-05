@@ -11,6 +11,8 @@ Jeonbuk Nation University. Statistics
 
 [LinkedIn](www.linkedin.com/in/stahangryum)
 
+[Blog](https://stahangryum.github.io/Woo)
+
 ---
 
 ## Contact
