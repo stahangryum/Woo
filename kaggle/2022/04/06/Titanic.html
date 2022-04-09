@@ -266,7 +266,8 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>On branch master
-Your branch is up to date with 'origin/master'.
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
 </pre>
@@ -286,10 +287,25 @@ nothing to commit, working tree clean
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git push
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git push origin master
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>To https://github.com/stahangryum/Woo.git
+   1ea0d2c..090b351  master -&gt; master
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
