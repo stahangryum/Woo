@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Anaconda Install Tutorial",
-            "content": "https://www.anaconda.com/products/individual . conda create -n py39r41 python=3.9 . | conda activate py39r41 . | conda install -c conda-forge r-essentials=4.1 . | conda install -c conda-forge jupyterlab . | R . | install.packages(&quot;IRkernel&quot;) . | library(IRkernel) . | installspec() . | q() . | pip install numpy . | pip install SciPy . | pip install matplotlib pip install pandas . | .",
+            "content": "https://www.anaconda.com/products/individual . conda create -n py39r41 python=3.9 . | conda activate py39r41 . | conda install -c conda-forge r-essentials=4.1 . | conda install -c conda-forge jupyterlab . | R . | install.packages(&quot;IRkernel&quot;) . | library(IRkernel) . | installspec() . | q() . | pip install numpy . | pip install SciPy . | pip install matplotlib pip install pandas . | . . {python} !git add . !git commit -m . !git push .",
             "url": "https://stahangryum.github.io/Woo/2022/03/15/anaconda_install.html",
             "relUrl": "/2022/03/15/anaconda_install.html",
             "date": " • Mar 15, 2022"
