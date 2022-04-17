@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>EDA HIGHLIGHT - 미완 | Woo</title>
+<title>EDA HIGHLIGHT | Woo</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="EDA HIGHLIGHT - 미완" />
+<meta property="og:title" content="EDA HIGHLIGHT" />
 <meta name="author" content="Kim Jeewoo" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="https://stahangryum.github.io/Woo/eda/r/2022/04/12/eda.html" />
@@ -17,9 +17,9 @@
 <meta property="article:published_time" content="2022-04-12T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://stahangryum.github.io/Woo/images/numpy_logo.png" />
-<meta property="twitter:title" content="EDA HIGHLIGHT - 미완" />
+<meta property="twitter:title" content="EDA HIGHLIGHT" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kim Jeewoo"},"dateModified":"2022-04-12T00:00:00-05:00","datePublished":"2022-04-12T00:00:00-05:00","headline":"EDA HIGHLIGHT - 미완","image":"https://stahangryum.github.io/Woo/images/numpy_logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://stahangryum.github.io/Woo/eda/r/2022/04/12/eda.html"},"url":"https://stahangryum.github.io/Woo/eda/r/2022/04/12/eda.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kim Jeewoo"},"dateModified":"2022-04-12T00:00:00-05:00","datePublished":"2022-04-12T00:00:00-05:00","headline":"EDA HIGHLIGHT","image":"https://stahangryum.github.io/Woo/images/numpy_logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://stahangryum.github.io/Woo/eda/r/2022/04/12/eda.html"},"url":"https://stahangryum.github.io/Woo/eda/r/2022/04/12/eda.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Woo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://stahangryum.github.io/Woo/feed.xml" title="Woo" /><link rel="shortcut icon" type="image/x-icon" href="/Woo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -90,7 +90,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">EDA HIGHLIGHT - 미완</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-04-12T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">EDA HIGHLIGHT</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-04-12T00:00:00-05:00" itemprop="datePublished">
         Apr 12, 2022
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -98,7 +98,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      7 min read
     
 </span></p>
 
@@ -146,9 +146,35 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#5.1-멱승,-로그,-지수-변환에-의한-재표현">5.1 멱승, 로그, 지수 변환에 의한 재표현 </a></li>
-<li class="toc-entry toc-h1"><a href="#5.4-표준화-변환">5.4 표준화 변환 </a></li>
-<li class="toc-entry toc-h1"><a href="#5.5-요약">5.5 요약 </a></li>
+<li class="toc-entry toc-h1"><a href="#Ch.1-R-Language">Ch.1 R Language </a></li>
+<li class="toc-entry toc-h1"><a href="#Ch.2-Introduction-to-EDA">Ch.2 Introduction to EDA </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#EDA(Exploratory-Data-Analysis)">EDA(Exploratory Data Analysis) </a></li>
+<li class="toc-entry toc-h2"><a href="#4-Themes">4 Themes </a></li>
+<li class="toc-entry toc-h2"><a href="#Summary-(2)">Summary (2) </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Ch.3-Stem-and-Leaf">Ch.3 Stem and Leaf </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Stem-and-Leaf">Stem and Leaf </a></li>
+<li class="toc-entry toc-h2"><a href="#Compared-with-Histogram">Compared with Histogram </a></li>
+<li class="toc-entry toc-h2"><a href="#Summary-(3)">Summary (3) </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Ch.4-Numerical-Summary-and-Box-Plot">Ch.4 Numerical Summary and Box Plot </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Mean-and-Median">Mean and Median </a></li>
+<li class="toc-entry toc-h2"><a href="#Five-Number-Summary">Five Number Summary </a></li>
+<li class="toc-entry toc-h2"><a href="#Skewness">Skewness </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Ch.5-Data-Re-Expression">Ch.5 Data Re-Expression </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#멱승,-로그,-지수-변환에-의한-재표현">멱승, 로그, 지수 변환에 의한 재표현 </a></li>
+<li class="toc-entry toc-h2"><a href="#표준화-변환">표준화 변환 </a></li>
+<li class="toc-entry toc-h2"><a href="#Summary-(5)">Summary (5) </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#ref-ppt">ref ppt </a></li>
 </ul><!--
 #################################################
@@ -159,11 +185,70 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Warning message:
+"패키지 'tidyverse'는 R 버전 4.1.3에서 작성되었습니다"
+-- <span class="ansi-bold">Attaching packages</span> ------------------------------------------------------------------------------- tidyverse 1.3.1 --
+
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">ggplot2</span> 3.3.5     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">purrr  </span> 0.3.4
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">tibble </span> 3.1.6     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">dplyr  </span> 1.0.8
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">tidyr  </span> 1.2.0     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">stringr</span> 1.4.0
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">readr  </span> 2.1.2     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">forcats</span> 0.5.1
+
+Warning message:
+"패키지 'ggplot2'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'tibble'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'tidyr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'readr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'purrr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'dplyr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'stringr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'forcats'는 R 버전 4.1.3에서 작성되었습니다"
+-- <span class="ansi-bold">Conflicts</span> ---------------------------------------------------------------------------------- tidyverse_conflicts() --
+<span class="ansi-red-fg">x</span> <span class="ansi-blue-fg">dplyr</span>::<span class="ansi-green-fg">filter()</span> masks <span class="ansi-blue-fg">stats</span>::filter()
+<span class="ansi-red-fg">x</span> <span class="ansi-blue-fg">dplyr</span>::<span class="ansi-green-fg">lag()</span>    masks <span class="ansi-blue-fg">stats</span>::lag()
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.1-멱승,-로그,-지수-변환에-의한-재표현">
-<a class="anchor" href="#5.1-%EB%A9%B1%EC%8A%B9,-%EB%A1%9C%EA%B7%B8,-%EC%A7%80%EC%88%98-%EB%B3%80%ED%99%98%EC%97%90-%EC%9D%98%ED%95%9C-%EC%9E%AC%ED%91%9C%ED%98%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.1 멱승, 로그, 지수 변환에 의한 재표현<a class="anchor-link" href="#5.1-%EB%A9%B1%EC%8A%B9,-%EB%A1%9C%EA%B7%B8,-%EC%A7%80%EC%88%98-%EB%B3%80%ED%99%98%EC%97%90-%EC%9D%98%ED%95%9C-%EC%9E%AC%ED%91%9C%ED%98%84"> </a>
+<h1 id="Ch.1-R-Language">
+<a class="anchor" href="#Ch.1-R-Language" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ch.1 R Language<a class="anchor-link" href="#Ch.1-R-Language"> </a>
 </h1>
 </div>
 </div>
@@ -171,9 +256,762 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.4-표준화-변환">
-<a class="anchor" href="#5.4-%ED%91%9C%EC%A4%80%ED%99%94-%EB%B3%80%ED%99%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.4 표준화 변환<a class="anchor-link" href="#5.4-%ED%91%9C%EC%A4%80%ED%99%94-%EB%B3%80%ED%99%98"> </a>
+<ul>
+<li>생략</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Ch.2-Introduction-to-EDA">
+<a class="anchor" href="#Ch.2-Introduction-to-EDA" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ch.2 Introduction to EDA<a class="anchor-link" href="#Ch.2-Introduction-to-EDA"> </a>
 </h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>자료분석은 대체로 두 가지 단계로 나뉜다.</p>
+<ul>
+<li>
+<p>탐색적 자료분석(데이터의 구조와 특징 파악)</p>
+</li>
+<li>
+<p>확증적 자료분석(모형, 재현성 평가)</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="EDA(Exploratory-Data-Analysis)">
+<a class="anchor" href="#EDA(Exploratory-Data-Analysis)" aria-hidden="true"><span class="octicon octicon-link"></span></a>EDA(Exploratory Data Analysis)<a class="anchor-link" href="#EDA(Exploratory-Data-Analysis)"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<p>EDA는 데이터 특징과 내재하는 구조적 관계를 알아내기 위한 기법들을 통칭한다.</p>
+</li>
+<li>
+<p>데이터를 특정한 모형에 적합시키기 보다는 데이터를 있는 그대로 보려는 데에 중점을 둔다.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4-Themes">
+<a class="anchor" href="#4-Themes" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 Themes<a class="anchor-link" href="#4-Themes"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>EDA에서는 네 가지 주제가 때로는 홀로, 때로는 얽혀서 나타난다.</p>
+<ul>
+<li>
+<p>저항성(resistance)의 강조(예를 들어 평균보다는 일부자료의 파손에 저항적인 중위수가 바람직한 대표값 측도로서 선호된다.)</p>
+</li>
+<li>
+<p>잔차(residual) 계산</p>
+</li>
+<li>
+<p>자료변수의 재표현(re-expression)을 통한 다각적 시도</p>
+</li>
+<li>
+<p>그래프를 통한 현시성(revelation)</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Summary-(2)">
+<a class="anchor" href="#Summary-(2)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Summary (2)<a class="anchor-link" href="#Summary-(2)"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<p>자료분석은 탐색적 자료분석과 확증적 자료분석의 두 단계로 나눌 수 있다.</p>
+</li>
+<li>
+<p>EDA는 자료의 구조 및 특징의 파악을 목적으로 한다. 이를 위하여 효과적이고 신뢰성 있는 데이터의 요약과 그래프적 기법이 사용된다.</p>
+</li>
+<li>
+<p>EDA의 네 개 주제는 저항성, 잔차, 재표현, 현시성이다.</p>
+</li>
+<li>
+<p>통계적 모형은 '진실'로서가 아니라 '주요 사례'로서 의미가 있다. 또한 모형과 데이터는 일방통행이 아닌 쌍방통행으로 이해되어야 한다. 데이터와 분석도 사이클을 이룬다.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Ch.3-Stem-and-Leaf">
+<a class="anchor" href="#Ch.3-Stem-and-Leaf" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ch.3 Stem and Leaf<a class="anchor-link" href="#Ch.3-Stem-and-Leaf"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Stem-and-Leaf">
+<a class="anchor" href="#Stem-and-Leaf" aria-hidden="true"><span class="octicon octicon-link"></span></a>Stem and Leaf<a class="anchor-link" href="#Stem-and-Leaf"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>데이터의 값을 십 단위인 줄기(stem)와 일 단위인 잎(leaf)으로 분리한다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 장점</p>
+<ul>
+<li>
+<p>사분위수나 중앙값을 찾기 쉽다.</p>
+</li>
+<li>
+<p>분포의 전체적인 모양(봉우리 개수, 대칭분포, 치우친 방향)을 쉽게 알 수 있다.</p>
+</li>
+<li>
+<p>이상값 유무를 파악할 수 있다.</p>
+</li>
+</ul>
+<p><code>-</code> 단점</p>
+<ul>
+<li>자료가 많은 경우에는 부적합하고 자료의 수가 50개 이하일 때 적합하다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">exam1</span> <span class="o">=</span> <span class="nf">read.table</span><span class="p">(</span><span class="s">'dataset/EDA/exam1.txt'</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">exam1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<table class="dataframe">
+<caption>A data.frame: 6 × 2</caption>
+<thead>
+	<tr>
+<th></th>
+<th scope="col">hw</th>
+<th scope="col">score</th>
+</tr>
+	<tr>
+<th></th>
+<th scope="col">&lt;int&gt;</th>
+<th scope="col">&lt;int&gt;</th>
+</tr>
+</thead>
+<tbody>
+	<tr>
+<th scope="row">1</th>
+<td>0</td>
+<td>54</td>
+</tr>
+	<tr>
+<th scope="row">2</th>
+<td>0</td>
+<td>51</td>
+</tr>
+	<tr>
+<th scope="row">3</th>
+<td>1</td>
+<td>52</td>
+</tr>
+	<tr>
+<th scope="row">4</th>
+<td>0</td>
+<td>82</td>
+</tr>
+	<tr>
+<th scope="row">5</th>
+<td>1</td>
+<td>37</td>
+</tr>
+	<tr>
+<th scope="row">6</th>
+<td>1</td>
+<td>41</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">stem</span><span class="p">(</span><span class="n">exam1</span><span class="o">$</span><span class="n">score</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+  The decimal point is 1 digit(s) to the right of the |
+
+  0 | 00
+  1 | 058
+  2 | 1333458889
+  3 | 0355789
+  4 | 11133456678
+  5 | 11122233344456688
+  6 | 147779
+  7 | 33478
+  8 | 29
+  9 | 09
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>이 줄기그림의 주요 특징은 이봉분포의 모습을 보인다는 점이다. 이것은 자료가 2개의 군집으로 되어 있음을 말한다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">exam1</span><span class="p">[</span><span class="n">exam1</span><span class="o">$</span><span class="n">hw</span> <span class="o">==</span> <span class="m">0</span><span class="p">,</span> <span class="p">]</span><span class="o">$</span><span class="n">score</span> <span class="o">%&gt;%</span> <span class="n">stem</span> <span class="c1"># 과제 미제출자</span>
+<span class="n">exam1</span><span class="p">[</span><span class="n">exam1</span><span class="o">$</span><span class="n">hw</span> <span class="o">==</span> <span class="m">1</span><span class="p">,</span> <span class="p">]</span><span class="o">$</span><span class="n">score</span> <span class="o">%&gt;%</span> <span class="n">stem</span> <span class="c1"># 과제 제출자</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+  The decimal point is 1 digit(s) to the right of the |
+
+  0 | 00
+  1 | 05
+  2 | 13334589
+  3 | 0355
+  4 | 13378
+  5 | 122333446
+  6 | 4
+  7 | 3
+  8 | 29
+
+
+  The decimal point is 1 digit(s) to the right of the |
+
+  1 | 8
+  2 | 88
+  3 | 789
+  4 | 114566
+  5 | 11245688
+  6 | 17779
+  7 | 3478
+  8 | 
+  9 | 09
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>과제 제출 여부에 따라서 줄기-잎 그림을 두 개 그려본 결과 흥미로운 점을 확인했다.</p>
+<p>과제 미제출자에 경우 여전히 이봉분포를 띄고 있으나 과제 제출자의 경우 단봉분포를 띄고 있다.</p>
+<p>이것은 과제물 미제출 그룹이 서로 이질적인 어떤 두 집단(50점대를 중심으로 하는 집단과 20점대를 중심으로 하는 집단)의 혼합임을 말하여 준다.</p>
+<p>아마 전자는 학업습관이 불성실하나 학업능력은 우수한 집단이고 후자는 학업습관과 학업능력 모두 좋지 않은 학생들의 집단이 아닐까 생각해본다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote>
+<p>Tip :R에서 줄기 수를 줄이거나 늘이려면 stem() 함수 내 scale 파라미터를 조정하면 된다.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">stem</span><span class="p">(</span><span class="n">exam1</span><span class="o">$</span><span class="n">score</span><span class="p">,</span> <span class="n">scale</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="c1"># 줄기 수를 절반으로 줄인다.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+  The decimal point is 1 digit(s) to the right of the |
+
+  0 | 00058
+  2 | 13334588890355789
+  4 | 1113345667811122233344456688
+  6 | 14777933478
+  8 | 2909
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>이 줄기 그림은 단봉분포의 형태를 취한다. 이것은 너무 단순하여 이 자료의 주요 특성을 잃은 것으로 볼 수 있다.</p>
+<p>즉 2개의 봉우리를 구분하지 못하고 1개만 본 것이다.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">stem</span><span class="p">(</span><span class="n">exam1</span><span class="o">$</span><span class="n">score</span><span class="p">,</span> <span class="n">scale</span> <span class="o">=</span> <span class="m">2</span><span class="p">)</span> <span class="c1"># 줄기 수를 두 배로 늘인다.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+  The decimal point is 1 digit(s) to the right of the |
+
+  0 | 00
+  0 | 
+  1 | 0
+  1 | 58
+  2 | 13334
+  2 | 58889
+  3 | 03
+  3 | 55789
+  4 | 111334
+  4 | 56678
+  5 | 111222333444
+  5 | 56688
+  6 | 14
+  6 | 7779
+  7 | 334
+  7 | 78
+  8 | 2
+  8 | 9
+  9 | 0
+  9 | 9
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>줄기 수를 늘였더니 더 많은 봉우리를 볼 수 있다.</p>
+<p>일반적으로 줄기 수를 늘이면 늘일수록 많은 수의 봉우리를 보게 되고 그 반대로 줄기 수를 줄이면 줄일수록 적은 수의 봉우리를 보게 된다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Compared-with-Histogram">
+<a class="anchor" href="#Compared-with-Histogram" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compared with Histogram<a class="anchor-link" href="#Compared-with-Histogram"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">hist</span><span class="p">(</span><span class="n">exam1</span><span class="o">$</span><span class="n">score</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA0gAAANICAMAAADKOT/pAAAAM1BMVEUAAABNTU1oaGh8fHyM%0AjIyampqnp6eysrK9vb3Hx8fQ0NDT09PZ2dnh4eHp6enw8PD///8uNL8wAAAACXBIWXMAABJ0%0AAAASdAHeZh94AAAgAElEQVR4nO2diXqqSBBGG/c4UXz/px0WFzQbVwr+qu5zvpnE5Kaotvs/%0AQZBougDAZJJ6AAA5gEgABiASgAGIBGAAIgEYgEgABiASgAGIBGAAIgEYgEgABiASgAGIBGAA%0AIgEYgEgABiASgAGIBGAAIgEYgEgABiASgAGIBGAAIgEYgEgABiASgAGIBGAAIgEYgEgABiAS%0AgAGIBGAAIgEYgEgABiASgAGIBGAAIgEYgEgABiASgAGIBGAAIgEYgEgABiASgAGIBGAAIsGD%0ARBzehZkbQ7on7HorfRu57SKD2Vcp2XXaPO5Ju+HVwWzLZYFIYxgl0me1yGTum952Ih0f92Sd%0AOnZWmy4LRBrDKJG+30uZs0rpZLax1qPrqA/pit3WSwKRxvBFpN9/aKGxTOa8SQ+RGkE/uv+W%0AeYCaG4g0hp/2SPW+fTy0+ei/cw/lcds++jpeS87NV+vDoPK86h4/fbQxXu3Ot+0dVmn12ewZ%0AqrT+fG7/tL1XkepdlapuK+dmKN23mkF9jmnQfHN931x7o/uver5jXYvGsvXt/ryO5np3HuMo%0AEkQaww8inaurPusnka4HG9dUf15/5FG56gpuP9Vl/voDTSp39+/dGW5v6GvHbQxtRfPobN98%0A2vV7lb8btJu8b6zqRXraaDvOx1e7L6MZ3J3hOEoEkcbwg0jNr+bmd3bdROswSPjmFuA+a9X9%0Ay1tlasua0K/rLvQDP5rdwTClPU/b+yLSbfPtfqQN+fHy0X8xokG7k7lvrLkz28Ht+x0b3IPj%0A13t3uzvP4ygQRBpDGnL9Rv+xfShTN7+V79/rjt8PdfPgqE9eG+v2U/WobPPdHpKcn7bUfLc9%0A3l+duk+P3i/be3lo1+tS98lvH9xVh+tuYWSD+81zb8fx8nrHmp+uTp1Vq29H092d53EUCCKN%0A4QeRWjnuh0K3SG77X+O3R1ibPnCtULfK48um+4+fT58eP/CyvReRms3X/Wa6HUR/6u3pdMEf%0ADR43P/udyvr1jl3vQb3an78dzfGbcZQHIo3hB5H2/TeukXv8Uxep7ld8f+jx7T83P/CxW6d7%0Azi9fPt3rhtt7EekxrP4x1Wr46GpMg+HmProN7V7u2F+jqb8bR3Eg0hgeWXpO4u4WnvOXf7rd%0ASl9F6r/+WA3M/F2kp1s/idR/t1Vg/y8NXnqd+oepwzs2ajSv4yiOQu/2P/KTSJf6oz+JtX76%0Ap/vv7OrbPVL3Zfvbf7U9nP5pj1S9/uNj8z11+6Csqv+hwe1m1bbpTtyllzs2ajRVqQLdKPzu%0Aj+RHkVq651Ue39v8eYzU/evq+v0/Rdr8dYx0fP4yXY+RRja43dy2e7KHSIM7th4eI/00mpdx%0AlAcijeEHkVb3A4TbL+f6x7N26SXD189/75F+P2vXbv6z+9TuFD/bE2zV0wmFsXuktk3z/7nb%0A0NMd++us3TfjKBBEGsMPIjWpWp+745L2ucr2UVX7+f5EaL9n+Po8UrehdffDx+pPkV6393IU%0Act/8Z//FqR3VanyD+837E0Qf392xjsMvo3kaR4Eg0hh+emh3OybvfgtvbzfWw6T114U+XdnQ%0Afft6wUPq9x+/ifSyvZd/vG6+S/y+z/q+O98wssHj5npwX57u2Oe3Vza8jGY4jhJBpDH8JFJ/%0AGLG+/g3P5u7Otho8D3PadheqvWa4/Xa1PZ1vFyx8s/UbT9t7/cfuQrjuedT7tXab7vnUcQ0G%0ANw+rx98jPd2x9jK661O1P4/mMY4iQaSFqCM8w1L6qbcJMHMz0x90XE7rCM/5I9LbMHMz8zg4%0AL/z8cOYg0szc/yKh2MPwMkCkuan37Ynlasv+KGsQCcAARAIwAJEADEAkAAMQCcAARAIwAJEA%0ADEAkAAMQCcAARAIwAJEADEAkAAMQCcAARAIwAJEADEAkAAMQCcAARAIwAJEADEAkAAMQCcAA%0ARAIwAJEADEAkAAMQCcAARAIwAJEADEAkAAMQCcAARAIwAJEADEAkAAMQCcAARAIwAJEADEAk%0AAAMQCcAARAIwAJEADEAkAAMQCcAARAIwAJEADEAkAAMQCcAARAIwAJEADEAkAAMQCcAARAIw%0AAJEADEAkAAMQCcAARAIwAJEADEAkAAMQCcAARIpLmor6DuQEkxmX9N80WHtDmMy4IJIjmMy4%0AIJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4%0AIJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4%0AIJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4%0AIJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4%0AIJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4%0AIJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjmMy4IJIjJk7m%0AYZXS5mgzFPhHEMkR705m6grXqWNnOCAYDSI5YpJIu7SrL5fzLh0shwQjQSRHTBKpSnV7u04r%0AuwHBaBDJEZNESmnwBSwNIjlikkjbm0iV1XDgH0AkR7wv0mZ/OKaP5ma942yDBERyxPsi9XQ3%0Aq9pySDASRHLE25N5Oh0Om013ymGHRxIQyRFMZlwQyREzTWYaMk8LQCRHLDCZrNdMIJIjECku%0AiOQIRIoLIjli6unvEYdBrNdMIJIj3p3MAyLJQSRHvP88UrWeuwX8DiI54v3JPI29MIj1mglE%0AcsSEyTyk09wt4DcQyRGctYsLIjkCkeKCSI5ApLggkiMQKS6I5AhEigsiOQKR4oJIjkCkuCCS%0AIxApLojkCESKCyI5ApHigkiOQKS4IJIjECkuiOQIRIoLIjkCkeKCSI5ApLggkiMQKS6I5AhE%0AigsiOQKR4oJIjkCkuCCSIxApLojkCESKCyI5ApHigkiOQKS4IJIjECkuiOQIRIoLIjkCkeKC%0ASI5ApLggkiMQKS6I5AhEigsiOQKR4oJIjkCkuCCSIxApLojkCESKCyI5ApHigkiOQKS4IJIj%0AECkuiOQIRIoLIjkCkeKCSI5ApLggkiMQKS6I5AhEigsiOQKR4oJIjkCkuCCSIxApLojkCESK%0ACyI5ApHigkiOQKS4IJIjECkuiOQIRIoLIjkCkeKCSI5ApLggkiMQKS6I5AhEigsiOQKR4oJI%0AjkCkuCCSIxApLojkCESKCyI5ApHigkiOQKS4IJIjECkuiOQIRIoLIjkCkeKCSI5ApLggkiMQ%0AKS6I5AhEigsiOQKR4oJIjkCkuCCSIxApLojkCESKCyI5ApHigkiOQKS4IJIjECkuiOQIRIoL%0AIjkCkeKCSI5ApLggkiMQKS6I5AhEigsiOQKR4oJIjkCkuCCSIxApLojkCESKCyI5ApHigkiO%0A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%0AAAAASUVORK5CYII=" width="420" height="420">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>줄기 - 잎</th>
+<th>히스토그램</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정보 손실</td>
+<td>손실되지 않음</td>
+<td>손실됨</td>
+</tr>
+<tr>
+<td>줄기 수 변환</td>
+<td>쉬움</td>
+<td>어려움</td>
+</tr>
+<tr>
+<td>구간의 폭</td>
+<td>조정 불가능</td>
+<td>조정 가능</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Summary-(3)">
+<a class="anchor" href="#Summary-(3)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Summary (3)<a class="anchor-link" href="#Summary-(3)"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<p>줄기 그림은 히스토그램과 마찬가지로 자료 분포의 특성을 그래프화한 것이다. 줄기 그림은 히스토그램에 비하여 정보의 보전 면에서 우수하며 쉽게 구간(줄기) 수를 늘이거나 줄일 수 있다. 그러나 구간(줄기)의 선정시 제약이 따른다.</p>
+</li>
+<li>
+<p>적절한 줄기 그림을 그리기 위하여 여러 개의 그림을 그려보고 비교해 보아야 한다. 계획된 시행착오가 필요하다.</p>
+</li>
+<li>
+<p>줄기 그림에서는 다음과 같은 자료의 특성을 관찰할 수 있다.</p>
+<ul>
+<li>군집의 수</li>
+<li>집중도가 높은 구간</li>
+<li>대칭성 여부</li>
+<li>자료의 범위 및 산포</li>
+<li>특이점의 존재여부</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Ch.4-Numerical-Summary-and-Box-Plot">
+<a class="anchor" href="#Ch.4-Numerical-Summary-and-Box-Plot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ch.4 Numerical Summary and Box Plot<a class="anchor-link" href="#Ch.4-Numerical-Summary-and-Box-Plot"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Mean-and-Median">
+<a class="anchor" href="#Mean-and-Median" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mean and Median<a class="anchor-link" href="#Mean-and-Median"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://miro.medium.com/max/754/0*wHMvuwRa_YF9SFwY.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>한 쪽 꼬리가 긴 분포에서 평균값은 쉽게 휘둘리지만 중앙값은 쉽게 휘둘리지 않다. 따라서 중앙값이 대표값으로서 적합하다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\begin{cases}
+X_{\frac{N+1}{2}} \qquad if N = odd\\ \\
+\dfrac{X_{\frac{N}{2}} + X_{\frac{N}{2} + 1}}{2} \qquad if N = even
+\end{cases}$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Five-Number-Summary">
+<a class="anchor" href="#Five-Number-Summary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Five Number Summary<a class="anchor-link" href="#Five-Number-Summary"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>아래 4분위수 : $H_L$
+중간값 : $M$
+위 4분위수 : $H_U$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>다섯 숫자 요약 = (min, $H_L, M, H_U$, max) = (최솟값, 제 1사분위수, 중앙값, 제 3사분위수, 최댓값)</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">summary</span><span class="p">(</span><span class="n">exam1</span><span class="o">$</span><span class="n">score</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea ">
+<pre>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00   33.00   48.00   47.23   58.00   99.00 </pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Skewness">
+<a class="anchor" href="#Skewness" aria-hidden="true"><span class="octicon octicon-link"></span></a>Skewness<a class="anchor-link" href="#Skewness"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>왜도</strong> <strong>=</strong> $SKEW = \dfrac{(H_U - M) - (M - H_L)}{(H_U - M) + (M - H_L)}$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>왜도</strong> &lt; 0 이면 왼쪽으로 기울어진 분포</p>
+<p><strong>왜도</strong> &gt; 0 이면 오른쪽으로 기울어진 분포</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Ch.5-Data-Re-Expression">
+<a class="anchor" href="#Ch.5-Data-Re-Expression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ch.5 Data Re-Expression<a class="anchor-link" href="#Ch.5-Data-Re-Expression"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="멱승,-로그,-지수-변환에-의한-재표현">
+<a class="anchor" href="#%EB%A9%B1%EC%8A%B9,-%EB%A1%9C%EA%B7%B8,-%EC%A7%80%EC%88%98-%EB%B3%80%ED%99%98%EC%97%90-%EC%9D%98%ED%95%9C-%EC%9E%AC%ED%91%9C%ED%98%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>멱승, 로그, 지수 변환에 의한 재표현<a class="anchor-link" href="#%EB%A9%B1%EC%8A%B9,-%EB%A1%9C%EA%B7%B8,-%EC%A7%80%EC%88%98-%EB%B3%80%ED%99%98%EC%97%90-%EC%9D%98%ED%95%9C-%EC%9E%AC%ED%91%9C%ED%98%84"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="표준화-변환">
+<a class="anchor" href="#%ED%91%9C%EC%A4%80%ED%99%94-%EB%B3%80%ED%99%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>표준화 변환<a class="anchor-link" href="#%ED%91%9C%EC%A4%80%ED%99%94-%EB%B3%80%ED%99%98"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -328,9 +1166,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.5-요약">
-<a class="anchor" href="#5.5-%EC%9A%94%EC%95%BD" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.5 요약<a class="anchor-link" href="#5.5-%EC%9A%94%EC%95%BD"> </a>
-</h1>
+<h2 id="Summary-(5)">
+<a class="anchor" href="#Summary-(5)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Summary (5)<a class="anchor-link" href="#Summary-(5)"> </a>
+</h2>
 </div>
 </div>
 </div>
