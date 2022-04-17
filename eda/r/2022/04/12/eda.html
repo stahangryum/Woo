@@ -166,6 +166,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Mean-and-Median">Mean and Median </a></li>
 <li class="toc-entry toc-h2"><a href="#Five-Number-Summary">Five Number Summary </a></li>
 <li class="toc-entry toc-h2"><a href="#Skewness">Skewness </a></li>
+<li class="toc-entry toc-h2"><a href="#Quantiles">Quantiles </a></li>
+<li class="toc-entry toc-h2"><a href="#KURTO">KURTO </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Ch.5-Data-Re-Expression">Ch.5 Data Re-Expression </a>
@@ -897,6 +899,8 @@ Warning message:
 X_{\frac{N+1}{2}} \qquad if N = odd\\ \\
 \dfrac{X_{\frac{N}{2}} + X_{\frac{N}{2} + 1}}{2} \qquad if N = even
 \end{cases}$</p>
+<p>중간값의 깊이 $d(M)$은</p>
+<p>$d(M) = \dfrac{(N+1)}{2}$</p>
 
 </div>
 </div>
@@ -985,6 +989,105 @@ X_{\frac{N+1}{2}} \qquad if N = odd\\ \\
 <p><strong>왜도</strong> &lt; 0 이면 왼쪽으로 기울어진 분포</p>
 <p><strong>왜도</strong> &gt; 0 이면 오른쪽으로 기울어진 분포</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Quantiles">
+<a class="anchor" href="#Quantiles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quantiles<a class="anchor-link" href="#Quantiles"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">low</span> <span class="o">=</span> <span class="nf">quantile</span><span class="p">(</span><span class="n">exam1</span><span class="o">$</span><span class="n">score</span><span class="p">,</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">/</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="o">/</span><span class="m">4</span><span class="p">,</span> <span class="m">1</span><span class="o">/</span><span class="m">8</span><span class="p">,</span> <span class="m">1</span><span class="o">/</span><span class="m">16</span><span class="p">),</span> <span class="n">type</span> <span class="o">=</span> <span class="m">8</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="n">as.numeric</span> <span class="o">%&gt;%</span> <span class="nf">round</span><span class="p">(</span><span class="m">2</span><span class="p">)</span><span class="c1"># 중간값, 아래 4분위수, 아래 8분위수, 아래 16분위수</span>
+<span class="n">high</span> <span class="o">=</span> <span class="nf">quantile</span><span class="p">(</span><span class="n">exam1</span><span class="o">$</span><span class="n">score</span><span class="p">,</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">/</span><span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="o">/</span><span class="m">4</span><span class="p">,</span> <span class="m">7</span><span class="o">/</span><span class="m">8</span><span class="p">,</span> <span class="m">15</span><span class="o">/</span><span class="m">16</span><span class="p">),</span> <span class="n">type</span> <span class="o">=</span> <span class="m">8</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="n">as.numeric</span> <span class="o">%&gt;%</span> <span class="nf">round</span><span class="p">(</span><span class="m">2</span><span class="p">)</span> <span class="c1"># 중간값, 위 4분위수, 위 8분위수, 위 16분위수</span>
+
+<span class="n">values</span> <span class="o">=</span> <span class="nf">cbind</span><span class="p">(</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">,</span> <span class="p">(</span><span class="n">low</span><span class="o">+</span><span class="n">high</span><span class="p">)</span><span class="o">/</span><span class="m">2</span><span class="p">,</span> <span class="n">high</span><span class="o">-</span><span class="n">low</span><span class="p">)</span>
+<span class="nf">colnames</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">'low'</span><span class="p">,</span> <span class="s">'high'</span><span class="p">,</span> <span class="s">'mid'</span><span class="p">,</span> <span class="s">'spr'</span><span class="p">)</span>
+<span class="nf">rownames</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">'M'</span><span class="p">,</span> <span class="s">'H'</span><span class="p">,</span> <span class="s">'E'</span><span class="p">,</span> <span class="s">'D'</span><span class="p">)</span>
+
+<span class="n">values</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<table class="dataframe">
+<caption>A matrix: 4 × 4 of type dbl</caption>
+<thead>
+	<tr>
+<th></th>
+<th scope="col">low</th>
+<th scope="col">high</th>
+<th scope="col">mid</th>
+<th scope="col">spr</th>
+</tr>
+</thead>
+<tbody>
+	<tr>
+<th scope="row">M</th>
+<td>48.00</td>
+<td>48.00</td>
+<td>48.00</td>
+<td> 0.00</td>
+</tr>
+	<tr>
+<th scope="row">H</th>
+<td>32.00</td>
+<td>58.00</td>
+<td>45.00</td>
+<td>26.00</td>
+</tr>
+	<tr>
+<th scope="row">E</th>
+<td>23.00</td>
+<td>73.00</td>
+<td>48.00</td>
+<td>50.00</td>
+</tr>
+	<tr>
+<th scope="row">D</th>
+<td>16.25</td>
+<td>80.33</td>
+<td>48.29</td>
+<td>64.08</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="KURTO">
+<a class="anchor" href="#KURTO" aria-hidden="true"><span class="octicon octicon-link"></span></a>KURTO<a class="anchor-link" href="#KURTO"> </a>
+</h2>
 </div>
 </div>
 </div>
