@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Santander Customer Satisfaction | Woo</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Santander Customer Satisfaction" />
+<meta name="author" content="Kim Jeewoo" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://stahangryum.github.io/Woo/kaggle/2022/05/10/santander.html" />
+<meta property="og:url" content="https://stahangryum.github.io/Woo/kaggle/2022/05/10/santander.html" />
+<meta property="og:site_name" content="Woo" />
+<meta property="og:image" content="https://stahangryum.github.io/Woo/images/kaggle_logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-10T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://stahangryum.github.io/Woo/images/kaggle_logo.png" />
+<meta property="twitter:title" content="Santander Customer Satisfaction" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kim Jeewoo"},"dateModified":"2022-05-10T00:00:00-05:00","datePublished":"2022-05-10T00:00:00-05:00","headline":"Santander Customer Satisfaction","image":"https://stahangryum.github.io/Woo/images/kaggle_logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://stahangryum.github.io/Woo/kaggle/2022/05/10/santander.html"},"url":"https://stahangryum.github.io/Woo/kaggle/2022/05/10/santander.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Woo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://stahangryum.github.io/Woo/feed.xml" title="Woo" /><link rel="shortcut icon" type="image/x-icon" href="/Woo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Woo/">Woo</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Woo/about/">About Me</a><a class="page-link" href="/Woo/search/">Search</a><a class="page-link" href="/Woo/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Santander Customer Satisfaction</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-05-10T00:00:00-05:00" itemprop="datePublished">
+        May 10, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Kim Jeewoo</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      29 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/Woo/categories/#Kaggle">Kaggle</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/stahangryum/Woo/tree/master/_notebooks/2022-05-10-santander.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/Woo/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/stahangryum/Woo/master?filepath=_notebooks%2F2022-05-10-santander.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Woo/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/stahangryum/Woo/blob/master/_notebooks/2022-05-10-santander.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Woo/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fstahangryum%2FWoo%2Fblob%2Fmaster%2F_notebooks%2F2022-05-10-santander.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/Woo/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-05-10-santander.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cust_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'dataset/santander/train_santander.csv'</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">'latin-1'</span><span class="p">)</span>
+<span class="n">cust_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>var3</th>
+      <th>var15</th>
+      <th>imp_ent_var16_ult1</th>
+      <th>imp_op_var39_comer_ult1</th>
+      <th>imp_op_var39_comer_ult3</th>
+      <th>imp_op_var40_comer_ult1</th>
+      <th>imp_op_var40_comer_ult3</th>
+      <th>imp_op_var40_efect_ult1</th>
+      <th>imp_op_var40_efect_ult3</th>
+      <th>...</th>
+      <th>saldo_medio_var33_hace2</th>
+      <th>saldo_medio_var33_hace3</th>
+      <th>saldo_medio_var33_ult1</th>
+      <th>saldo_medio_var33_ult3</th>
+      <th>saldo_medio_var44_hace2</th>
+      <th>saldo_medio_var44_hace3</th>
+      <th>saldo_medio_var44_ult1</th>
+      <th>saldo_medio_var44_ult3</th>
+      <th>var38</th>
+      <th>TARGET</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2</td>
+      <td>23</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>39205.17</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>2</td>
+      <td>34</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>49278.03</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4</td>
+      <td>2</td>
+      <td>23</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>67333.77</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>3 rows × 371 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cust_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 76020 entries, 0 to 76019
+Columns: 371 entries, ID to TARGET
+dtypes: float64(111), int64(260)
+memory usage: 215.2 MB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cust_df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(76020, 371)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">cust_df</span><span class="p">[</span><span class="s1">'TARGET'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="n">unsatisfied_cnt</span> <span class="o">=</span> <span class="n">cust_df</span><span class="p">[</span><span class="n">cust_df</span><span class="p">[</span><span class="s1">'TARGET'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">TARGET</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">total_cnt</span> <span class="o">=</span> <span class="n">cust_df</span><span class="o">.</span><span class="n">TARGET</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'unsatisfied 비율 :'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">unsatisfied_cnt</span> <span class="o">/</span> <span class="n">total_cnt</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0    73012
+1     3008
+Name: TARGET, dtype: int64
+unsatisfied 비율 : 0.04
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>불만족 비율은 전체의 4%에 불과하다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cust_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>var3</th>
+      <th>var15</th>
+      <th>imp_ent_var16_ult1</th>
+      <th>imp_op_var39_comer_ult1</th>
+      <th>imp_op_var39_comer_ult3</th>
+      <th>imp_op_var40_comer_ult1</th>
+      <th>imp_op_var40_comer_ult3</th>
+      <th>imp_op_var40_efect_ult1</th>
+      <th>imp_op_var40_efect_ult3</th>
+      <th>...</th>
+      <th>saldo_medio_var33_hace2</th>
+      <th>saldo_medio_var33_hace3</th>
+      <th>saldo_medio_var33_ult1</th>
+      <th>saldo_medio_var33_ult3</th>
+      <th>saldo_medio_var44_hace2</th>
+      <th>saldo_medio_var44_hace3</th>
+      <th>saldo_medio_var44_ult1</th>
+      <th>saldo_medio_var44_ult3</th>
+      <th>var38</th>
+      <th>TARGET</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>...</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>76020.000000</td>
+      <td>7.602000e+04</td>
+      <td>76020.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>75964.050723</td>
+      <td>-1523.199277</td>
+      <td>33.212865</td>
+      <td>86.208265</td>
+      <td>72.363067</td>
+      <td>119.529632</td>
+      <td>3.559130</td>
+      <td>6.472698</td>
+      <td>0.412946</td>
+      <td>0.567352</td>
+      <td>...</td>
+      <td>7.935824</td>
+      <td>1.365146</td>
+      <td>12.215580</td>
+      <td>8.784074</td>
+      <td>31.505324</td>
+      <td>1.858575</td>
+      <td>76.026165</td>
+      <td>56.614351</td>
+      <td>1.172358e+05</td>
+      <td>0.039569</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>43781.947379</td>
+      <td>39033.462364</td>
+      <td>12.956486</td>
+      <td>1614.757313</td>
+      <td>339.315831</td>
+      <td>546.266294</td>
+      <td>93.155749</td>
+      <td>153.737066</td>
+      <td>30.604864</td>
+      <td>36.513513</td>
+      <td>...</td>
+      <td>455.887218</td>
+      <td>113.959637</td>
+      <td>783.207399</td>
+      <td>538.439211</td>
+      <td>2013.125393</td>
+      <td>147.786584</td>
+      <td>4040.337842</td>
+      <td>2852.579397</td>
+      <td>1.826646e+05</td>
+      <td>0.194945</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>-999999.000000</td>
+      <td>5.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>5.163750e+03</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>38104.750000</td>
+      <td>2.000000</td>
+      <td>23.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>6.787061e+04</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>76043.000000</td>
+      <td>2.000000</td>
+      <td>28.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.064092e+05</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>113748.750000</td>
+      <td>2.000000</td>
+      <td>40.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.187563e+05</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>151838.000000</td>
+      <td>238.000000</td>
+      <td>105.000000</td>
+      <td>210000.000000</td>
+      <td>12888.030000</td>
+      <td>21024.810000</td>
+      <td>8237.820000</td>
+      <td>11073.570000</td>
+      <td>6600.000000</td>
+      <td>6600.000000</td>
+      <td>...</td>
+      <td>50003.880000</td>
+      <td>20385.720000</td>
+      <td>138831.630000</td>
+      <td>91778.730000</td>
+      <td>438329.220000</td>
+      <td>24650.010000</td>
+      <td>681462.900000</td>
+      <td>397884.300000</td>
+      <td>2.203474e+07</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>8 rows × 371 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cust_df</span><span class="p">[</span><span class="s1">'var3'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="o">-</span><span class="mi">999999</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">cust_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">'ID'</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="n">X_features</span> <span class="o">=</span> <span class="n">cust_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">y_labels</span> <span class="o">=</span> <span class="n">cust_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'피쳐 데이터 shape :'</span><span class="p">,</span> <span class="n">X_features</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>피쳐 데이터 shape : (76020, 369)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_features</span><span class="p">,</span> <span class="n">y_labels</span><span class="p">,</span>
+                                                    <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">train_cnt</span> <span class="o">=</span> <span class="n">y_train</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">test_cnt</span> <span class="o">=</span> <span class="n">y_test</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'학습 세트 Shape : </span><span class="si">{0}</span><span class="s1">, 테스트 세트 Shape : </span><span class="si">{1}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">' 학습 세트 레이블 값 분포 비율'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">/</span><span class="n">train_cnt</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1"> 테스트 세트 레이블 값 분포 비율'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">/</span><span class="n">test_cnt</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>학습 세트 Shape : (60816, 369), 테스트 세트 Shape : (15204, 369)
+ 학습 세트 레이블 값 분포 비율
+0    0.960964
+1    0.039036
+Name: TARGET, dtype: float64
+
+ 테스트 세트 레이블 값 분포 비율
+0    0.9583
+1    0.0417
+Name: TARGET, dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_tr</span><span class="p">,</span> <span class="n">X_val</span><span class="p">,</span> <span class="n">y_tr</span><span class="p">,</span> <span class="n">y_val</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
+                                            <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">xgboost</span> <span class="kn">import</span> <span class="n">XGBClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">roc_auc_score</span>
+
+<span class="n">xgb_clf</span> <span class="o">=</span> <span class="n">XGBClassifier</span><span class="p">(</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">156</span><span class="p">)</span>
+
+<span class="c1"># 성능 평가 지표를 auc로, 조기 중단 파라미터는 100으로 설정하고 학습 수행</span>
+<span class="n">xgb_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">early_stopping_rounds</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="n">eval_metric</span> <span class="o">=</span> <span class="s1">'logloss'</span><span class="p">,</span> <span class="n">eval_set</span> <span class="o">=</span> <span class="p">[(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)])</span>
+
+<span class="n">xgb_roc_score</span> <span class="o">=</span> <span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">xgb_clf</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">average</span> <span class="o">=</span><span class="s1">'macro'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'ROC AUC :'</span><span class="p">,</span> <span class="n">xgb_roc_score</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-logloss:0.47251	validation_1-logloss:0.47431
+[1]	validation_0-logloss:0.35180	validation_1-logloss:0.35486
+[2]	validation_0-logloss:0.27740	validation_1-logloss:0.28183
+[3]	validation_0-logloss:0.22891	validation_1-logloss:0.23460
+[4]	validation_0-logloss:0.19656	validation_1-logloss:0.20328
+[5]	validation_0-logloss:0.17445	validation_1-logloss:0.18210
+[6]	validation_0-logloss:0.15934	validation_1-logloss:0.16792
+[7]	validation_0-logloss:0.14870	validation_1-logloss:0.15822
+[8]	validation_0-logloss:0.14125	validation_1-logloss:0.15182
+[9]	validation_0-logloss:0.13608	validation_1-logloss:0.14740
+[10]	validation_0-logloss:0.13231	validation_1-logloss:0.14457
+[11]	validation_0-logloss:0.12940	validation_1-logloss:0.14263
+[12]	validation_0-logloss:0.12715	validation_1-logloss:0.14133
+[13]	validation_0-logloss:0.12546	validation_1-logloss:0.14054
+[14]	validation_0-logloss:0.12434	validation_1-logloss:0.14000
+[15]	validation_0-logloss:0.12319	validation_1-logloss:0.13974
+[16]	validation_0-logloss:0.12237	validation_1-logloss:0.13947
+[17]	validation_0-logloss:0.12181	validation_1-logloss:0.13941
+[18]	validation_0-logloss:0.12139	validation_1-logloss:0.13942
+[19]	validation_0-logloss:0.12091	validation_1-logloss:0.13939
+[20]	validation_0-logloss:0.12018	validation_1-logloss:0.13936
+[21]	validation_0-logloss:0.11999	validation_1-logloss:0.13934
+[22]	validation_0-logloss:0.11947	validation_1-logloss:0.13933
+[23]	validation_0-logloss:0.11929	validation_1-logloss:0.13930
+[24]	validation_0-logloss:0.11876	validation_1-logloss:0.13931
+[25]	validation_0-logloss:0.11847	validation_1-logloss:0.13924
+[26]	validation_0-logloss:0.11811	validation_1-logloss:0.13900
+[27]	validation_0-logloss:0.11783	validation_1-logloss:0.13903
+[28]	validation_0-logloss:0.11766	validation_1-logloss:0.13908
+[29]	validation_0-logloss:0.11697	validation_1-logloss:0.13931
+[30]	validation_0-logloss:0.11663	validation_1-logloss:0.13943
+[31]	validation_0-logloss:0.11587	validation_1-logloss:0.13948
+[32]	validation_0-logloss:0.11521	validation_1-logloss:0.13967
+[33]	validation_0-logloss:0.11460	validation_1-logloss:0.13973
+[34]	validation_0-logloss:0.11446	validation_1-logloss:0.13971
+[35]	validation_0-logloss:0.11440	validation_1-logloss:0.13974
+[36]	validation_0-logloss:0.11385	validation_1-logloss:0.13981
+[37]	validation_0-logloss:0.11368	validation_1-logloss:0.13986
+[38]	validation_0-logloss:0.11361	validation_1-logloss:0.13986
+[39]	validation_0-logloss:0.11351	validation_1-logloss:0.13986
+[40]	validation_0-logloss:0.11331	validation_1-logloss:0.13998
+[41]	validation_0-logloss:0.11291	validation_1-logloss:0.14007
+[42]	validation_0-logloss:0.11281	validation_1-logloss:0.14013
+[43]	validation_0-logloss:0.11269	validation_1-logloss:0.14011
+[44]	validation_0-logloss:0.11255	validation_1-logloss:0.14015
+[45]	validation_0-logloss:0.11250	validation_1-logloss:0.14011
+[46]	validation_0-logloss:0.11246	validation_1-logloss:0.14014
+[47]	validation_0-logloss:0.11238	validation_1-logloss:0.14017
+[48]	validation_0-logloss:0.11220	validation_1-logloss:0.14014
+[49]	validation_0-logloss:0.11200	validation_1-logloss:0.14022
+[50]	validation_0-logloss:0.11190	validation_1-logloss:0.14028
+[51]	validation_0-logloss:0.11108	validation_1-logloss:0.14027
+[52]	validation_0-logloss:0.11041	validation_1-logloss:0.14031
+[53]	validation_0-logloss:0.10983	validation_1-logloss:0.14020
+[54]	validation_0-logloss:0.10961	validation_1-logloss:0.14015
+[55]	validation_0-logloss:0.10949	validation_1-logloss:0.14020
+[56]	validation_0-logloss:0.10889	validation_1-logloss:0.14026
+[57]	validation_0-logloss:0.10875	validation_1-logloss:0.14030
+[58]	validation_0-logloss:0.10831	validation_1-logloss:0.14025
+[59]	validation_0-logloss:0.10778	validation_1-logloss:0.14045
+[60]	validation_0-logloss:0.10756	validation_1-logloss:0.14051
+[61]	validation_0-logloss:0.10745	validation_1-logloss:0.14064
+[62]	validation_0-logloss:0.10702	validation_1-logloss:0.14070
+[63]	validation_0-logloss:0.10694	validation_1-logloss:0.14072
+[64]	validation_0-logloss:0.10689	validation_1-logloss:0.14072
+[65]	validation_0-logloss:0.10683	validation_1-logloss:0.14070
+[66]	validation_0-logloss:0.10654	validation_1-logloss:0.14073
+[67]	validation_0-logloss:0.10648	validation_1-logloss:0.14073
+[68]	validation_0-logloss:0.10628	validation_1-logloss:0.14087
+[69]	validation_0-logloss:0.10622	validation_1-logloss:0.14086
+[70]	validation_0-logloss:0.10616	validation_1-logloss:0.14091
+[71]	validation_0-logloss:0.10609	validation_1-logloss:0.14090
+[72]	validation_0-logloss:0.10581	validation_1-logloss:0.14109
+[73]	validation_0-logloss:0.10575	validation_1-logloss:0.14106
+[74]	validation_0-logloss:0.10562	validation_1-logloss:0.14110
+[75]	validation_0-logloss:0.10557	validation_1-logloss:0.14119
+[76]	validation_0-logloss:0.10490	validation_1-logloss:0.14114
+[77]	validation_0-logloss:0.10436	validation_1-logloss:0.14136
+[78]	validation_0-logloss:0.10396	validation_1-logloss:0.14137
+[79]	validation_0-logloss:0.10374	validation_1-logloss:0.14146
+[80]	validation_0-logloss:0.10347	validation_1-logloss:0.14155
+[81]	validation_0-logloss:0.10301	validation_1-logloss:0.14175
+[82]	validation_0-logloss:0.10283	validation_1-logloss:0.14162
+[83]	validation_0-logloss:0.10250	validation_1-logloss:0.14169
+[84]	validation_0-logloss:0.10239	validation_1-logloss:0.14176
+[85]	validation_0-logloss:0.10214	validation_1-logloss:0.14184
+[86]	validation_0-logloss:0.10211	validation_1-logloss:0.14185
+[87]	validation_0-logloss:0.10206	validation_1-logloss:0.14185
+[88]	validation_0-logloss:0.10188	validation_1-logloss:0.14194
+[89]	validation_0-logloss:0.10178	validation_1-logloss:0.14200
+[90]	validation_0-logloss:0.10174	validation_1-logloss:0.14204
+[91]	validation_0-logloss:0.10162	validation_1-logloss:0.14209
+[92]	validation_0-logloss:0.10159	validation_1-logloss:0.14209
+[93]	validation_0-logloss:0.10122	validation_1-logloss:0.14221
+[94]	validation_0-logloss:0.10118	validation_1-logloss:0.14222
+[95]	validation_0-logloss:0.10113	validation_1-logloss:0.14231
+[96]	validation_0-logloss:0.10082	validation_1-logloss:0.14250
+[97]	validation_0-logloss:0.10077	validation_1-logloss:0.14253
+[98]	validation_0-logloss:0.10035	validation_1-logloss:0.14265
+[99]	validation_0-logloss:0.09991	validation_1-logloss:0.14271
+[100]	validation_0-logloss:0.09964	validation_1-logloss:0.14277
+[101]	validation_0-logloss:0.09931	validation_1-logloss:0.14291
+[102]	validation_0-logloss:0.09928	validation_1-logloss:0.14291
+[103]	validation_0-logloss:0.09885	validation_1-logloss:0.14307
+[104]	validation_0-logloss:0.09873	validation_1-logloss:0.14323
+[105]	validation_0-logloss:0.09853	validation_1-logloss:0.14331
+[106]	validation_0-logloss:0.09799	validation_1-logloss:0.14359
+[107]	validation_0-logloss:0.09796	validation_1-logloss:0.14366
+[108]	validation_0-logloss:0.09782	validation_1-logloss:0.14385
+[109]	validation_0-logloss:0.09776	validation_1-logloss:0.14388
+[110]	validation_0-logloss:0.09756	validation_1-logloss:0.14400
+[111]	validation_0-logloss:0.09752	validation_1-logloss:0.14398
+[112]	validation_0-logloss:0.09728	validation_1-logloss:0.14405
+[113]	validation_0-logloss:0.09701	validation_1-logloss:0.14429
+[114]	validation_0-logloss:0.09689	validation_1-logloss:0.14426
+[115]	validation_0-logloss:0.09668	validation_1-logloss:0.14434
+[116]	validation_0-logloss:0.09663	validation_1-logloss:0.14439
+[117]	validation_0-logloss:0.09649	validation_1-logloss:0.14446
+[118]	validation_0-logloss:0.09641	validation_1-logloss:0.14450
+[119]	validation_0-logloss:0.09613	validation_1-logloss:0.14447
+[120]	validation_0-logloss:0.09606	validation_1-logloss:0.14455
+[121]	validation_0-logloss:0.09593	validation_1-logloss:0.14451
+[122]	validation_0-logloss:0.09566	validation_1-logloss:0.14469
+[123]	validation_0-logloss:0.09547	validation_1-logloss:0.14479
+[124]	validation_0-logloss:0.09542	validation_1-logloss:0.14476
+[125]	validation_0-logloss:0.09524	validation_1-logloss:0.14471
+ROC AUC : 0.8410117370942843
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+
+<span class="c1"># 하이퍼 파라미터 테스트의 수행 속도를 향상시키기 위해 n_estimators를 100으로 감소</span>
+<span class="n">xgb_clf</span> <span class="o">=</span> <span class="n">XGBClassifier</span><span class="p">(</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'max_depth'</span><span class="p">:[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+          <span class="s1">'min_child_weight'</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+          <span class="s1">'colsample_bytree'</span><span class="p">:[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">]</span>
+         <span class="p">}</span>
+
+<span class="n">gridcv</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">xgb_clf</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">cv</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># 2*2*2*3</span>
+<span class="n">gridcv</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">early_stopping_rounds</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="n">eval_metric</span> <span class="o">=</span> <span class="s1">'auc'</span><span class="p">,</span> <span class="n">eval_set</span><span class="o">=</span><span class="p">[(</span><span class="n">X_tr</span><span class="p">,</span> <span class="n">y_tr</span><span class="p">),</span> <span class="p">(</span><span class="n">X_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">)])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'GridSearchCV 최적 파라미터:'</span><span class="p">,</span> <span class="n">gridcv</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="n">xgb_rod_score</span> <span class="o">=</span> <span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">gridcv</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">average</span> <span class="o">=</span> <span class="s1">'macro'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'ROC AUC :'</span><span class="p">,</span> <span class="n">xgb_roc_score</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.79161	validation_1-auc:0.79321
+[1]	validation_0-auc:0.81865	validation_1-auc:0.81375
+[2]	validation_0-auc:0.82586	validation_1-auc:0.81846
+[3]	validation_0-auc:0.82789	validation_1-auc:0.82226
+[4]	validation_0-auc:0.83249	validation_1-auc:0.82677
+[5]	validation_0-auc:0.83477	validation_1-auc:0.83225
+[6]	validation_0-auc:0.83340	validation_1-auc:0.82654
+[7]	validation_0-auc:0.84223	validation_1-auc:0.83486
+[8]	validation_0-auc:0.84586	validation_1-auc:0.83682
+[9]	validation_0-auc:0.84557	validation_1-auc:0.83472
+[10]	validation_0-auc:0.84423	validation_1-auc:0.83181
+[11]	validation_0-auc:0.84428	validation_1-auc:0.82920
+[12]	validation_0-auc:0.85176	validation_1-auc:0.83433
+[13]	validation_0-auc:0.85540	validation_1-auc:0.83565
+[14]	validation_0-auc:0.85718	validation_1-auc:0.83696
+[15]	validation_0-auc:0.85851	validation_1-auc:0.83561
+[16]	validation_0-auc:0.85964	validation_1-auc:0.83578
+[17]	validation_0-auc:0.86091	validation_1-auc:0.83570
+[18]	validation_0-auc:0.86188	validation_1-auc:0.83595
+[19]	validation_0-auc:0.86249	validation_1-auc:0.83552
+[20]	validation_0-auc:0.86298	validation_1-auc:0.83452
+[21]	validation_0-auc:0.86375	validation_1-auc:0.83437
+[22]	validation_0-auc:0.86440	validation_1-auc:0.83516
+[23]	validation_0-auc:0.86554	validation_1-auc:0.83470
+[24]	validation_0-auc:0.86601	validation_1-auc:0.83492
+[25]	validation_0-auc:0.86700	validation_1-auc:0.83510
+[26]	validation_0-auc:0.86770	validation_1-auc:0.83412
+[27]	validation_0-auc:0.86852	validation_1-auc:0.83394
+[28]	validation_0-auc:0.86898	validation_1-auc:0.83441
+[29]	validation_0-auc:0.86914	validation_1-auc:0.83440
+[30]	validation_0-auc:0.86953	validation_1-auc:0.83380
+[31]	validation_0-auc:0.87051	validation_1-auc:0.83346
+[32]	validation_0-auc:0.87085	validation_1-auc:0.83334
+[33]	validation_0-auc:0.87112	validation_1-auc:0.83313
+[34]	validation_0-auc:0.87161	validation_1-auc:0.83383
+[35]	validation_0-auc:0.87173	validation_1-auc:0.83376
+[36]	validation_0-auc:0.87260	validation_1-auc:0.83340
+[37]	validation_0-auc:0.87310	validation_1-auc:0.83344
+[38]	validation_0-auc:0.87322	validation_1-auc:0.83343
+[39]	validation_0-auc:0.87339	validation_1-auc:0.83370
+[40]	validation_0-auc:0.87351	validation_1-auc:0.83373
+[41]	validation_0-auc:0.87411	validation_1-auc:0.83358
+[42]	validation_0-auc:0.87433	validation_1-auc:0.83325
+[43]	validation_0-auc:0.87432	validation_1-auc:0.83319
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.80013	validation_1-auc:0.79685
+[1]	validation_0-auc:0.82084	validation_1-auc:0.81574
+[2]	validation_0-auc:0.82744	validation_1-auc:0.82189
+[3]	validation_0-auc:0.83029	validation_1-auc:0.82317
+[4]	validation_0-auc:0.83578	validation_1-auc:0.82564
+[5]	validation_0-auc:0.83777	validation_1-auc:0.83385
+[6]	validation_0-auc:0.83742	validation_1-auc:0.83162
+[7]	validation_0-auc:0.84373	validation_1-auc:0.83436
+[8]	validation_0-auc:0.84836	validation_1-auc:0.83664
+[9]	validation_0-auc:0.84790	validation_1-auc:0.83583
+[10]	validation_0-auc:0.84717	validation_1-auc:0.83268
+[11]	validation_0-auc:0.84654	validation_1-auc:0.83066
+[12]	validation_0-auc:0.85377	validation_1-auc:0.83579
+[13]	validation_0-auc:0.85800	validation_1-auc:0.83859
+[14]	validation_0-auc:0.85962	validation_1-auc:0.83984
+[15]	validation_0-auc:0.86143	validation_1-auc:0.84003
+[16]	validation_0-auc:0.86269	validation_1-auc:0.84049
+[17]	validation_0-auc:0.86399	validation_1-auc:0.84009
+[18]	validation_0-auc:0.86474	validation_1-auc:0.84034
+[19]	validation_0-auc:0.86662	validation_1-auc:0.84138
+[20]	validation_0-auc:0.86730	validation_1-auc:0.84100
+[21]	validation_0-auc:0.86821	validation_1-auc:0.84058
+[22]	validation_0-auc:0.86942	validation_1-auc:0.84128
+[23]	validation_0-auc:0.86992	validation_1-auc:0.84122
+[24]	validation_0-auc:0.87035	validation_1-auc:0.84116
+[25]	validation_0-auc:0.87091	validation_1-auc:0.84045
+[26]	validation_0-auc:0.87139	validation_1-auc:0.83974
+[27]	validation_0-auc:0.87296	validation_1-auc:0.83926
+[28]	validation_0-auc:0.87307	validation_1-auc:0.83943
+[29]	validation_0-auc:0.87330	validation_1-auc:0.84017
+[30]	validation_0-auc:0.87443	validation_1-auc:0.83949
+[31]	validation_0-auc:0.87467	validation_1-auc:0.83936
+[32]	validation_0-auc:0.87513	validation_1-auc:0.83943
+[33]	validation_0-auc:0.87519	validation_1-auc:0.83951
+[34]	validation_0-auc:0.87542	validation_1-auc:0.83953
+[35]	validation_0-auc:0.87552	validation_1-auc:0.83946
+[36]	validation_0-auc:0.87582	validation_1-auc:0.83936
+[37]	validation_0-auc:0.87604	validation_1-auc:0.83919
+[38]	validation_0-auc:0.87622	validation_1-auc:0.83874
+[39]	validation_0-auc:0.87670	validation_1-auc:0.83844
+[40]	validation_0-auc:0.87678	validation_1-auc:0.83859
+[41]	validation_0-auc:0.87711	validation_1-auc:0.83830
+[42]	validation_0-auc:0.87738	validation_1-auc:0.83823
+[43]	validation_0-auc:0.87752	validation_1-auc:0.83796
+[44]	validation_0-auc:0.87777	validation_1-auc:0.83765
+[45]	validation_0-auc:0.87785	validation_1-auc:0.83786
+[46]	validation_0-auc:0.87802	validation_1-auc:0.83761
+[47]	validation_0-auc:0.87840	validation_1-auc:0.83698
+[48]	validation_0-auc:0.87868	validation_1-auc:0.83699
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.80039	validation_1-auc:0.80013
+[1]	validation_0-auc:0.82111	validation_1-auc:0.82026
+[2]	validation_0-auc:0.82749	validation_1-auc:0.82627
+[3]	validation_0-auc:0.83124	validation_1-auc:0.82830
+[4]	validation_0-auc:0.83475	validation_1-auc:0.82881
+[5]	validation_0-auc:0.83676	validation_1-auc:0.83385
+[6]	validation_0-auc:0.83648	validation_1-auc:0.83085
+[7]	validation_0-auc:0.84336	validation_1-auc:0.83472
+[8]	validation_0-auc:0.84624	validation_1-auc:0.83404
+[9]	validation_0-auc:0.84541	validation_1-auc:0.83287
+[10]	validation_0-auc:0.84554	validation_1-auc:0.83039
+[11]	validation_0-auc:0.84525	validation_1-auc:0.82995
+[12]	validation_0-auc:0.85144	validation_1-auc:0.83489
+[13]	validation_0-auc:0.85525	validation_1-auc:0.83803
+[14]	validation_0-auc:0.85745	validation_1-auc:0.84145
+[15]	validation_0-auc:0.85817	validation_1-auc:0.84082
+[16]	validation_0-auc:0.86006	validation_1-auc:0.84076
+[17]	validation_0-auc:0.86127	validation_1-auc:0.84139
+[18]	validation_0-auc:0.86194	validation_1-auc:0.84041
+[19]	validation_0-auc:0.86337	validation_1-auc:0.84100
+[20]	validation_0-auc:0.86386	validation_1-auc:0.84145
+[21]	validation_0-auc:0.86550	validation_1-auc:0.84030
+[22]	validation_0-auc:0.86690	validation_1-auc:0.84072
+[23]	validation_0-auc:0.86765	validation_1-auc:0.84077
+[24]	validation_0-auc:0.86827	validation_1-auc:0.84136
+[25]	validation_0-auc:0.86939	validation_1-auc:0.84120
+[26]	validation_0-auc:0.87045	validation_1-auc:0.84098
+[27]	validation_0-auc:0.87062	validation_1-auc:0.84148
+[28]	validation_0-auc:0.87072	validation_1-auc:0.84120
+[29]	validation_0-auc:0.87113	validation_1-auc:0.84147
+[30]	validation_0-auc:0.87115	validation_1-auc:0.84181
+[31]	validation_0-auc:0.87145	validation_1-auc:0.84172
+[32]	validation_0-auc:0.87226	validation_1-auc:0.84100
+[33]	validation_0-auc:0.87242	validation_1-auc:0.84149
+[34]	validation_0-auc:0.87255	validation_1-auc:0.84120
+[35]	validation_0-auc:0.87297	validation_1-auc:0.84095
+[36]	validation_0-auc:0.87348	validation_1-auc:0.84051
+[37]	validation_0-auc:0.87395	validation_1-auc:0.84084
+[38]	validation_0-auc:0.87433	validation_1-auc:0.84055
+[39]	validation_0-auc:0.87448	validation_1-auc:0.84048
+[40]	validation_0-auc:0.87465	validation_1-auc:0.84042
+[41]	validation_0-auc:0.87486	validation_1-auc:0.84034
+[42]	validation_0-auc:0.87518	validation_1-auc:0.84021
+[43]	validation_0-auc:0.87525	validation_1-auc:0.84022
+[44]	validation_0-auc:0.87595	validation_1-auc:0.83967
+[45]	validation_0-auc:0.87629	validation_1-auc:0.84004
+[46]	validation_0-auc:0.87704	validation_1-auc:0.83966
+[47]	validation_0-auc:0.87746	validation_1-auc:0.83963
+[48]	validation_0-auc:0.87774	validation_1-auc:0.83931
+[49]	validation_0-auc:0.87784	validation_1-auc:0.83925
+[50]	validation_0-auc:0.87826	validation_1-auc:0.83935
+[51]	validation_0-auc:0.87861	validation_1-auc:0.83920
+[52]	validation_0-auc:0.87950	validation_1-auc:0.83895
+[53]	validation_0-auc:0.88024	validation_1-auc:0.83876
+[54]	validation_0-auc:0.88117	validation_1-auc:0.83840
+[55]	validation_0-auc:0.88126	validation_1-auc:0.83834
+[56]	validation_0-auc:0.88145	validation_1-auc:0.83873
+[57]	validation_0-auc:0.88157	validation_1-auc:0.83860
+[58]	validation_0-auc:0.88178	validation_1-auc:0.83810
+[59]	validation_0-auc:0.88186	validation_1-auc:0.83774
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.79210	validation_1-auc:0.79292
+[1]	validation_0-auc:0.81759	validation_1-auc:0.81404
+[2]	validation_0-auc:0.82567	validation_1-auc:0.81864
+[3]	validation_0-auc:0.82819	validation_1-auc:0.82244
+[4]	validation_0-auc:0.83233	validation_1-auc:0.82618
+[5]	validation_0-auc:0.83480	validation_1-auc:0.83163
+[6]	validation_0-auc:0.83342	validation_1-auc:0.82840
+[7]	validation_0-auc:0.84265	validation_1-auc:0.83512
+[8]	validation_0-auc:0.84614	validation_1-auc:0.83742
+[9]	validation_0-auc:0.84573	validation_1-auc:0.83475
+[10]	validation_0-auc:0.84426	validation_1-auc:0.83066
+[11]	validation_0-auc:0.84358	validation_1-auc:0.82937
+[12]	validation_0-auc:0.85089	validation_1-auc:0.83491
+[13]	validation_0-auc:0.85457	validation_1-auc:0.83785
+[14]	validation_0-auc:0.85645	validation_1-auc:0.83894
+[15]	validation_0-auc:0.85744	validation_1-auc:0.83784
+[16]	validation_0-auc:0.85870	validation_1-auc:0.83899
+[17]	validation_0-auc:0.86002	validation_1-auc:0.83854
+[18]	validation_0-auc:0.86091	validation_1-auc:0.83860
+[19]	validation_0-auc:0.86154	validation_1-auc:0.83818
+[20]	validation_0-auc:0.86189	validation_1-auc:0.83772
+[21]	validation_0-auc:0.86295	validation_1-auc:0.83703
+[22]	validation_0-auc:0.86334	validation_1-auc:0.83721
+[23]	validation_0-auc:0.86402	validation_1-auc:0.83581
+[24]	validation_0-auc:0.86456	validation_1-auc:0.83557
+[25]	validation_0-auc:0.86494	validation_1-auc:0.83534
+[26]	validation_0-auc:0.86516	validation_1-auc:0.83481
+[27]	validation_0-auc:0.86660	validation_1-auc:0.83557
+[28]	validation_0-auc:0.86784	validation_1-auc:0.83546
+[29]	validation_0-auc:0.86793	validation_1-auc:0.83545
+[30]	validation_0-auc:0.86840	validation_1-auc:0.83496
+[31]	validation_0-auc:0.86867	validation_1-auc:0.83481
+[32]	validation_0-auc:0.86884	validation_1-auc:0.83472
+[33]	validation_0-auc:0.86900	validation_1-auc:0.83482
+[34]	validation_0-auc:0.86907	validation_1-auc:0.83423
+[35]	validation_0-auc:0.86981	validation_1-auc:0.83350
+[36]	validation_0-auc:0.86996	validation_1-auc:0.83334
+[37]	validation_0-auc:0.87004	validation_1-auc:0.83365
+[38]	validation_0-auc:0.87022	validation_1-auc:0.83384
+[39]	validation_0-auc:0.87078	validation_1-auc:0.83373
+[40]	validation_0-auc:0.87094	validation_1-auc:0.83373
+[41]	validation_0-auc:0.87109	validation_1-auc:0.83359
+[42]	validation_0-auc:0.87173	validation_1-auc:0.83365
+[43]	validation_0-auc:0.87264	validation_1-auc:0.83386
+[44]	validation_0-auc:0.87336	validation_1-auc:0.83319
+[45]	validation_0-auc:0.87361	validation_1-auc:0.83318
+[46]	validation_0-auc:0.87406	validation_1-auc:0.83227
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.79931	validation_1-auc:0.79594
+[1]	validation_0-auc:0.81987	validation_1-auc:0.81503
+[2]	validation_0-auc:0.82734	validation_1-auc:0.82126
+[3]	validation_0-auc:0.83110	validation_1-auc:0.82302
+[4]	validation_0-auc:0.83608	validation_1-auc:0.82494
+[5]	validation_0-auc:0.83914	validation_1-auc:0.83100
+[6]	validation_0-auc:0.83828	validation_1-auc:0.82999
+[7]	validation_0-auc:0.84425	validation_1-auc:0.83439
+[8]	validation_0-auc:0.84749	validation_1-auc:0.83609
+[9]	validation_0-auc:0.84727	validation_1-auc:0.83597
+[10]	validation_0-auc:0.84703	validation_1-auc:0.83250
+[11]	validation_0-auc:0.84664	validation_1-auc:0.83237
+[12]	validation_0-auc:0.85343	validation_1-auc:0.83713
+[13]	validation_0-auc:0.85671	validation_1-auc:0.83887
+[14]	validation_0-auc:0.85824	validation_1-auc:0.83919
+[15]	validation_0-auc:0.85962	validation_1-auc:0.83905
+[16]	validation_0-auc:0.86089	validation_1-auc:0.84031
+[17]	validation_0-auc:0.86216	validation_1-auc:0.84051
+[18]	validation_0-auc:0.86264	validation_1-auc:0.84051
+[19]	validation_0-auc:0.86341	validation_1-auc:0.84030
+[20]	validation_0-auc:0.86379	validation_1-auc:0.83988
+[21]	validation_0-auc:0.86413	validation_1-auc:0.84020
+[22]	validation_0-auc:0.86513	validation_1-auc:0.84033
+[23]	validation_0-auc:0.86584	validation_1-auc:0.84016
+[24]	validation_0-auc:0.86638	validation_1-auc:0.84016
+[25]	validation_0-auc:0.86691	validation_1-auc:0.83991
+[26]	validation_0-auc:0.86798	validation_1-auc:0.83979
+[27]	validation_0-auc:0.86869	validation_1-auc:0.83952
+[28]	validation_0-auc:0.86881	validation_1-auc:0.83942
+[29]	validation_0-auc:0.86908	validation_1-auc:0.83912
+[30]	validation_0-auc:0.86934	validation_1-auc:0.83907
+[31]	validation_0-auc:0.86942	validation_1-auc:0.83896
+[32]	validation_0-auc:0.87000	validation_1-auc:0.83860
+[33]	validation_0-auc:0.87016	validation_1-auc:0.83878
+[34]	validation_0-auc:0.87050	validation_1-auc:0.83830
+[35]	validation_0-auc:0.87069	validation_1-auc:0.83825
+[36]	validation_0-auc:0.87118	validation_1-auc:0.83880
+[37]	validation_0-auc:0.87126	validation_1-auc:0.83883
+[38]	validation_0-auc:0.87138	validation_1-auc:0.83882
+[39]	validation_0-auc:0.87243	validation_1-auc:0.83833
+[40]	validation_0-auc:0.87267	validation_1-auc:0.83813
+[41]	validation_0-auc:0.87282	validation_1-auc:0.83811
+[42]	validation_0-auc:0.87356	validation_1-auc:0.83806
+[43]	validation_0-auc:0.87372	validation_1-auc:0.83815
+[44]	validation_0-auc:0.87384	validation_1-auc:0.83807
+[45]	validation_0-auc:0.87395	validation_1-auc:0.83813
+[46]	validation_0-auc:0.87450	validation_1-auc:0.83757
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.80248	validation_1-auc:0.80001
+[1]	validation_0-auc:0.82249	validation_1-auc:0.81765
+[2]	validation_0-auc:0.82833	validation_1-auc:0.82524
+[3]	validation_0-auc:0.83371	validation_1-auc:0.82814
+[4]	validation_0-auc:0.83653	validation_1-auc:0.82856
+[5]	validation_0-auc:0.83838	validation_1-auc:0.83345
+[6]	validation_0-auc:0.83823	validation_1-auc:0.83165
+[7]	validation_0-auc:0.84386	validation_1-auc:0.83505
+[8]	validation_0-auc:0.84688	validation_1-auc:0.83507
+[9]	validation_0-auc:0.84634	validation_1-auc:0.83483
+[10]	validation_0-auc:0.84564	validation_1-auc:0.83324
+[11]	validation_0-auc:0.84501	validation_1-auc:0.83283
+[12]	validation_0-auc:0.85011	validation_1-auc:0.83693
+[13]	validation_0-auc:0.85299	validation_1-auc:0.83995
+[14]	validation_0-auc:0.85523	validation_1-auc:0.84250
+[15]	validation_0-auc:0.85608	validation_1-auc:0.84183
+[16]	validation_0-auc:0.85748	validation_1-auc:0.84319
+[17]	validation_0-auc:0.85895	validation_1-auc:0.84363
+[18]	validation_0-auc:0.85944	validation_1-auc:0.84311
+[19]	validation_0-auc:0.86102	validation_1-auc:0.84368
+[20]	validation_0-auc:0.86122	validation_1-auc:0.84367
+[21]	validation_0-auc:0.86196	validation_1-auc:0.84403
+[22]	validation_0-auc:0.86291	validation_1-auc:0.84498
+[23]	validation_0-auc:0.86385	validation_1-auc:0.84460
+[24]	validation_0-auc:0.86452	validation_1-auc:0.84460
+[25]	validation_0-auc:0.86534	validation_1-auc:0.84480
+[26]	validation_0-auc:0.86584	validation_1-auc:0.84441
+[27]	validation_0-auc:0.86653	validation_1-auc:0.84401
+[28]	validation_0-auc:0.86697	validation_1-auc:0.84422
+[29]	validation_0-auc:0.86770	validation_1-auc:0.84385
+[30]	validation_0-auc:0.86777	validation_1-auc:0.84407
+[31]	validation_0-auc:0.86803	validation_1-auc:0.84395
+[32]	validation_0-auc:0.86826	validation_1-auc:0.84381
+[33]	validation_0-auc:0.86862	validation_1-auc:0.84417
+[34]	validation_0-auc:0.86902	validation_1-auc:0.84385
+[35]	validation_0-auc:0.86959	validation_1-auc:0.84369
+[36]	validation_0-auc:0.87020	validation_1-auc:0.84297
+[37]	validation_0-auc:0.87047	validation_1-auc:0.84278
+[38]	validation_0-auc:0.87175	validation_1-auc:0.84286
+[39]	validation_0-auc:0.87269	validation_1-auc:0.84224
+[40]	validation_0-auc:0.87289	validation_1-auc:0.84197
+[41]	validation_0-auc:0.87294	validation_1-auc:0.84175
+[42]	validation_0-auc:0.87418	validation_1-auc:0.84148
+[43]	validation_0-auc:0.87431	validation_1-auc:0.84121
+[44]	validation_0-auc:0.87441	validation_1-auc:0.84127
+[45]	validation_0-auc:0.87458	validation_1-auc:0.84103
+[46]	validation_0-auc:0.87475	validation_1-auc:0.84119
+[47]	validation_0-auc:0.87529	validation_1-auc:0.84128
+[48]	validation_0-auc:0.87554	validation_1-auc:0.84050
+[49]	validation_0-auc:0.87572	validation_1-auc:0.84039
+[50]	validation_0-auc:0.87575	validation_1-auc:0.84062
+[51]	validation_0-auc:0.87605	validation_1-auc:0.84105
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.80843	validation_1-auc:0.80885
+[1]	validation_0-auc:0.82920	validation_1-auc:0.82211
+[2]	validation_0-auc:0.83320	validation_1-auc:0.82400
+[3]	validation_0-auc:0.83625	validation_1-auc:0.82577
+[4]	validation_0-auc:0.84188	validation_1-auc:0.82897
+[5]	validation_0-auc:0.84455	validation_1-auc:0.83377
+[6]	validation_0-auc:0.84503	validation_1-auc:0.82916
+[7]	validation_0-auc:0.85319	validation_1-auc:0.83364
+[8]	validation_0-auc:0.85976	validation_1-auc:0.83390
+[9]	validation_0-auc:0.85952	validation_1-auc:0.82834
+[10]	validation_0-auc:0.85919	validation_1-auc:0.82378
+[11]	validation_0-auc:0.85956	validation_1-auc:0.82400
+[12]	validation_0-auc:0.86574	validation_1-auc:0.82888
+[13]	validation_0-auc:0.87027	validation_1-auc:0.83251
+[14]	validation_0-auc:0.87240	validation_1-auc:0.83311
+[15]	validation_0-auc:0.87365	validation_1-auc:0.83080
+[16]	validation_0-auc:0.87567	validation_1-auc:0.83134
+[17]	validation_0-auc:0.87777	validation_1-auc:0.83255
+[18]	validation_0-auc:0.87904	validation_1-auc:0.83149
+[19]	validation_0-auc:0.88037	validation_1-auc:0.83083
+[20]	validation_0-auc:0.88104	validation_1-auc:0.82964
+[21]	validation_0-auc:0.88159	validation_1-auc:0.82802
+[22]	validation_0-auc:0.88227	validation_1-auc:0.82806
+[23]	validation_0-auc:0.88255	validation_1-auc:0.82806
+[24]	validation_0-auc:0.88328	validation_1-auc:0.82840
+[25]	validation_0-auc:0.88353	validation_1-auc:0.82851
+[26]	validation_0-auc:0.88384	validation_1-auc:0.82899
+[27]	validation_0-auc:0.88509	validation_1-auc:0.82988
+[28]	validation_0-auc:0.88544	validation_1-auc:0.82886
+[29]	validation_0-auc:0.88569	validation_1-auc:0.82922
+[30]	validation_0-auc:0.88588	validation_1-auc:0.82962
+[31]	validation_0-auc:0.88682	validation_1-auc:0.82951
+[32]	validation_0-auc:0.88752	validation_1-auc:0.82858
+[33]	validation_0-auc:0.88762	validation_1-auc:0.82843
+[34]	validation_0-auc:0.88792	validation_1-auc:0.82804
+[35]	validation_0-auc:0.88865	validation_1-auc:0.82692
+[36]	validation_0-auc:0.88868	validation_1-auc:0.82609
+[37]	validation_0-auc:0.88901	validation_1-auc:0.82607
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.81304	validation_1-auc:0.81746
+[1]	validation_0-auc:0.82882	validation_1-auc:0.82026
+[2]	validation_0-auc:0.83609	validation_1-auc:0.82474
+[3]	validation_0-auc:0.84041	validation_1-auc:0.82824
+[4]	validation_0-auc:0.84760	validation_1-auc:0.83130
+[5]	validation_0-auc:0.84938	validation_1-auc:0.83590
+[6]	validation_0-auc:0.85116	validation_1-auc:0.83167
+[7]	validation_0-auc:0.85828	validation_1-auc:0.83471
+[8]	validation_0-auc:0.86371	validation_1-auc:0.83640
+[9]	validation_0-auc:0.86365	validation_1-auc:0.83549
+[10]	validation_0-auc:0.86395	validation_1-auc:0.83127
+[11]	validation_0-auc:0.86437	validation_1-auc:0.82983
+[12]	validation_0-auc:0.87068	validation_1-auc:0.83421
+[13]	validation_0-auc:0.87545	validation_1-auc:0.83773
+[14]	validation_0-auc:0.87779	validation_1-auc:0.83843
+[15]	validation_0-auc:0.87893	validation_1-auc:0.83628
+[16]	validation_0-auc:0.88035	validation_1-auc:0.83878
+[17]	validation_0-auc:0.88227	validation_1-auc:0.83749
+[18]	validation_0-auc:0.88364	validation_1-auc:0.83710
+[19]	validation_0-auc:0.88528	validation_1-auc:0.83727
+[20]	validation_0-auc:0.88606	validation_1-auc:0.83670
+[21]	validation_0-auc:0.88672	validation_1-auc:0.83629
+[22]	validation_0-auc:0.88793	validation_1-auc:0.83586
+[23]	validation_0-auc:0.88875	validation_1-auc:0.83562
+[24]	validation_0-auc:0.88913	validation_1-auc:0.83589
+[25]	validation_0-auc:0.88932	validation_1-auc:0.83575
+[26]	validation_0-auc:0.89053	validation_1-auc:0.83424
+[27]	validation_0-auc:0.89116	validation_1-auc:0.83427
+[28]	validation_0-auc:0.89172	validation_1-auc:0.83384
+[29]	validation_0-auc:0.89244	validation_1-auc:0.83318
+[30]	validation_0-auc:0.89260	validation_1-auc:0.83224
+[31]	validation_0-auc:0.89294	validation_1-auc:0.83214
+[32]	validation_0-auc:0.89361	validation_1-auc:0.83111
+[33]	validation_0-auc:0.89396	validation_1-auc:0.83114
+[34]	validation_0-auc:0.89481	validation_1-auc:0.83121
+[35]	validation_0-auc:0.89548	validation_1-auc:0.83133
+[36]	validation_0-auc:0.89589	validation_1-auc:0.83039
+[37]	validation_0-auc:0.89614	validation_1-auc:0.83024
+[38]	validation_0-auc:0.89743	validation_1-auc:0.82952
+[39]	validation_0-auc:0.89749	validation_1-auc:0.82950
+[40]	validation_0-auc:0.89754	validation_1-auc:0.82932
+[41]	validation_0-auc:0.89813	validation_1-auc:0.82838
+[42]	validation_0-auc:0.89831	validation_1-auc:0.82849
+[43]	validation_0-auc:0.89841	validation_1-auc:0.82827
+[44]	validation_0-auc:0.89908	validation_1-auc:0.82824
+[45]	validation_0-auc:0.89919	validation_1-auc:0.82788
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.81393	validation_1-auc:0.81377
+[1]	validation_0-auc:0.82962	validation_1-auc:0.82668
+[2]	validation_0-auc:0.83724	validation_1-auc:0.83017
+[3]	validation_0-auc:0.84075	validation_1-auc:0.83079
+[4]	validation_0-auc:0.84691	validation_1-auc:0.83337
+[5]	validation_0-auc:0.84896	validation_1-auc:0.83502
+[6]	validation_0-auc:0.84980	validation_1-auc:0.82858
+[7]	validation_0-auc:0.85918	validation_1-auc:0.83358
+[8]	validation_0-auc:0.86284	validation_1-auc:0.83470
+[9]	validation_0-auc:0.86365	validation_1-auc:0.83427
+[10]	validation_0-auc:0.86243	validation_1-auc:0.83264
+[11]	validation_0-auc:0.86248	validation_1-auc:0.83255
+[12]	validation_0-auc:0.86969	validation_1-auc:0.83531
+[13]	validation_0-auc:0.87452	validation_1-auc:0.83774
+[14]	validation_0-auc:0.87630	validation_1-auc:0.83936
+[15]	validation_0-auc:0.87826	validation_1-auc:0.83676
+[16]	validation_0-auc:0.87988	validation_1-auc:0.83852
+[17]	validation_0-auc:0.88289	validation_1-auc:0.83811
+[18]	validation_0-auc:0.88333	validation_1-auc:0.83735
+[19]	validation_0-auc:0.88506	validation_1-auc:0.83720
+[20]	validation_0-auc:0.88528	validation_1-auc:0.83718
+[21]	validation_0-auc:0.88547	validation_1-auc:0.83646
+[22]	validation_0-auc:0.88632	validation_1-auc:0.83706
+[23]	validation_0-auc:0.88770	validation_1-auc:0.83714
+[24]	validation_0-auc:0.88867	validation_1-auc:0.83742
+[25]	validation_0-auc:0.88905	validation_1-auc:0.83753
+[26]	validation_0-auc:0.89065	validation_1-auc:0.83634
+[27]	validation_0-auc:0.89158	validation_1-auc:0.83565
+[28]	validation_0-auc:0.89214	validation_1-auc:0.83460
+[29]	validation_0-auc:0.89345	validation_1-auc:0.83413
+[30]	validation_0-auc:0.89377	validation_1-auc:0.83373
+[31]	validation_0-auc:0.89392	validation_1-auc:0.83396
+[32]	validation_0-auc:0.89410	validation_1-auc:0.83435
+[33]	validation_0-auc:0.89416	validation_1-auc:0.83412
+[34]	validation_0-auc:0.89437	validation_1-auc:0.83386
+[35]	validation_0-auc:0.89513	validation_1-auc:0.83338
+[36]	validation_0-auc:0.89553	validation_1-auc:0.83232
+[37]	validation_0-auc:0.89589	validation_1-auc:0.83223
+[38]	validation_0-auc:0.89609	validation_1-auc:0.83222
+[39]	validation_0-auc:0.89636	validation_1-auc:0.83187
+[40]	validation_0-auc:0.89652	validation_1-auc:0.83146
+[41]	validation_0-auc:0.89655	validation_1-auc:0.83131
+[42]	validation_0-auc:0.89789	validation_1-auc:0.83068
+[43]	validation_0-auc:0.89792	validation_1-auc:0.83069
+[44]	validation_0-auc:0.89889	validation_1-auc:0.83038
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.80901	validation_1-auc:0.80653
+[1]	validation_0-auc:0.82713	validation_1-auc:0.82150
+[2]	validation_0-auc:0.83227	validation_1-auc:0.82513
+[3]	validation_0-auc:0.83319	validation_1-auc:0.82525
+[4]	validation_0-auc:0.83786	validation_1-auc:0.82805
+[5]	validation_0-auc:0.84104	validation_1-auc:0.82979
+[6]	validation_0-auc:0.84432	validation_1-auc:0.82639
+[7]	validation_0-auc:0.85301	validation_1-auc:0.83411
+[8]	validation_0-auc:0.85882	validation_1-auc:0.83754
+[9]	validation_0-auc:0.85838	validation_1-auc:0.83437
+[10]	validation_0-auc:0.85606	validation_1-auc:0.83252
+[11]	validation_0-auc:0.85677	validation_1-auc:0.83031
+[12]	validation_0-auc:0.86256	validation_1-auc:0.83311
+[13]	validation_0-auc:0.86712	validation_1-auc:0.83500
+[14]	validation_0-auc:0.86926	validation_1-auc:0.83593
+[15]	validation_0-auc:0.87031	validation_1-auc:0.83404
+[16]	validation_0-auc:0.87119	validation_1-auc:0.83472
+[17]	validation_0-auc:0.87276	validation_1-auc:0.83454
+[18]	validation_0-auc:0.87365	validation_1-auc:0.83418
+[19]	validation_0-auc:0.87495	validation_1-auc:0.83324
+[20]	validation_0-auc:0.87498	validation_1-auc:0.83267
+[21]	validation_0-auc:0.87527	validation_1-auc:0.83259
+[22]	validation_0-auc:0.87572	validation_1-auc:0.83274
+[23]	validation_0-auc:0.87659	validation_1-auc:0.83362
+[24]	validation_0-auc:0.87704	validation_1-auc:0.83315
+[25]	validation_0-auc:0.87743	validation_1-auc:0.83338
+[26]	validation_0-auc:0.87762	validation_1-auc:0.83358
+[27]	validation_0-auc:0.87818	validation_1-auc:0.83337
+[28]	validation_0-auc:0.87822	validation_1-auc:0.83346
+[29]	validation_0-auc:0.87890	validation_1-auc:0.83331
+[30]	validation_0-auc:0.87903	validation_1-auc:0.83315
+[31]	validation_0-auc:0.87993	validation_1-auc:0.83277
+[32]	validation_0-auc:0.88063	validation_1-auc:0.83284
+[33]	validation_0-auc:0.88096	validation_1-auc:0.83339
+[34]	validation_0-auc:0.88210	validation_1-auc:0.83309
+[35]	validation_0-auc:0.88207	validation_1-auc:0.83317
+[36]	validation_0-auc:0.88224	validation_1-auc:0.83314
+[37]	validation_0-auc:0.88240	validation_1-auc:0.83292
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.81176	validation_1-auc:0.80947
+[1]	validation_0-auc:0.82651	validation_1-auc:0.82286
+[2]	validation_0-auc:0.83551	validation_1-auc:0.82712
+[3]	validation_0-auc:0.83820	validation_1-auc:0.82810
+[4]	validation_0-auc:0.84733	validation_1-auc:0.82952
+[5]	validation_0-auc:0.84903	validation_1-auc:0.83409
+[6]	validation_0-auc:0.84836	validation_1-auc:0.83191
+[7]	validation_0-auc:0.85387	validation_1-auc:0.83486
+[8]	validation_0-auc:0.85876	validation_1-auc:0.83709
+[9]	validation_0-auc:0.85840	validation_1-auc:0.83730
+[10]	validation_0-auc:0.85787	validation_1-auc:0.83417
+[11]	validation_0-auc:0.85814	validation_1-auc:0.83328
+[12]	validation_0-auc:0.86431	validation_1-auc:0.83684
+[13]	validation_0-auc:0.86878	validation_1-auc:0.83901
+[14]	validation_0-auc:0.87119	validation_1-auc:0.83987
+[15]	validation_0-auc:0.87268	validation_1-auc:0.83789
+[16]	validation_0-auc:0.87455	validation_1-auc:0.83903
+[17]	validation_0-auc:0.87645	validation_1-auc:0.83873
+[18]	validation_0-auc:0.87724	validation_1-auc:0.83908
+[19]	validation_0-auc:0.87799	validation_1-auc:0.83966
+[20]	validation_0-auc:0.87882	validation_1-auc:0.83958
+[21]	validation_0-auc:0.87902	validation_1-auc:0.83960
+[22]	validation_0-auc:0.87951	validation_1-auc:0.83985
+[23]	validation_0-auc:0.88042	validation_1-auc:0.83903
+[24]	validation_0-auc:0.88118	validation_1-auc:0.83938
+[25]	validation_0-auc:0.88183	validation_1-auc:0.83941
+[26]	validation_0-auc:0.88279	validation_1-auc:0.83943
+[27]	validation_0-auc:0.88430	validation_1-auc:0.83947
+[28]	validation_0-auc:0.88447	validation_1-auc:0.83972
+[29]	validation_0-auc:0.88487	validation_1-auc:0.83903
+[30]	validation_0-auc:0.88567	validation_1-auc:0.83956
+[31]	validation_0-auc:0.88560	validation_1-auc:0.83942
+[32]	validation_0-auc:0.88572	validation_1-auc:0.83903
+[33]	validation_0-auc:0.88598	validation_1-auc:0.83902
+[34]	validation_0-auc:0.88633	validation_1-auc:0.83882
+[35]	validation_0-auc:0.88642	validation_1-auc:0.83890
+[36]	validation_0-auc:0.88707	validation_1-auc:0.83877
+[37]	validation_0-auc:0.88742	validation_1-auc:0.83862
+[38]	validation_0-auc:0.88755	validation_1-auc:0.83835
+[39]	validation_0-auc:0.88788	validation_1-auc:0.83760
+[40]	validation_0-auc:0.88777	validation_1-auc:0.83781
+[41]	validation_0-auc:0.88796	validation_1-auc:0.83789
+[42]	validation_0-auc:0.88804	validation_1-auc:0.83796
+[43]	validation_0-auc:0.88868	validation_1-auc:0.83769
+[44]	validation_0-auc:0.88942	validation_1-auc:0.83764
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.81519	validation_1-auc:0.81115
+[1]	validation_0-auc:0.83201	validation_1-auc:0.82366
+[2]	validation_0-auc:0.83718	validation_1-auc:0.83029
+[3]	validation_0-auc:0.84145	validation_1-auc:0.83163
+[4]	validation_0-auc:0.84628	validation_1-auc:0.83410
+[5]	validation_0-auc:0.84792	validation_1-auc:0.83694
+[6]	validation_0-auc:0.84780	validation_1-auc:0.83116
+[7]	validation_0-auc:0.85599	validation_1-auc:0.83759
+[8]	validation_0-auc:0.85905	validation_1-auc:0.83700
+[9]	validation_0-auc:0.85860	validation_1-auc:0.83638
+[10]	validation_0-auc:0.85875	validation_1-auc:0.83594
+[11]	validation_0-auc:0.85921	validation_1-auc:0.83691
+[12]	validation_0-auc:0.86560	validation_1-auc:0.84075
+[13]	validation_0-auc:0.86941	validation_1-auc:0.84350
+[14]	validation_0-auc:0.87102	validation_1-auc:0.84520
+[15]	validation_0-auc:0.87174	validation_1-auc:0.84423
+[16]	validation_0-auc:0.87350	validation_1-auc:0.84460
+[17]	validation_0-auc:0.87528	validation_1-auc:0.84395
+[18]	validation_0-auc:0.87593	validation_1-auc:0.84331
+[19]	validation_0-auc:0.87733	validation_1-auc:0.84275
+[20]	validation_0-auc:0.87769	validation_1-auc:0.84252
+[21]	validation_0-auc:0.87822	validation_1-auc:0.84160
+[22]	validation_0-auc:0.87989	validation_1-auc:0.84207
+[23]	validation_0-auc:0.88086	validation_1-auc:0.84223
+[24]	validation_0-auc:0.88139	validation_1-auc:0.84238
+[25]	validation_0-auc:0.88186	validation_1-auc:0.84258
+[26]	validation_0-auc:0.88258	validation_1-auc:0.84240
+[27]	validation_0-auc:0.88359	validation_1-auc:0.84183
+[28]	validation_0-auc:0.88402	validation_1-auc:0.84147
+[29]	validation_0-auc:0.88415	validation_1-auc:0.84140
+[30]	validation_0-auc:0.88455	validation_1-auc:0.84080
+[31]	validation_0-auc:0.88538	validation_1-auc:0.84070
+[32]	validation_0-auc:0.88563	validation_1-auc:0.84055
+[33]	validation_0-auc:0.88610	validation_1-auc:0.84024
+[34]	validation_0-auc:0.88631	validation_1-auc:0.83977
+[35]	validation_0-auc:0.88637	validation_1-auc:0.83959
+[36]	validation_0-auc:0.88644	validation_1-auc:0.83935
+[37]	validation_0-auc:0.88728	validation_1-auc:0.83898
+[38]	validation_0-auc:0.88802	validation_1-auc:0.83814
+[39]	validation_0-auc:0.88815	validation_1-auc:0.83806
+[40]	validation_0-auc:0.88815	validation_1-auc:0.83811
+[41]	validation_0-auc:0.88838	validation_1-auc:0.83807
+[42]	validation_0-auc:0.88883	validation_1-auc:0.83753
+[43]	validation_0-auc:0.88902	validation_1-auc:0.83781
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.81007	validation_1-auc:0.80693
+[1]	validation_0-auc:0.82137	validation_1-auc:0.81877
+[2]	validation_0-auc:0.82976	validation_1-auc:0.82498
+[3]	validation_0-auc:0.83120	validation_1-auc:0.82212
+[4]	validation_0-auc:0.83382	validation_1-auc:0.82481
+[5]	validation_0-auc:0.83696	validation_1-auc:0.82672
+[6]	validation_0-auc:0.83976	validation_1-auc:0.83016
+[7]	validation_0-auc:0.84177	validation_1-auc:0.83330
+[8]	validation_0-auc:0.84585	validation_1-auc:0.83282
+[9]	validation_0-auc:0.84984	validation_1-auc:0.83519
+[10]	validation_0-auc:0.85146	validation_1-auc:0.83530
+[11]	validation_0-auc:0.85113	validation_1-auc:0.83380
+[12]	validation_0-auc:0.85502	validation_1-auc:0.83622
+[13]	validation_0-auc:0.85797	validation_1-auc:0.83644
+[14]	validation_0-auc:0.85990	validation_1-auc:0.83686
+[15]	validation_0-auc:0.86114	validation_1-auc:0.83639
+[16]	validation_0-auc:0.86158	validation_1-auc:0.83602
+[17]	validation_0-auc:0.86285	validation_1-auc:0.83501
+[18]	validation_0-auc:0.86405	validation_1-auc:0.83454
+[19]	validation_0-auc:0.86498	validation_1-auc:0.83497
+[20]	validation_0-auc:0.86595	validation_1-auc:0.83417
+[21]	validation_0-auc:0.86757	validation_1-auc:0.83454
+[22]	validation_0-auc:0.86810	validation_1-auc:0.83466
+[23]	validation_0-auc:0.86830	validation_1-auc:0.83461
+[24]	validation_0-auc:0.86859	validation_1-auc:0.83422
+[25]	validation_0-auc:0.86941	validation_1-auc:0.83371
+[26]	validation_0-auc:0.86986	validation_1-auc:0.83392
+[27]	validation_0-auc:0.87053	validation_1-auc:0.83330
+[28]	validation_0-auc:0.87105	validation_1-auc:0.83367
+[29]	validation_0-auc:0.87111	validation_1-auc:0.83371
+[30]	validation_0-auc:0.87152	validation_1-auc:0.83435
+[31]	validation_0-auc:0.87181	validation_1-auc:0.83437
+[32]	validation_0-auc:0.87286	validation_1-auc:0.83459
+[33]	validation_0-auc:0.87304	validation_1-auc:0.83470
+[34]	validation_0-auc:0.87347	validation_1-auc:0.83407
+[35]	validation_0-auc:0.87393	validation_1-auc:0.83319
+[36]	validation_0-auc:0.87464	validation_1-auc:0.83300
+[37]	validation_0-auc:0.87469	validation_1-auc:0.83311
+[38]	validation_0-auc:0.87502	validation_1-auc:0.83281
+[39]	validation_0-auc:0.87594	validation_1-auc:0.83273
+[40]	validation_0-auc:0.87620	validation_1-auc:0.83299
+[41]	validation_0-auc:0.87747	validation_1-auc:0.83274
+[42]	validation_0-auc:0.87754	validation_1-auc:0.83254
+[43]	validation_0-auc:0.87846	validation_1-auc:0.83286
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.80863	validation_1-auc:0.80010
+[1]	validation_0-auc:0.82349	validation_1-auc:0.81717
+[2]	validation_0-auc:0.82654	validation_1-auc:0.81737
+[3]	validation_0-auc:0.82988	validation_1-auc:0.82281
+[4]	validation_0-auc:0.83570	validation_1-auc:0.82554
+[5]	validation_0-auc:0.83917	validation_1-auc:0.82930
+[6]	validation_0-auc:0.84492	validation_1-auc:0.83396
+[7]	validation_0-auc:0.84657	validation_1-auc:0.83569
+[8]	validation_0-auc:0.84837	validation_1-auc:0.83476
+[9]	validation_0-auc:0.85010	validation_1-auc:0.83841
+[10]	validation_0-auc:0.85017	validation_1-auc:0.83887
+[11]	validation_0-auc:0.85091	validation_1-auc:0.83723
+[12]	validation_0-auc:0.85584	validation_1-auc:0.83976
+[13]	validation_0-auc:0.85900	validation_1-auc:0.84063
+[14]	validation_0-auc:0.86059	validation_1-auc:0.84054
+[15]	validation_0-auc:0.86167	validation_1-auc:0.84086
+[16]	validation_0-auc:0.86303	validation_1-auc:0.84085
+[17]	validation_0-auc:0.86383	validation_1-auc:0.83947
+[18]	validation_0-auc:0.86462	validation_1-auc:0.83971
+[19]	validation_0-auc:0.86559	validation_1-auc:0.84059
+[20]	validation_0-auc:0.86650	validation_1-auc:0.83981
+[21]	validation_0-auc:0.86762	validation_1-auc:0.84030
+[22]	validation_0-auc:0.86865	validation_1-auc:0.84050
+[23]	validation_0-auc:0.86916	validation_1-auc:0.83978
+[24]	validation_0-auc:0.86953	validation_1-auc:0.84033
+[25]	validation_0-auc:0.86992	validation_1-auc:0.84000
+[26]	validation_0-auc:0.87005	validation_1-auc:0.83998
+[27]	validation_0-auc:0.87115	validation_1-auc:0.83964
+[28]	validation_0-auc:0.87205	validation_1-auc:0.83972
+[29]	validation_0-auc:0.87328	validation_1-auc:0.83984
+[30]	validation_0-auc:0.87360	validation_1-auc:0.83929
+[31]	validation_0-auc:0.87367	validation_1-auc:0.83938
+[32]	validation_0-auc:0.87441	validation_1-auc:0.83918
+[33]	validation_0-auc:0.87490	validation_1-auc:0.83990
+[34]	validation_0-auc:0.87594	validation_1-auc:0.84011
+[35]	validation_0-auc:0.87618	validation_1-auc:0.83988
+[36]	validation_0-auc:0.87648	validation_1-auc:0.83991
+[37]	validation_0-auc:0.87657	validation_1-auc:0.83991
+[38]	validation_0-auc:0.87676	validation_1-auc:0.83987
+[39]	validation_0-auc:0.87696	validation_1-auc:0.83973
+[40]	validation_0-auc:0.87705	validation_1-auc:0.83990
+[41]	validation_0-auc:0.87724	validation_1-auc:0.83941
+[42]	validation_0-auc:0.87781	validation_1-auc:0.83934
+[43]	validation_0-auc:0.87810	validation_1-auc:0.83924
+[44]	validation_0-auc:0.87848	validation_1-auc:0.83882
+[45]	validation_0-auc:0.87863	validation_1-auc:0.83888
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.82005	validation_1-auc:0.81815
+[1]	validation_0-auc:0.82547	validation_1-auc:0.82159
+[2]	validation_0-auc:0.83019	validation_1-auc:0.82631
+[3]	validation_0-auc:0.83230	validation_1-auc:0.82660
+[4]	validation_0-auc:0.83488	validation_1-auc:0.82988
+[5]	validation_0-auc:0.83888	validation_1-auc:0.83262
+[6]	validation_0-auc:0.84242	validation_1-auc:0.83408
+[7]	validation_0-auc:0.84581	validation_1-auc:0.83560
+[8]	validation_0-auc:0.84775	validation_1-auc:0.83617
+[9]	validation_0-auc:0.84989	validation_1-auc:0.83746
+[10]	validation_0-auc:0.85052	validation_1-auc:0.83816
+[11]	validation_0-auc:0.84982	validation_1-auc:0.83603
+[12]	validation_0-auc:0.85408	validation_1-auc:0.83825
+[13]	validation_0-auc:0.85547	validation_1-auc:0.83955
+[14]	validation_0-auc:0.85818	validation_1-auc:0.84292
+[15]	validation_0-auc:0.85990	validation_1-auc:0.84361
+[16]	validation_0-auc:0.86142	validation_1-auc:0.84287
+[17]	validation_0-auc:0.86247	validation_1-auc:0.84280
+[18]	validation_0-auc:0.86276	validation_1-auc:0.84297
+[19]	validation_0-auc:0.86368	validation_1-auc:0.84290
+[20]	validation_0-auc:0.86488	validation_1-auc:0.84279
+[21]	validation_0-auc:0.86540	validation_1-auc:0.84307
+[22]	validation_0-auc:0.86631	validation_1-auc:0.84285
+[23]	validation_0-auc:0.86687	validation_1-auc:0.84289
+[24]	validation_0-auc:0.86777	validation_1-auc:0.84289
+[25]	validation_0-auc:0.86830	validation_1-auc:0.84279
+[26]	validation_0-auc:0.86862	validation_1-auc:0.84237
+[27]	validation_0-auc:0.87011	validation_1-auc:0.84232
+[28]	validation_0-auc:0.87063	validation_1-auc:0.84224
+[29]	validation_0-auc:0.87063	validation_1-auc:0.84199
+[30]	validation_0-auc:0.87108	validation_1-auc:0.84246
+[31]	validation_0-auc:0.87190	validation_1-auc:0.84252
+[32]	validation_0-auc:0.87275	validation_1-auc:0.84147
+[33]	validation_0-auc:0.87302	validation_1-auc:0.84149
+[34]	validation_0-auc:0.87350	validation_1-auc:0.84118
+[35]	validation_0-auc:0.87371	validation_1-auc:0.84115
+[36]	validation_0-auc:0.87407	validation_1-auc:0.84113
+[37]	validation_0-auc:0.87475	validation_1-auc:0.84038
+[38]	validation_0-auc:0.87529	validation_1-auc:0.84009
+[39]	validation_0-auc:0.87540	validation_1-auc:0.83988
+[40]	validation_0-auc:0.87555	validation_1-auc:0.83984
+[41]	validation_0-auc:0.87579	validation_1-auc:0.83991
+[42]	validation_0-auc:0.87630	validation_1-auc:0.83942
+[43]	validation_0-auc:0.87664	validation_1-auc:0.83926
+[44]	validation_0-auc:0.87713	validation_1-auc:0.83916
+[45]	validation_0-auc:0.87763	validation_1-auc:0.83868
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.81105	validation_1-auc:0.80637
+[1]	validation_0-auc:0.82008	validation_1-auc:0.81881
+[2]	validation_0-auc:0.82922	validation_1-auc:0.82532
+[3]	validation_0-auc:0.83159	validation_1-auc:0.82594
+[4]	validation_0-auc:0.83378	validation_1-auc:0.82618
+[5]	validation_0-auc:0.83671	validation_1-auc:0.82887
+[6]	validation_0-auc:0.84111	validation_1-auc:0.83302
+[7]	validation_0-auc:0.84227	validation_1-auc:0.83380
+[8]	validation_0-auc:0.84422	validation_1-auc:0.83346
+[9]	validation_0-auc:0.84742	validation_1-auc:0.83581
+[10]	validation_0-auc:0.84984	validation_1-auc:0.83563
+[11]	validation_0-auc:0.84933	validation_1-auc:0.83344
+[12]	validation_0-auc:0.85285	validation_1-auc:0.83653
+[13]	validation_0-auc:0.85494	validation_1-auc:0.83796
+[14]	validation_0-auc:0.85653	validation_1-auc:0.83880
+[15]	validation_0-auc:0.85803	validation_1-auc:0.83841
+[16]	validation_0-auc:0.85922	validation_1-auc:0.83773
+[17]	validation_0-auc:0.85983	validation_1-auc:0.83709
+[18]	validation_0-auc:0.86162	validation_1-auc:0.83622
+[19]	validation_0-auc:0.86232	validation_1-auc:0.83513
+[20]	validation_0-auc:0.86287	validation_1-auc:0.83518
+[21]	validation_0-auc:0.86374	validation_1-auc:0.83543
+[22]	validation_0-auc:0.86416	validation_1-auc:0.83540
+[23]	validation_0-auc:0.86459	validation_1-auc:0.83510
+[24]	validation_0-auc:0.86482	validation_1-auc:0.83477
+[25]	validation_0-auc:0.86526	validation_1-auc:0.83484
+[26]	validation_0-auc:0.86545	validation_1-auc:0.83473
+[27]	validation_0-auc:0.86568	validation_1-auc:0.83481
+[28]	validation_0-auc:0.86578	validation_1-auc:0.83485
+[29]	validation_0-auc:0.86654	validation_1-auc:0.83501
+[30]	validation_0-auc:0.86666	validation_1-auc:0.83465
+[31]	validation_0-auc:0.86790	validation_1-auc:0.83486
+[32]	validation_0-auc:0.86802	validation_1-auc:0.83488
+[33]	validation_0-auc:0.86809	validation_1-auc:0.83473
+[34]	validation_0-auc:0.86821	validation_1-auc:0.83483
+[35]	validation_0-auc:0.86828	validation_1-auc:0.83508
+[36]	validation_0-auc:0.86861	validation_1-auc:0.83435
+[37]	validation_0-auc:0.86866	validation_1-auc:0.83425
+[38]	validation_0-auc:0.86892	validation_1-auc:0.83451
+[39]	validation_0-auc:0.86913	validation_1-auc:0.83425
+[40]	validation_0-auc:0.86939	validation_1-auc:0.83430
+[41]	validation_0-auc:0.86940	validation_1-auc:0.83443
+[42]	validation_0-auc:0.86949	validation_1-auc:0.83436
+[43]	validation_0-auc:0.87013	validation_1-auc:0.83441
+[44]	validation_0-auc:0.87059	validation_1-auc:0.83365
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.81067	validation_1-auc:0.81109
+[1]	validation_0-auc:0.82045	validation_1-auc:0.81627
+[2]	validation_0-auc:0.82760	validation_1-auc:0.82116
+[3]	validation_0-auc:0.82925	validation_1-auc:0.81730
+[4]	validation_0-auc:0.83628	validation_1-auc:0.82554
+[5]	validation_0-auc:0.83889	validation_1-auc:0.82992
+[6]	validation_0-auc:0.84258	validation_1-auc:0.83304
+[7]	validation_0-auc:0.84515	validation_1-auc:0.83327
+[8]	validation_0-auc:0.84797	validation_1-auc:0.83479
+[9]	validation_0-auc:0.84982	validation_1-auc:0.83737
+[10]	validation_0-auc:0.84996	validation_1-auc:0.83746
+[11]	validation_0-auc:0.84929	validation_1-auc:0.83715
+[12]	validation_0-auc:0.85506	validation_1-auc:0.83957
+[13]	validation_0-auc:0.85817	validation_1-auc:0.84131
+[14]	validation_0-auc:0.85945	validation_1-auc:0.84041
+[15]	validation_0-auc:0.86040	validation_1-auc:0.83984
+[16]	validation_0-auc:0.86127	validation_1-auc:0.83954
+[17]	validation_0-auc:0.86170	validation_1-auc:0.83947
+[18]	validation_0-auc:0.86276	validation_1-auc:0.83945
+[19]	validation_0-auc:0.86327	validation_1-auc:0.84019
+[20]	validation_0-auc:0.86381	validation_1-auc:0.84075
+[21]	validation_0-auc:0.86454	validation_1-auc:0.84078
+[22]	validation_0-auc:0.86530	validation_1-auc:0.84164
+[23]	validation_0-auc:0.86598	validation_1-auc:0.84128
+[24]	validation_0-auc:0.86656	validation_1-auc:0.84078
+[25]	validation_0-auc:0.86721	validation_1-auc:0.84069
+[26]	validation_0-auc:0.86745	validation_1-auc:0.84066
+[27]	validation_0-auc:0.86808	validation_1-auc:0.84017
+[28]	validation_0-auc:0.86914	validation_1-auc:0.84027
+[29]	validation_0-auc:0.86951	validation_1-auc:0.84014
+[30]	validation_0-auc:0.86972	validation_1-auc:0.84016
+[31]	validation_0-auc:0.86996	validation_1-auc:0.83992
+[32]	validation_0-auc:0.87072	validation_1-auc:0.84001
+[33]	validation_0-auc:0.87090	validation_1-auc:0.83997
+[34]	validation_0-auc:0.87111	validation_1-auc:0.83969
+[35]	validation_0-auc:0.87145	validation_1-auc:0.83964
+[36]	validation_0-auc:0.87215	validation_1-auc:0.84006
+[37]	validation_0-auc:0.87242	validation_1-auc:0.83987
+[38]	validation_0-auc:0.87262	validation_1-auc:0.83995
+[39]	validation_0-auc:0.87270	validation_1-auc:0.84021
+[40]	validation_0-auc:0.87275	validation_1-auc:0.84066
+[41]	validation_0-auc:0.87323	validation_1-auc:0.84095
+[42]	validation_0-auc:0.87372	validation_1-auc:0.84074
+[43]	validation_0-auc:0.87433	validation_1-auc:0.84057
+[44]	validation_0-auc:0.87440	validation_1-auc:0.84028
+[45]	validation_0-auc:0.87511	validation_1-auc:0.84011
+[46]	validation_0-auc:0.87553	validation_1-auc:0.83972
+[47]	validation_0-auc:0.87606	validation_1-auc:0.83880
+[48]	validation_0-auc:0.87630	validation_1-auc:0.83876
+[49]	validation_0-auc:0.87629	validation_1-auc:0.83900
+[50]	validation_0-auc:0.87637	validation_1-auc:0.83902
+[51]	validation_0-auc:0.87649	validation_1-auc:0.83930
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.81835	validation_1-auc:0.81691
+[1]	validation_0-auc:0.82862	validation_1-auc:0.82346
+[2]	validation_0-auc:0.83280	validation_1-auc:0.82893
+[3]	validation_0-auc:0.83563	validation_1-auc:0.82931
+[4]	validation_0-auc:0.83780	validation_1-auc:0.83200
+[5]	validation_0-auc:0.83975	validation_1-auc:0.83280
+[6]	validation_0-auc:0.84205	validation_1-auc:0.83374
+[7]	validation_0-auc:0.84453	validation_1-auc:0.83256
+[8]	validation_0-auc:0.84638	validation_1-auc:0.83384
+[9]	validation_0-auc:0.84986	validation_1-auc:0.83670
+[10]	validation_0-auc:0.85058	validation_1-auc:0.83825
+[11]	validation_0-auc:0.84986	validation_1-auc:0.83646
+[12]	validation_0-auc:0.85321	validation_1-auc:0.83744
+[13]	validation_0-auc:0.85478	validation_1-auc:0.83942
+[14]	validation_0-auc:0.85613	validation_1-auc:0.84091
+[15]	validation_0-auc:0.85709	validation_1-auc:0.84170
+[16]	validation_0-auc:0.85891	validation_1-auc:0.84239
+[17]	validation_0-auc:0.86023	validation_1-auc:0.84215
+[18]	validation_0-auc:0.86146	validation_1-auc:0.84247
+[19]	validation_0-auc:0.86202	validation_1-auc:0.84237
+[20]	validation_0-auc:0.86268	validation_1-auc:0.84152
+[21]	validation_0-auc:0.86342	validation_1-auc:0.84132
+[22]	validation_0-auc:0.86492	validation_1-auc:0.84044
+[23]	validation_0-auc:0.86602	validation_1-auc:0.84073
+[24]	validation_0-auc:0.86688	validation_1-auc:0.84082
+[25]	validation_0-auc:0.86779	validation_1-auc:0.84074
+[26]	validation_0-auc:0.86849	validation_1-auc:0.84076
+[27]	validation_0-auc:0.86910	validation_1-auc:0.84096
+[28]	validation_0-auc:0.86931	validation_1-auc:0.84113
+[29]	validation_0-auc:0.86974	validation_1-auc:0.84187
+[30]	validation_0-auc:0.87070	validation_1-auc:0.84167
+[31]	validation_0-auc:0.87108	validation_1-auc:0.84174
+[32]	validation_0-auc:0.87123	validation_1-auc:0.84166
+[33]	validation_0-auc:0.87153	validation_1-auc:0.84142
+[34]	validation_0-auc:0.87214	validation_1-auc:0.84153
+[35]	validation_0-auc:0.87289	validation_1-auc:0.84147
+[36]	validation_0-auc:0.87329	validation_1-auc:0.84136
+[37]	validation_0-auc:0.87345	validation_1-auc:0.84116
+[38]	validation_0-auc:0.87355	validation_1-auc:0.84114
+[39]	validation_0-auc:0.87411	validation_1-auc:0.84087
+[40]	validation_0-auc:0.87419	validation_1-auc:0.84088
+[41]	validation_0-auc:0.87540	validation_1-auc:0.84065
+[42]	validation_0-auc:0.87576	validation_1-auc:0.84078
+[43]	validation_0-auc:0.87598	validation_1-auc:0.84097
+[44]	validation_0-auc:0.87646	validation_1-auc:0.84047
+[45]	validation_0-auc:0.87666	validation_1-auc:0.84048
+[46]	validation_0-auc:0.87670	validation_1-auc:0.84016
+[47]	validation_0-auc:0.87719	validation_1-auc:0.84000
+[48]	validation_0-auc:0.87796	validation_1-auc:0.83922
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0]	validation_0-auc:0.81685	validation_1-auc:0.81075
+[1]	validation_0-auc:0.82791	validation_1-auc:0.82283
+[2]	validation_0-auc:0.83537	validation_1-auc:0.82615
+[3]	validation_0-auc:0.83996	validation_1-auc:0.82712
+[4]	validation_0-auc:0.84558	validation_1-auc:0.82791
+[5]	validation_0-auc:0.84781	validation_1-auc:0.82977
+[6]	validation_0-auc:0.85151	validation_1-auc:0.83373
+[7]	validation_0-auc:0.85510	validation_1-auc:0.83444
+[8]	validation_0-auc:0.85998	validation_1-auc:0.83601
+[9]	validation_0-auc:0.86238	validation_1-auc:0.83804
+[10]	validation_0-auc:0.86435	validation_1-auc:0.83584
+[11]	validation_0-auc:0.86583	validation_1-auc:0.83093
+[12]	validation_0-auc:0.87079	validation_1-auc:0.83235
+[13]	validation_0-auc:0.87454	validation_1-auc:0.83253
+[14]	validation_0-auc:0.87642	validation_1-auc:0.83254
+[15]	validation_0-auc:0.87856	validation_1-auc:0.83218
+[16]	validation_0-auc:0.87973	validation_1-auc:0.83171
+[17]	validation_0-auc:0.88122	validation_1-auc:0.83115
+[18]	validation_0-auc:0.88256	validation_1-auc:0.83119
+[19]	validation_0-auc:0.88330	validation_1-auc:0.83139
+[20]	validation_0-auc:0.88408	validation_1-auc:0.83082
+[21]	validation_0-auc:0.88505	validation_1-auc:0.83044
+[22]	validation_0-auc:0.88631	validation_1-auc:0.83025
+[23]	validation_0-auc:0.88670	validation_1-auc:0.83047
+[24]	validation_0-auc:0.88740	validation_1-auc:0.82903
+[25]	validation_0-auc:0.88770	validation_1-auc:0.82895
+[26]	validation_0-auc:0.88793	validation_1-auc:0.82913
+[27]	validation_0-auc:0.88808	validation_1-auc:0.82881
+[28]	validation_0-auc:0.88830	validation_1-auc:0.82901
+[29]	validation_0-auc:0.88834	validation_1-auc:0.82910
+[30]	validation_0-auc:0.88894	validation_1-auc:0.82854
+[31]	validation_0-auc:0.88898	validation_1-auc:0.82859
+[32]	validation_0-auc:0.88914	validation_1-auc:0.82837
+[33]	validation_0-auc:0.88935	validation_1-auc:0.82847
+[34]	validation_0-auc:0.89037	validation_1-auc:0.82891
+[35]	validation_0-auc:0.89097	validation_1-auc:0.82869
+[36]	validation_0-auc:0.89158	validation_1-auc:0.82814
+[37]	validation_0-auc:0.89167	validation_1-auc:0.82822
+[38]	validation_0-auc:0.89184	validation_1-auc:0.82764
+[39]	validation_0-auc:0.89187	validation_1-auc:0.82734
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\sklearn.py:1224: UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+  warnings.warn(label_encoder_deprecation_msg, UserWarning)
+C:\Users\woo\anaconda3\envs\py39r41\lib\site-packages\xgboost\data.py:262: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  elif isinstance(data.columns, (pd.Int64Index, pd.RangeIndex)):
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="stahangryum/Woo"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/Woo/kaggle/2022/05/10/santander.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Woo/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Woo/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Woo/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p></p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/Woo/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/Woo/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
