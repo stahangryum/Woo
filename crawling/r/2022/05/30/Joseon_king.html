@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>조선 국왕 수명 데이터 분석 | Woo</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="조선 국왕 수명 데이터 분석" />
+<meta name="author" content="Kim Jeewoo" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://stahangryum.github.io/Woo/crawling/r/2022/05/30/Joseon_king.html" />
+<meta property="og:url" content="https://stahangryum.github.io/Woo/crawling/r/2022/05/30/Joseon_king.html" />
+<meta property="og:site_name" content="Woo" />
+<meta property="og:image" content="https://stahangryum.github.io/Woo/images/joseon_king.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-30T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://stahangryum.github.io/Woo/images/joseon_king.jpg" />
+<meta property="twitter:title" content="조선 국왕 수명 데이터 분석" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kim Jeewoo"},"dateModified":"2022-05-30T00:00:00-05:00","datePublished":"2022-05-30T00:00:00-05:00","headline":"조선 국왕 수명 데이터 분석","image":"https://stahangryum.github.io/Woo/images/joseon_king.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://stahangryum.github.io/Woo/crawling/r/2022/05/30/Joseon_king.html"},"url":"https://stahangryum.github.io/Woo/crawling/r/2022/05/30/Joseon_king.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Woo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://stahangryum.github.io/Woo/feed.xml" title="Woo" /><link rel="shortcut icon" type="image/x-icon" href="/Woo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Woo/">Woo</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Woo/about/">About Me</a><a class="page-link" href="/Woo/search/">Search</a><a class="page-link" href="/Woo/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">조선 국왕 수명 데이터 분석</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-05-30T00:00:00-05:00" itemprop="datePublished">
+        May 30, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Kim Jeewoo</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/Woo/categories/#Crawling">Crawling</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/Woo/categories/#R">R</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/stahangryum/Woo/tree/master/_notebooks/2022-05-30-Joseon_king.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/Woo/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/stahangryum/Woo/master?filepath=_notebooks%2F2022-05-30-Joseon_king.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Woo/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/stahangryum/Woo/blob/master/_notebooks/2022-05-30-Joseon_king.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Woo/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fstahangryum%2FWoo%2Fblob%2Fmaster%2F_notebooks%2F2022-05-30-Joseon_king.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/Woo/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Reference">Reference </a></li>
+<li class="toc-entry toc-h1"><a href="#Crawling">Crawling </a></li>
+<li class="toc-entry toc-h1"><a href="#Analysis">Analysis </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-05-30-Joseon_king.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Reference">
+<a class="anchor" href="#Reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reference<a class="anchor-link" href="#Reference"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 조선 국왕 데이터</p>
+<p><a href="https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%A0_%EA%B5%AD%EC%99%95">https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%A0_%EA%B5%AD%EC%99%95</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Crawling">
+<a class="anchor" href="#Crawling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Crawling<a class="anchor-link" href="#Crawling"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 위키피디아에서 조선의 국와 정보를 크롤링합니다.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">rvest</span><span class="p">))</span> <span class="nf">install.packages</span><span class="p">(</span><span class="s">'rvest'</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">rvest</span><span class="p">)</span>
+
+<span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">))</span> <span class="nf">install.packages</span><span class="p">(</span><span class="s">'tidyverse'</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+
+<span class="n">get_required_info</span> <span class="o">=</span> <span class="nf">function</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">order</span><span class="p">){</span>
+    <span class="n">clean_table</span> <span class="o">=</span> <span class="n">rows</span><span class="p">[</span><span class="n">order</span><span class="p">]</span> <span class="o">%&gt;%</span> <span class="c1"># 한글자씩 쪼갠다.</span>
+        <span class="nf">strsplit</span><span class="p">(</span><span class="n">split</span> <span class="o">=</span> <span class="s">''</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">unlist</span><span class="p">()</span> <span class="o">%&gt;%</span>
+        <span class="nf">str_replace</span><span class="p">(</span><span class="s">'[^가-힣0-9]'</span><span class="p">,</span> <span class="s">'N'</span><span class="p">)</span>  <span class="o">%&gt;%</span> <span class="c1"># (한글, 숫자)가 아닌 문자는 불필요하므로 N으로 치환한다.</span>
+        <span class="nf">paste</span><span class="p">(</span><span class="n">collapse</span> <span class="o">=</span> <span class="s">''</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="c1"># 모든 문자를 합친 다음 N을 기준으로 다시 나눈다.</span>
+        <span class="nf">strsplit</span><span class="p">(</span><span class="s">'N'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">unlist</span><span class="p">()</span>
+
+    <span class="n">order_index</span> <span class="o">=</span> <span class="nf">grep</span><span class="p">(</span><span class="s">'^제.{1,}대$'</span><span class="p">,</span> <span class="n">clean_table</span><span class="p">)</span>
+    <span class="n">order</span> <span class="o">=</span> <span class="n">clean_table</span><span class="p">[</span><span class="n">order_index</span><span class="p">]</span>
+    
+    <span class="n">name_index</span> <span class="o">=</span> <span class="nf">grep</span><span class="p">(</span><span class="s">'^.{1,2}[조|종|군]$'</span><span class="p">,</span> <span class="n">clean_table</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">clean_table</span><span class="p">[</span><span class="n">name_index</span><span class="p">]</span>
+
+    <span class="n">years_index</span> <span class="o">=</span> <span class="nf">grep</span><span class="p">(</span><span class="s">'^.{1,}년$'</span><span class="p">,</span> <span class="n">clean_table</span><span class="p">)</span>
+    <span class="n">years</span> <span class="o">&lt;-</span> <span class="c1"># 순서대로 출생, 사망, 즉위, 퇴위</span>
+        <span class="n">clean_table</span><span class="p">[</span><span class="n">years_index</span><span class="p">]</span> <span class="o">%&gt;%</span>
+        <span class="nf">substr</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">4</span><span class="p">)</span>
+
+    <span class="n">grave_index</span> <span class="o">=</span> <span class="nf">grep</span><span class="p">(</span><span class="s">'^.{1,3}[릉|묘]$'</span><span class="p">,</span> <span class="n">clean_table</span><span class="p">)</span>
+    <span class="n">grave</span> <span class="o">=</span> <span class="n">clean_table</span><span class="p">[</span><span class="n">grave_index</span><span class="p">]</span>
+    
+    <span class="nf">return</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="n">order</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">years</span><span class="p">,</span> <span class="n">grave</span><span class="p">))</span>
+<span class="p">}</span>
+
+<span class="n">target_url</span> <span class="o">&lt;-</span> <span class="s">'https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%A0_%EA%B5%AD%EC%99%95'</span>
+<span class="n">unclean_table</span> <span class="o">&lt;-</span> 
+    <span class="nf">read_html</span><span class="p">(</span><span class="n">target_url</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s">'UTF-8'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'table[class=wikitable]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'tbody'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'tr'</span><span class="p">)</span> <span class="o">%&gt;%</span>    
+    <span class="nf">html_text</span><span class="p">()</span> 
+
+<span class="c1"># 필요로 하는 데이터는 모두 '제'로 시작한다.</span>
+<span class="c1"># '제'로 시작하지 않는 데이터는 불필요하므로 제거한다.</span>
+<span class="n">requiredRows_index</span> <span class="o">&lt;-</span> <span class="nf">str_detect</span><span class="p">(</span><span class="n">unclean_table</span><span class="p">,</span> <span class="s">'^제'</span><span class="p">)</span>
+<span class="n">requiredRows</span> <span class="o">&lt;-</span> <span class="n">unclean_table</span><span class="p">[</span><span class="n">requiredRows_index</span><span class="p">]</span>
+
+<span class="n">last_order</span> <span class="o">=</span> <span class="m">26</span>
+<span class="n">kings_info</span> <span class="o">&lt;-</span> <span class="nf">vector</span><span class="p">(</span><span class="s">'list'</span><span class="p">,</span> <span class="n">last_order</span><span class="p">)</span>
+<span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="n">last_order</span><span class="p">){</span>
+    <span class="n">kings_info</span><span class="p">[[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="nf">get_required_info</span><span class="p">(</span><span class="n">requiredRows</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">kings_info</span> <span class="o">=</span> <span class="nf">do.call</span><span class="p">(</span><span class="s">'rbind'</span><span class="p">,</span> <span class="n">kings_info</span><span class="p">)</span>
+<span class="nf">colnames</span><span class="p">(</span><span class="n">kings_info</span><span class="p">)</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">'order'</span><span class="p">,</span> <span class="s">'name'</span><span class="p">,</span> <span class="s">'birth'</span><span class="p">,</span> <span class="s">'death'</span><span class="p">,</span> <span class="s">'king_start'</span><span class="p">,</span> <span class="s">'king_end'</span><span class="p">,</span> <span class="s">'grave'</span><span class="p">)</span>
+<span class="nf">write.table</span><span class="p">(</span><span class="n">kings_info</span><span class="p">,</span> <span class="s">'Joseon_king.txt'</span><span class="p">,</span> <span class="n">row.names</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Analysis">
+<a class="anchor" href="#Analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Analysis<a class="anchor-link" href="#Analysis"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 왕의 수명을 출생년도 기준으로 동의보감 편찬 이전과 이후로 나누었을 때, 유의미한 차이가 있는가?</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">kings_info</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">kings_info</span><span class="p">)</span>
+<span class="n">kings_info</span><span class="p">[,</span> <span class="nf">c</span><span class="p">(</span><span class="s">'birth'</span><span class="p">,</span> <span class="s">'death'</span><span class="p">)]</span> <span class="o">=</span>
+    <span class="n">kings_info</span><span class="p">[,</span> <span class="nf">c</span><span class="p">(</span><span class="s">'birth'</span><span class="p">,</span> <span class="s">'death'</span><span class="p">)]</span> <span class="o">%&gt;%</span> 
+    <span class="nf">unlist</span><span class="p">()</span> <span class="o">%&gt;%</span> 
+    <span class="nf">as.numeric</span><span class="p">()</span>
+
+<span class="n">kings_info</span> <span class="o">=</span> 
+    <span class="n">kings_info</span> <span class="o">%&gt;%</span>
+    <span class="nf">mutate</span><span class="p">(</span><span class="n">age</span> <span class="o">=</span> <span class="n">death</span> <span class="o">-</span> <span class="n">birth</span><span class="p">)</span>
+
+<span class="nf">par</span><span class="p">(</span><span class="n">mfrow</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">))</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">kings_info</span><span class="o">$</span><span class="n">birth</span><span class="p">,</span> <span class="n">kings_info</span><span class="o">$</span><span class="n">age</span><span class="p">,</span>
+     <span class="n">xlab</span> <span class="o">=</span> <span class="s">'birth_year'</span><span class="p">,</span>
+     <span class="n">ylab</span> <span class="o">=</span> <span class="s">'age'</span><span class="p">,</span>
+     <span class="n">main</span> <span class="o">=</span> <span class="s">'동의보감 1610년'</span><span class="p">)</span>
+
+<span class="n">Donguibogam</span> <span class="o">=</span> <span class="m">1610</span>
+<span class="nf">abline</span><span class="p">(</span><span class="n">v</span> <span class="o">=</span> <span class="n">Donguibogam</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="s">'red'</span><span class="p">)</span>
+<span class="nf">abline</span><span class="p">(</span><span class="nf">lm</span><span class="p">(</span><span class="n">kings_info</span><span class="o">$</span><span class="n">age</span> <span class="o">~</span> <span class="n">kings_info</span><span class="o">$</span><span class="n">birth</span><span class="p">))</span> <span class="c1"># 회귀선</span>
+
+<span class="c1"># 상자그림</span>
+<span class="n">kings_info</span><span class="p">[</span><span class="s">'class'</span><span class="p">]</span> <span class="o">=</span> 
+    <span class="nf">ifelse</span><span class="p">(</span><span class="n">kings_info</span><span class="p">[</span><span class="s">'birth'</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="m">1610</span><span class="p">,</span> <span class="s">'Before'</span><span class="p">,</span> <span class="s">'After'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">factor</span><span class="p">(</span><span class="n">levels</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">'Before'</span><span class="p">,</span> <span class="s">'After'</span><span class="p">))</span>
+            
+<span class="nf">boxplot</span><span class="p">(</span><span class="n">kings_info</span><span class="o">$</span><span class="n">age</span> <span class="o">~</span> <span class="n">kings_info</span><span class="o">$</span><span class="n">class</span><span class="p">,</span>
+        <span class="n">xlab</span> <span class="o">=</span> <span class="s">'group'</span><span class="p">,</span>
+        <span class="n">ylab</span> <span class="o">=</span> <span class="s">'age'</span><span class="p">,</span>
+        <span class="n">main</span> <span class="o">=</span> <span class="s">'동의보감 이전과 이후'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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%0ADyY+2M6yrK9/Obz1JoTjIqy6P7p9e2zTf/oxLHrft4vQdH9++7Rbhfte2j0UfQ2zZN2Eda9l%0Ap64b/T+G/ujgNP4u/ORF6rRZnm6VP/93fRepe2zbf/4q/Lbf/oVNe/u26ebyB+/Xtx1Oo3VT%0AZtnW++fRsus990be2rm53emeyYvU7E/7Jvy7VX55PD1acf7P9voZdGUXftpvP+Fwvnl++LgM%0Au/aZ/1q5wum+B8jK7tq2R8v+DRt5a+f9TvdMXqR2pXvXHhtcKv97uffy9fd++84idKYt2g+k%0A9tbxcRx3Fem3VO4zZnVt26Nlt3uWQ5Hu3XXP5EW6f7v9O/VbIUTatgd1v+2XcKO9+7DbLK8i%0AlUt+vjy17dU98jHfTCHHP4gW6Riadk50GIq0vN+aRNMmDyJ5I1qk0/p8uLBYDB/4CYvt7oBI%0AxUAkb1yOsHtzpOu9z18f7MNy3x7ZXY/KH89HpHIM5kiDe66NPB99h0d3fyqmqmXi4+a2rrN7%0AEulwentadhGa7uFuneg8Z1pdGrZnjlSOwapdd09v1W4Rtu1qahh01z0THzfdyYjQLev0urII%0A7UzojUjn98HLivhlYtQc2sO9C7+IVIjlfX56K/jjPNK26+h1afzWXfdMfNz0rl7odeV38YdI%0AxxCuVztsz8L9tB9O50lSWP4+jisgO+vmXPG+SKdtc72y4bRpzgdz18dWtzu9M79xs7sc+EF9%0APl2zMKV3tQmlasQyTOMt7pvpLiU5rj5di4VIvggPTlO5dOu7uV7c2Hx4GiL5oi9SM42p67ez%0AXYaw+HhtMCIBzAxEAjAAkQAMQCQAAxAJwABEAjAAkQAMQCQAAxAJwABEAjAAkQAMQCQAAxAJ%0AwABEAjAAkQAMQCQAAxAJwABEAjAAkQAMQCQAAxAJwABEAjAAkQAMQCQAAxAJwABEAjAAkQAM%0A+D8HIa6tUYKDUQAAAABJRU5ErkJggg==" width="420" height="420">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="stahangryum/Woo"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/Woo/crawling/r/2022/05/30/Joseon_king.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Woo/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Woo/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Woo/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p></p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/Woo/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/Woo/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

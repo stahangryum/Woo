@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>명나라, 청나라 황제 수명 데이터 분석 | Woo</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="명나라, 청나라 황제 수명 데이터 분석" />
+<meta name="author" content="Kim Jeewoo" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://stahangryum.github.io/Woo/crawling/r/2022/05/30/ming-qing.html" />
+<meta property="og:url" content="https://stahangryum.github.io/Woo/crawling/r/2022/05/30/ming-qing.html" />
+<meta property="og:site_name" content="Woo" />
+<meta property="og:image" content="https://stahangryum.github.io/Woo/images/ming_king.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-30T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://stahangryum.github.io/Woo/images/ming_king.jpg" />
+<meta property="twitter:title" content="명나라, 청나라 황제 수명 데이터 분석" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kim Jeewoo"},"dateModified":"2022-05-30T00:00:00-05:00","datePublished":"2022-05-30T00:00:00-05:00","headline":"명나라, 청나라 황제 수명 데이터 분석","image":"https://stahangryum.github.io/Woo/images/ming_king.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://stahangryum.github.io/Woo/crawling/r/2022/05/30/ming-qing.html"},"url":"https://stahangryum.github.io/Woo/crawling/r/2022/05/30/ming-qing.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Woo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://stahangryum.github.io/Woo/feed.xml" title="Woo" /><link rel="shortcut icon" type="image/x-icon" href="/Woo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Woo/">Woo</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Woo/about/">About Me</a><a class="page-link" href="/Woo/search/">Search</a><a class="page-link" href="/Woo/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">명나라, 청나라 황제 수명 데이터 분석</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-05-30T00:00:00-05:00" itemprop="datePublished">
+        May 30, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Kim Jeewoo</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/Woo/categories/#Crawling">Crawling</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/Woo/categories/#R">R</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/stahangryum/Woo/tree/master/_notebooks/2022-05-30-ming-qing.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/Woo/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/stahangryum/Woo/master?filepath=_notebooks%2F2022-05-30-ming-qing.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Woo/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/stahangryum/Woo/blob/master/_notebooks/2022-05-30-ming-qing.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Woo/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fstahangryum%2FWoo%2Fblob%2Fmaster%2F_notebooks%2F2022-05-30-ming-qing.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/Woo/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Reference">Reference </a></li>
+<li class="toc-entry toc-h1"><a href="#Crawling">Crawling </a></li>
+<li class="toc-entry toc-h1"><a href="#Analysis">Analysis </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-05-30-ming-qing.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Reference">
+<a class="anchor" href="#Reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reference<a class="anchor-link" href="#Reference"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 명나라 황제 데이터</p>
+<p><a href="https://en.wikipedia.org/wiki/List_of_emperors_of_the_Ming_dynasty">https://en.wikipedia.org/wiki/List_of_emperors_of_the_Ming_dynasty</a></p>
+<p><code>-</code> 청나라 황제 데이터</p>
+<p><a href="https://en.wikipedia.org/wiki/List_of_emperors_of_the_Qing_dynasty">https://en.wikipedia.org/wiki/List_of_emperors_of_the_Qing_dynasty</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Crawling">
+<a class="anchor" href="#Crawling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Crawling<a class="anchor-link" href="#Crawling"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">rvest</span><span class="p">))</span> <span class="nf">install.packages</span><span class="p">(</span><span class="s">'rvest'</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">rvest</span><span class="p">)</span>
+
+<span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">))</span> <span class="nf">install.packages</span><span class="p">(</span><span class="s">'tidyverse'</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+
+<span class="n">get_kings_info</span> <span class="o">=</span> <span class="nf">function</span><span class="p">(</span><span class="n">order</span><span class="p">,</span> <span class="n">nation</span><span class="p">){</span> <span class="c1"># ex) order = 1, nation = 'Ming' or 'King'</span>
+    <span class="n">ming_url</span> <span class="o">=</span> <span class="s">'https://en.wikipedia.org/wiki/List_of_emperors_of_the_Ming_dynasty'</span>
+    <span class="n">qing_url</span> <span class="o">=</span> <span class="s">'https://en.wikipedia.org/wiki/List_of_emperors_of_the_Qing_dynasty'</span>
+    
+    <span class="n">target_url</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">nation</span> <span class="o">==</span> <span class="s">'Ming'</span><span class="p">,</span> <span class="n">ming_url</span><span class="p">,</span> <span class="n">qing_url</span><span class="p">)</span>
+    <span class="n">dynasty</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">nation</span> <span class="o">==</span> <span class="s">'Ming'</span><span class="p">,</span> <span class="s">'Ming'</span><span class="p">,</span> <span class="s">'Qing'</span><span class="p">)</span>
+    
+    <span class="n">unclean_table</span> <span class="o">=</span> 
+    <span class="p">(</span><span class="n">target_url</span> <span class="o">%&gt;%</span>
+        <span class="n">read_html</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'table[class=wikitable]'</span><span class="p">))[</span><span class="m">1</span><span class="p">]</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'tbody'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'tr'</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+        <span class="nf">html_text</span><span class="p">()</span>
+
+    <span class="c1"># 정규표현식을 이용해 양식을 맞춘다</span>
+    
+    <span class="n">requiredRows_index</span> <span class="o">=</span> <span class="nf">str_detect</span><span class="p">(</span><span class="n">unclean_table</span><span class="p">,</span> <span class="s">'[A-Za-z]{5,}\\([0-9]{1,2}\\s[A-Z]{1}'</span><span class="p">)</span>
+    <span class="n">requiredRows</span> <span class="o">=</span> <span class="n">unclean_table</span><span class="p">[</span><span class="n">requiredRows_index</span><span class="p">]</span>
+
+    <span class="n">clean_table</span> <span class="o">=</span> <span class="nf">gsub</span><span class="p">(</span><span class="s">'\n'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="n">requiredRows</span><span class="p">[</span><span class="n">order</span><span class="p">])</span> <span class="o">%&gt;%</span> 
+        <span class="nf">strsplit</span><span class="p">(</span><span class="s">''</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">unlist</span><span class="p">()</span>
+
+    <span class="n">name_start_index</span> <span class="o">=</span> <span class="m">1</span>
+    <span class="n">name_end_index</span> <span class="o">=</span> <span class="nf">grep</span><span class="p">(</span><span class="s">'\\('</span><span class="p">,</span> <span class="n">clean_table</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span><span class="m">-1</span> <span class="c1"># 괄호보다 한 칸 이전에 있으므로 -1</span>
+    <span class="n">name</span> <span class="o">=</span> 
+        <span class="n">clean_table</span><span class="p">[</span><span class="n">name_start_index</span><span class="o">:</span><span class="n">name_end_index</span><span class="p">]</span> <span class="o">%&gt;%</span>
+        <span class="nf">paste</span><span class="p">(</span><span class="n">collapse</span> <span class="o">=</span> <span class="s">''</span><span class="p">)</span>
+
+    <span class="n">only_numbers</span> <span class="o">=</span> 
+        <span class="n">requiredRows</span><span class="p">[</span><span class="n">order</span><span class="p">]</span> <span class="o">%&gt;%</span> <span class="c1"># 숫자 존재하는 벡터</span>
+        <span class="nf">strsplit</span><span class="p">(</span><span class="n">split</span> <span class="o">=</span> <span class="s">'[^0-9]'</span><span class="p">)</span> <span class="o">%&gt;%</span>  
+        <span class="nf">unlist</span><span class="p">()</span>
+
+    <span class="n">year_index</span> <span class="o">=</span> <span class="nf">grep</span><span class="p">(</span><span class="s">'.{4}'</span><span class="p">,</span> <span class="n">only_numbers</span><span class="p">)[</span><span class="m">1</span><span class="o">:</span><span class="m">2</span><span class="p">]</span> <span class="c1"># 월, 일은 2글자를 초과하지 못하므로 자연스럽게 네글자만 연도이다.</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="n">only_numbers</span><span class="p">[</span><span class="n">year_index</span><span class="p">]</span>
+    
+    <span class="nf">return</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="n">dynasty</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year</span><span class="p">))</span>
+<span class="p">}</span>
+
+<span class="n">ming_last_order</span> <span class="o">=</span> <span class="m">16</span>
+<span class="n">qing_last_order</span> <span class="o">=</span> <span class="m">12</span>
+
+<span class="n">ming_kings_info</span> <span class="o">&lt;-</span> <span class="nf">vector</span><span class="p">(</span><span class="s">'list'</span><span class="p">,</span> <span class="n">ming_last_order</span><span class="p">)</span>
+<span class="n">qing_kings_info</span> <span class="o">&lt;-</span> <span class="nf">vector</span><span class="p">(</span><span class="s">'list'</span><span class="p">,</span> <span class="n">qing_last_order</span><span class="p">)</span>
+<span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="n">ming_last_order</span><span class="p">)</span> <span class="n">ming_kings_info</span><span class="p">[[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="nf">get_kings_info</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s">'Ming'</span><span class="p">)</span>
+<span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="n">qing_last_order</span><span class="p">)</span> <span class="n">qing_kings_info</span><span class="p">[[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="nf">get_kings_info</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s">'Qing'</span><span class="p">)</span>
+
+<span class="n">kings_info</span> <span class="o">=</span> <span class="nf">do.call</span><span class="p">(</span><span class="s">'rbind'</span><span class="p">,</span> <span class="nf">c</span><span class="p">(</span><span class="n">ming_kings_info</span><span class="p">,</span> <span class="n">qing_kings_info</span><span class="p">))</span>
+<span class="nf">colnames</span><span class="p">(</span><span class="n">kings_info</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">'dynasty'</span><span class="p">,</span> <span class="s">'name'</span><span class="p">,</span> <span class="s">'birth'</span><span class="p">,</span> <span class="s">'death'</span><span class="p">)</span>
+<span class="nf">write.table</span><span class="p">(</span><span class="n">kings_info</span><span class="p">,</span> <span class="s">'China_king.txt'</span><span class="p">,</span> <span class="n">row.names</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>필요한 패키지를 로딩중입니다: rvest
+
+Warning message:
+"패키지 'rvest'는 R 버전 4.1.3에서 작성되었습니다"
+필요한 패키지를 로딩중입니다: tidyverse
+
+Warning message:
+"패키지 'tidyverse'는 R 버전 4.1.3에서 작성되었습니다"
+-- <span class="ansi-bold">Attaching packages</span> ------------------------------------------------------------------------------- tidyverse 1.3.1 --
+
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">ggplot2</span> 3.3.5     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">purrr  </span> 0.3.4
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">tibble </span> 3.1.6     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">dplyr  </span> 1.0.8
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">tidyr  </span> 1.2.0     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">stringr</span> 1.4.0
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">readr  </span> 2.1.2     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">forcats</span> 0.5.1
+
+Warning message:
+"패키지 'ggplot2'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'tibble'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'tidyr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'readr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'purrr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'dplyr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'stringr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'forcats'는 R 버전 4.1.3에서 작성되었습니다"
+-- <span class="ansi-bold">Conflicts</span> ---------------------------------------------------------------------------------- tidyverse_conflicts() --
+<span class="ansi-red-fg">x</span> <span class="ansi-blue-fg">dplyr</span>::<span class="ansi-green-fg">filter()</span>         masks <span class="ansi-blue-fg">stats</span>::filter()
+<span class="ansi-red-fg">x</span> <span class="ansi-blue-fg">readr</span>::<span class="ansi-green-fg">guess_encoding()</span> masks <span class="ansi-blue-fg">rvest</span>::guess_encoding()
+<span class="ansi-red-fg">x</span> <span class="ansi-blue-fg">dplyr</span>::<span class="ansi-green-fg">lag()</span>            masks <span class="ansi-blue-fg">stats</span>::lag()
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Analysis">
+<a class="anchor" href="#Analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Analysis<a class="anchor-link" href="#Analysis"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">kings_info</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">kings_info</span><span class="p">)</span>
+<span class="n">kings_info</span><span class="p">[,</span> <span class="nf">c</span><span class="p">(</span><span class="s">'birth'</span><span class="p">,</span> <span class="s">'death'</span><span class="p">)]</span> <span class="o">=</span> 
+    <span class="n">kings_info</span><span class="p">[,</span> <span class="nf">c</span><span class="p">(</span><span class="s">'birth'</span><span class="p">,</span> <span class="s">'death'</span><span class="p">)]</span> <span class="o">%&gt;%</span>
+    <span class="nf">unlist</span><span class="p">()</span> <span class="o">%&gt;%</span>
+    <span class="nf">as.numeric</span><span class="p">()</span>
+
+<span class="n">kings_info</span> <span class="o">=</span>
+    <span class="n">kings_info</span> <span class="o">%&gt;%</span>
+    <span class="nf">mutate</span><span class="p">(</span><span class="n">age</span> <span class="o">=</span> <span class="n">death</span> <span class="o">-</span> <span class="n">birth</span><span class="p">)</span>
+
+<span class="nf">par</span><span class="p">(</span><span class="n">mfrow</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">))</span>
+
+<span class="nf">plot</span><span class="p">(</span><span class="n">kings_info</span><span class="o">$</span><span class="n">birth</span><span class="p">,</span> <span class="n">kings_info</span><span class="o">$</span><span class="n">age</span><span class="p">,</span>
+     <span class="n">xlab</span> <span class="o">=</span> <span class="s">'birth'</span><span class="p">,</span>
+     <span class="n">ylab</span> <span class="o">=</span> <span class="s">'age'</span><span class="p">)</span>
+<span class="nf">abline</span><span class="p">(</span><span class="nf">lm</span><span class="p">(</span><span class="n">kings_info</span><span class="o">$</span><span class="n">age</span> <span class="o">~</span> <span class="n">kings_info</span><span class="o">$</span><span class="n">birth</span><span class="p">))</span>
+
+<span class="nf">boxplot</span><span class="p">(</span><span class="n">kings_info</span><span class="o">$</span><span class="n">age</span> <span class="o">~</span> <span class="nf">factor</span><span class="p">(</span><span class="n">kings_info</span><span class="o">$</span><span class="n">dynasty</span><span class="p">),</span>
+        <span class="n">xlab</span> <span class="o">=</span> <span class="s">'dynasty'</span><span class="p">,</span>
+        <span class="n">ylab</span> <span class="o">=</span> <span class="s">'age'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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%0AskZa7wAAAABJRU5ErkJggg==" width="420" height="420">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="stahangryum/Woo"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/Woo/crawling/r/2022/05/30/ming-qing.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Woo/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Woo/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Woo/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p></p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/Woo/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/Woo/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
