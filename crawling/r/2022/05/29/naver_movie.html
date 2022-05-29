@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Naver Movie Ranking Crawling | Woo</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Naver Movie Ranking Crawling" />
+<meta name="author" content="Kim Jeewoo" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://stahangryum.github.io/Woo/crawling/r/2022/05/29/naver_movie.html" />
+<meta property="og:url" content="https://stahangryum.github.io/Woo/crawling/r/2022/05/29/naver_movie.html" />
+<meta property="og:site_name" content="Woo" />
+<meta property="og:image" content="https://stahangryum.github.io/Woo/images/naver_movie.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-29T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://stahangryum.github.io/Woo/images/naver_movie.png" />
+<meta property="twitter:title" content="Naver Movie Ranking Crawling" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kim Jeewoo"},"dateModified":"2022-05-29T00:00:00-05:00","datePublished":"2022-05-29T00:00:00-05:00","headline":"Naver Movie Ranking Crawling","image":"https://stahangryum.github.io/Woo/images/naver_movie.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://stahangryum.github.io/Woo/crawling/r/2022/05/29/naver_movie.html"},"url":"https://stahangryum.github.io/Woo/crawling/r/2022/05/29/naver_movie.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Woo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://stahangryum.github.io/Woo/feed.xml" title="Woo" /><link rel="shortcut icon" type="image/x-icon" href="/Woo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Woo/">Woo</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Woo/about/">About Me</a><a class="page-link" href="/Woo/search/">Search</a><a class="page-link" href="/Woo/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Naver Movie Ranking Crawling</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-05-29T00:00:00-05:00" itemprop="datePublished">
+        May 29, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Kim Jeewoo</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      13 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/Woo/categories/#Crawling">Crawling</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/Woo/categories/#R">R</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/stahangryum/Woo/tree/master/_notebooks/2022-05-29-naver_movie.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/Woo/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/stahangryum/Woo/master?filepath=_notebooks%2F2022-05-29-naver_movie.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Woo/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/stahangryum/Woo/blob/master/_notebooks/2022-05-29-naver_movie.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Woo/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fstahangryum%2FWoo%2Fblob%2Fmaster%2F_notebooks%2F2022-05-29-naver_movie.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/Woo/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Naver-Movie-Ranking-Crawling">Naver Movie Ranking Crawling </a></li>
+<li class="toc-entry toc-h1"><a href="#Code">Code </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-05-29-naver_movie.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Naver-Movie-Ranking-Crawling">
+<a class="anchor" href="#Naver-Movie-Ranking-Crawling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Naver Movie Ranking Crawling<a class="anchor-link" href="#Naver-Movie-Ranking-Crawling"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>네이버 영화 순위를 크롤링한다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Code">
+<a class="anchor" href="#Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code<a class="anchor-link" href="#Code"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">rvest</span><span class="p">))</span> <span class="nf">install.packages</span><span class="p">(</span><span class="s">'rvest'</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">rvest</span><span class="p">)</span>
+
+<span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">))</span> <span class="nf">install.packages</span><span class="p">(</span><span class="s">'tidyverse'</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+
+
+<span class="c1"># 날짜와 페이지를 입력하면 조건에 따른 영화 코드를 반환하는 함수를 정의함</span>
+<span class="n">get_movie_code</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="n">page</span><span class="p">){</span> <span class="c1"># ex) date = 20220502, page = 1</span>
+    
+    <span class="n">base_url</span> <span class="o">&lt;-</span> <span class="s">'https://movie.naver.com/movie/sdb/rank/rmovie.naver?sel=pnt&amp;date='</span>
+    <span class="n">target_url</span> <span class="o">&lt;-</span> <span class="nf">paste0</span><span class="p">(</span><span class="n">base_url</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="s">'&amp;page='</span><span class="p">,</span> <span class="n">page</span><span class="p">)</span>
+    
+    <span class="n">tables</span> <span class="o">&lt;-</span> <span class="n">target_url</span> <span class="o">%&gt;%</span>
+        <span class="nf">read_html</span><span class="p">(</span><span class="n">encoding</span> <span class="o">=</span> <span class="s">'UTF-8'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'table'</span><span class="p">)</span>
+    
+    <span class="n">hrefs</span> <span class="o">&lt;-</span> <span class="n">tables</span><span class="p">[[</span><span class="m">1</span><span class="p">]]</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'a'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_attr</span><span class="p">(</span><span class="s">'href'</span><span class="p">)</span>
+    
+    <span class="n">hrefs_odd</span> <span class="o">&lt;-</span> <span class="n">hrefs</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="kc">TRUE</span><span class="p">,</span> <span class="kc">FALSE</span><span class="p">)]</span> <span class="c1"># 같은 코드이나 서로 다른링크가 짝으로 존재함을 확인했다. 홀수번째 원소만 인덱싱한다.</span>
+    <span class="n">codes</span> <span class="o">&lt;-</span> <span class="nf">substr</span><span class="p">(</span><span class="n">hrefs_odd</span><span class="p">,</span> <span class="nf">unlist</span><span class="p">(</span><span class="nf">gregexpr</span><span class="p">(</span><span class="s">'='</span><span class="p">,</span> <span class="n">hrefs_odd</span><span class="p">))</span> <span class="o">+</span> <span class="m">1</span><span class="p">,</span> <span class="nf">nchar</span><span class="p">(</span><span class="n">hrefs_odd</span><span class="p">))</span> <span class="c1"># 다섯자리 코드와 여섯자리 코드가 혼재하므로 등호를 기준으로 인덱싱한다.</span>
+    
+    <span class="nf">return</span><span class="p">(</span><span class="n">codes</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># 영화의 코드를 입력하면 영화의 정보를 반환하는 함수를 정의함</span>
+<span class="n">get_movie_info</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">code</span><span class="p">){</span>
+    <span class="n">base_url</span> <span class="o">&lt;-</span> <span class="s">'https://movie.naver.com/movie/bi/mi/point.nhn?code='</span>
+    <span class="n">target_url</span> <span class="o">&lt;-</span> <span class="nf">paste0</span><span class="p">(</span><span class="n">base_url</span><span class="p">,</span> <span class="n">code</span><span class="p">)</span>
+    <span class="n">html</span> <span class="o">&lt;-</span> <span class="nf">read_html</span><span class="p">(</span><span class="n">target_url</span><span class="p">)</span>
+    
+    <span class="n">title_unclean</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span>
+    <span class="nf">html_nodes</span><span class="p">(</span><span class="s">"title"</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">html_text</span><span class="p">()</span>
+
+    <span class="n">title</span> <span class="o">&lt;-</span> <span class="nf">substr</span><span class="p">(</span><span class="n">title_unclean</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="nf">unlist</span><span class="p">(</span><span class="nf">gregexpr</span><span class="p">(</span><span class="s">' : 네이버 영화'</span><span class="p">,</span> <span class="n">title_unclean</span><span class="p">))</span><span class="m">-1</span><span class="p">)</span>
+    <span class="n">exist</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span> <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'dl[class=info_spec]'</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'dt'</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">html_text</span><span class="p">()</span>
+
+    <span class="n">steps</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'dl[class=info_spec]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'dd'</span><span class="p">)</span>
+
+    <span class="c1"># 개요, 감독, 출연, 등급 중 결측값이 존재하는 경우를 대비함</span>
+    <span class="n">step1</span> <span class="o">=</span> <span class="kc">NA</span>
+    <span class="n">step2</span> <span class="o">=</span> <span class="kc">NA</span>
+    <span class="n">step3</span> <span class="o">=</span> <span class="kc">NA</span>
+    <span class="n">step4</span> <span class="o">=</span> <span class="kc">NA</span>
+    <span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="nf">length</span><span class="p">(</span><span class="n">exist</span><span class="p">)){</span>
+        <span class="nf">if </span><span class="p">(</span><span class="n">exist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">'개요()'</span><span class="p">){</span>
+            <span class="n">step1_unclean</span> <span class="o">&lt;-</span> <span class="n">steps</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%&gt;%</span>
+                <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'p'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+                    <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'span'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+                <span class="nf">html_text</span><span class="p">()</span>
+            <span class="n">step1</span> <span class="o">&lt;-</span> <span class="nf">gsub</span><span class="p">(</span><span class="s">'\\t|\\n|\\r'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="n">step1_unclean</span><span class="p">)</span>
+        <span class="p">}</span><span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">exist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">'감독'</span><span class="p">){</span>
+            <span class="n">step2</span> <span class="o">&lt;-</span> <span class="n">steps</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%&gt;%</span>
+                <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'p'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+                <span class="nf">html_text</span><span class="p">()</span>
+        <span class="p">}</span><span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">exist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">'출연'</span><span class="p">){</span>
+            <span class="n">step3</span> <span class="o">&lt;-</span> <span class="n">steps</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%&gt;%</span>
+                <span class="nf">html_text</span><span class="p">()</span>
+        <span class="p">}</span><span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">exist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">'등급'</span><span class="p">){</span>
+            <span class="n">step4_unclean</span> <span class="o">&lt;-</span> <span class="n">steps</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%&gt;%</span>
+                <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'p'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+                <span class="nf">html_text</span><span class="p">()</span>
+            <span class="n">step4</span> <span class="o">&lt;-</span> <span class="nf">gsub</span><span class="p">(</span><span class="s">'\\t|\\n|\\r'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="n">step4_unclean</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="nf">if </span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="n">step1</span><span class="p">)</span> <span class="o">==</span> <span class="m">3</span><span class="p">){</span> <span class="c1"># 개봉일자가 존재하지 않는 경우 결측값으로 처리함 ex)먼 훗날 우리</span>
+        <span class="n">step1</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="n">step1</span><span class="p">,</span> <span class="kc">NA</span><span class="p">)</span>
+    <span class="p">}</span>
+    
+    <span class="n">tdt</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=viewing_graph]'</span><span class="p">)</span>
+    
+    <span class="c1"># 성별, 나이별 관람추이가 존재하지 않는 경우 관람객 통계가 존재하지 않으므로 결측값으로 처리함</span>
+    <span class="nf">if </span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="n">tdt</span><span class="p">)</span> <span class="o">==</span> <span class="m">0</span><span class="p">){</span>
+        <span class="n">audience_age_10</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_age_20</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_age_30</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_age_40</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_age_50</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_score</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_count</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_male</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_female</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_10</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_20</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_30</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_40</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+        <span class="n">audience_50</span> <span class="o">&lt;-</span> <span class="kc">NA</span>
+    <span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
+        <span class="n">audi_age</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'strong[class=graph_percent]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_text</span><span class="p">()</span>
+        <span class="n">audience_age_10</span> <span class="o">&lt;-</span> <span class="n">audi_age</span><span class="p">[</span><span class="m">1</span><span class="p">]</span>
+        <span class="n">audience_age_20</span> <span class="o">&lt;-</span> <span class="n">audi_age</span><span class="p">[</span><span class="m">2</span><span class="p">]</span>
+        <span class="n">audience_age_30</span> <span class="o">&lt;-</span> <span class="n">audi_age</span><span class="p">[</span><span class="m">3</span><span class="p">]</span>
+        <span class="n">audience_age_40</span> <span class="o">&lt;-</span> <span class="n">audi_age</span><span class="p">[</span><span class="m">4</span><span class="p">]</span>
+        <span class="n">audience_age_50</span> <span class="o">&lt;-</span> <span class="n">audi_age</span><span class="p">[</span><span class="m">5</span><span class="p">]</span>
+
+        <span class="n">audience_score</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span> 
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=grade_audience]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=star_score]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'em'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_text</span><span class="p">()</span> <span class="o">%&gt;%</span> <span class="nf">paste</span><span class="p">(</span><span class="n">collapse</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+        <span class="n">audience_count</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span> 
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=grade_audience]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'span[class=user_count]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'em'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_text</span><span class="p">()</span> <span class="o">%&gt;%</span> <span class="nf">paste</span><span class="p">(</span><span class="n">collapse</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+        
+        <span class="n">audience_male</span> <span class="o">&lt;-</span> <span class="p">(</span><span class="n">html</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=graph_area]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=grp_male]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'strong[class=graph_point]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_text</span><span class="p">())[</span><span class="m">2</span><span class="p">]</span>
+
+        <span class="n">audience_female</span> <span class="o">&lt;-</span> <span class="p">(</span><span class="n">html</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=graph_area]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=grp_female]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'strong[class=graph_point]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_text</span><span class="p">())[</span><span class="m">2</span><span class="p">]</span>
+
+        <span class="n">audience_age</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=grp_age]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'strong[class=graph_point]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+            <span class="nf">html_text</span><span class="p">()</span>
+        
+        <span class="n">audience_10</span> <span class="o">&lt;-</span> <span class="n">audience_age</span><span class="p">[</span><span class="m">6</span><span class="p">]</span>
+        <span class="n">audience_20</span> <span class="o">&lt;-</span> <span class="n">audience_age</span><span class="p">[</span><span class="m">7</span><span class="p">]</span>
+        <span class="n">audience_30</span> <span class="o">&lt;-</span> <span class="n">audience_age</span><span class="p">[</span><span class="m">8</span><span class="p">]</span>
+        <span class="n">audience_40</span> <span class="o">&lt;-</span> <span class="n">audience_age</span><span class="p">[</span><span class="m">9</span><span class="p">]</span>
+        <span class="n">audience_50</span> <span class="o">&lt;-</span> <span class="n">audience_age</span><span class="p">[</span><span class="m">10</span><span class="p">]</span>
+        
+    <span class="p">}</span>
+    
+    <span class="n">netizen_score</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span> 
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=grade_netizen]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=star_score]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'em'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_text</span><span class="p">()</span> <span class="o">%&gt;%</span> <span class="nf">paste</span><span class="p">(</span><span class="n">collapse</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+    
+    <span class="n">netizen_count</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span> 
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=grade_netizen]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'span[class=user_count]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'em'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_text</span><span class="p">()</span> <span class="o">%&gt;%</span> <span class="nf">paste</span><span class="p">(</span><span class="n">collapse</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+    
+    <span class="n">ntz_male</span> <span class="o">&lt;-</span> <span class="p">(</span><span class="n">html</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=graph_area]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=grp_male]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'strong[class=graph_point]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_text</span><span class="p">())[</span><span class="m">1</span><span class="p">]</span>
+    
+    <span class="n">ntz_female</span> <span class="o">&lt;-</span> <span class="p">(</span><span class="n">html</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=graph_area]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=grp_female]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'strong[class=graph_point]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_text</span><span class="p">())[</span><span class="m">1</span><span class="p">]</span>
+    
+    <span class="n">ntz_age</span> <span class="o">&lt;-</span> <span class="n">html</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'div[class=grp_age]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_nodes</span><span class="p">(</span><span class="s">'strong[class=graph_point]'</span><span class="p">)</span> <span class="o">%&gt;%</span>
+        <span class="nf">html_text</span><span class="p">()</span>
+    <span class="n">ntz_10</span> <span class="o">&lt;-</span> <span class="n">ntz_age</span><span class="p">[</span><span class="m">1</span><span class="p">]</span>
+    <span class="n">ntz_20</span> <span class="o">&lt;-</span> <span class="n">ntz_age</span><span class="p">[</span><span class="m">2</span><span class="p">]</span>
+    <span class="n">ntz_30</span> <span class="o">&lt;-</span> <span class="n">ntz_age</span><span class="p">[</span><span class="m">3</span><span class="p">]</span>
+    <span class="n">ntz_40</span> <span class="o">&lt;-</span> <span class="n">ntz_age</span><span class="p">[</span><span class="m">4</span><span class="p">]</span>
+    <span class="n">ntz_50</span> <span class="o">&lt;-</span> <span class="n">ntz_age</span><span class="p">[</span><span class="m">5</span><span class="p">]</span>
+    
+    <span class="nf">return</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">step1</span><span class="p">,</span> <span class="n">step2</span><span class="p">,</span> <span class="n">step3</span><span class="p">,</span> <span class="n">step4</span><span class="p">,</span> <span class="n">audience_age_10</span><span class="p">,</span> <span class="n">audience_age_20</span><span class="p">,</span> <span class="n">audience_age_30</span><span class="p">,</span>
+     <span class="n">audience_age_40</span><span class="p">,</span> <span class="n">audience_age_50</span><span class="p">,</span> <span class="n">netizen_score</span><span class="p">,</span> <span class="n">netizen_count</span><span class="p">,</span> <span class="n">ntz_male</span><span class="p">,</span> <span class="n">ntz_female</span><span class="p">,</span>
+      <span class="n">ntz_10</span><span class="p">,</span> <span class="n">ntz_20</span><span class="p">,</span> <span class="n">ntz_30</span><span class="p">,</span> <span class="n">ntz_40</span><span class="p">,</span> <span class="n">ntz_50</span><span class="p">,</span> <span class="n">audience_score</span><span class="p">,</span> <span class="n">audience_count</span><span class="p">,</span> <span class="n">audience_male</span><span class="p">,</span>
+     <span class="n">audience_female</span><span class="p">,</span> <span class="n">audience_10</span><span class="p">,</span> <span class="n">audience_20</span><span class="p">,</span> <span class="n">audience_30</span><span class="p">,</span> <span class="n">audience_40</span><span class="p">,</span> <span class="n">audience_50</span><span class="p">))</span>
+<span class="p">}</span>
+
+<span class="n">info</span> <span class="o">&lt;-</span> <span class="nf">vector</span><span class="p">(</span><span class="s">'list'</span><span class="p">,</span> <span class="m">100</span><span class="p">)</span>
+<span class="n">top_100_codes</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="nf">get_movie_code</span><span class="p">(</span><span class="m">20220502</span><span class="p">,</span> <span class="m">1</span><span class="p">),</span> <span class="nf">get_movie_code</span><span class="p">(</span><span class="m">20220502</span><span class="p">,</span> <span class="m">2</span><span class="p">))</span>
+
+<span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="nf">length</span><span class="p">(</span><span class="n">top_100_codes</span><span class="p">)){</span> <span class="c1"># 한 줄씩 차곡차곡 쌓는다.</span>
+    <span class="n">info</span><span class="p">[[</span><span class="n">i</span><span class="p">]]</span> <span class="o">&lt;-</span> <span class="nf">get_movie_info</span><span class="p">(</span><span class="n">top_100_codes</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="p">}</span>
+
+<span class="n">final_info</span> <span class="o">&lt;-</span> <span class="nf">do.call</span><span class="p">(</span><span class="s">'rbind'</span><span class="p">,</span> <span class="n">info</span><span class="p">)</span>
+<span class="c1"># 컬럼명을 지정함</span>
+<span class="nf">colnames</span><span class="p">(</span><span class="n">final_info</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">"title"</span><span class="p">,</span><span class="s">"code"</span><span class="p">,</span><span class="s">"genre"</span><span class="p">,</span><span class="s">"country"</span><span class="p">,</span><span class="s">"runtime"</span><span class="p">,</span><span class="s">"release"</span><span class="p">,</span>
+        <span class="s">"director"</span><span class="p">,</span><span class="s">"actor"</span><span class="p">,</span><span class="s">"view_class"</span><span class="p">,</span><span class="s">"audience_age_10"</span><span class="p">,</span><span class="s">"audience_age_20"</span><span class="p">,</span>
+        <span class="s">"audience_age_30"</span><span class="p">,</span><span class="s">"audience_age_40"</span><span class="p">,</span><span class="s">"audience_age_50"</span><span class="p">,</span>
+        <span class="s">"netizen_score"</span><span class="p">,</span><span class="s">"netizen_count"</span><span class="p">,</span><span class="s">"ntz_male"</span><span class="p">,</span><span class="s">"ntz_female"</span><span class="p">,</span><span class="s">"ntz_10"</span><span class="p">,</span>
+        <span class="s">"ntz_20"</span><span class="p">,</span><span class="s">"ntz_30"</span><span class="p">,</span><span class="s">"ntz_40"</span><span class="p">,</span><span class="s">"ntz_50"</span><span class="p">,</span><span class="s">"audience_score"</span><span class="p">,</span>
+        <span class="s">"audience_count"</span><span class="p">,</span><span class="s">"audience_male"</span><span class="p">,</span><span class="s">"audience_female"</span><span class="p">,</span><span class="s">"audience_10"</span><span class="p">,</span>
+        <span class="s">"audience_20"</span><span class="p">,</span><span class="s">"audience_30"</span><span class="p">,</span><span class="s">"audience_40"</span><span class="p">,</span><span class="s">"audience_50"</span><span class="p">)</span>
+
+<span class="nf">write.csv</span><span class="p">(</span><span class="n">final_info</span><span class="p">,</span> <span class="s">'movie.csv'</span><span class="p">,</span> <span class="n">row.names</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span> <span class="c1"># 최종 csv파일 생성함</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>필요한 패키지를 로딩중입니다: rvest
+
+Warning message:
+"패키지 'rvest'는 R 버전 4.1.3에서 작성되었습니다"
+필요한 패키지를 로딩중입니다: tidyverse
+
+Warning message:
+"패키지 'tidyverse'는 R 버전 4.1.3에서 작성되었습니다"
+-- <span class="ansi-bold">Attaching packages</span> ------------------------------------------------------------------------------- tidyverse 1.3.1 --
+
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">ggplot2</span> 3.3.5     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">purrr  </span> 0.3.4
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">tibble </span> 3.1.6     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">dplyr  </span> 1.0.8
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">tidyr  </span> 1.2.0     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">stringr</span> 1.4.0
+<span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">readr  </span> 2.1.2     <span class="ansi-green-fg">v</span> <span class="ansi-blue-fg">forcats</span> 0.5.1
+
+Warning message:
+"패키지 'ggplot2'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'tibble'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'tidyr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'readr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'purrr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'dplyr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'stringr'는 R 버전 4.1.3에서 작성되었습니다"
+Warning message:
+"패키지 'forcats'는 R 버전 4.1.3에서 작성되었습니다"
+-- <span class="ansi-bold">Conflicts</span> ---------------------------------------------------------------------------------- tidyverse_conflicts() --
+<span class="ansi-red-fg">x</span> <span class="ansi-blue-fg">dplyr</span>::<span class="ansi-green-fg">filter()</span>         masks <span class="ansi-blue-fg">stats</span>::filter()
+<span class="ansi-red-fg">x</span> <span class="ansi-blue-fg">readr</span>::<span class="ansi-green-fg">guess_encoding()</span> masks <span class="ansi-blue-fg">rvest</span>::guess_encoding()
+<span class="ansi-red-fg">x</span> <span class="ansi-blue-fg">dplyr</span>::<span class="ansi-green-fg">lag()</span>            masks <span class="ansi-blue-fg">stats</span>::lag()
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">final_info</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<table class="dataframe">
+<caption>A matrix: 100 × 32 of type chr</caption>
+<thead>
+	<tr>
+<th scope="col">title</th>
+<th scope="col">code</th>
+<th scope="col">genre</th>
+<th scope="col">country</th>
+<th scope="col">runtime</th>
+<th scope="col">release</th>
+<th scope="col">director</th>
+<th scope="col">actor</th>
+<th scope="col">view_class</th>
+<th scope="col">audience_age_10</th>
+<th scope="col">⋯</th>
+<th scope="col">ntz_50</th>
+<th scope="col">audience_score</th>
+<th scope="col">audience_count</th>
+<th scope="col">audience_male</th>
+<th scope="col">audience_female</th>
+<th scope="col">audience_10</th>
+<th scope="col">audience_20</th>
+<th scope="col">audience_30</th>
+<th scope="col">audience_40</th>
+<th scope="col">audience_50</th>
+</tr>
+</thead>
+<tbody>
+	<tr>
+<td>클라우스                                 </td>
+<td>191613</td>
+<td>애니메이션, 코미디, 가족                       </td>
+<td>스페인, 영국  </td>
+<td>96분  </td>
+<td> 2019.11.15 개봉                                                                            </td>
+<td>서지오 파블로스, 카를로스 마르티네즈 로페즈</td>
+<td>제이슨 슈왈츠먼, J.K. 시몬스, 라시다 존스더보기                                                            </td>
+<td>[국내] 전체 관람가                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.17</td>
+<td>NA  </td>
+<td>NA    </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>그린 북                                  </td>
+<td>171539</td>
+<td>드라마                                         </td>
+<td>미국          </td>
+<td>130분 </td>
+<td> 2019.01.09 개봉                                                                            </td>
+<td>피터 패럴리                                </td>
+<td>비고 모텐슨(토니 발레롱가), 마허샬라 알리(돈 셜리 박사)더보기                                              </td>
+<td>[국내] 12세 관람가 [해외] PG-13도움말</td>
+<td>0% </td>
+<td>⋯</td>
+<td>9.46</td>
+<td>9.55</td>
+<td>2,070 </td>
+<td>9.52</td>
+<td>9.57</td>
+<td>9.60</td>
+<td>9.50</td>
+<td>9.58</td>
+<td>9.53</td>
+<td>9.58</td>
+</tr>
+	<tr>
+<td>가버나움                                 </td>
+<td>174830</td>
+<td>드라마                                         </td>
+<td>레바논, 프랑스</td>
+<td>126분 </td>
+<td> 2019.01.24 개봉                                                                            </td>
+<td>나딘 라바키                                </td>
+<td>자인 알 라피아(자인), 요르다노스 시프로우(라힐)더보기                                                      </td>
+<td>[국내] 15세 관람가 [해외] R도움말    </td>
+<td>2% </td>
+<td>⋯</td>
+<td>9.55</td>
+<td>9.54</td>
+<td>1,393 </td>
+<td>9.39</td>
+<td>9.61</td>
+<td>9.64</td>
+<td>9.56</td>
+<td>9.51</td>
+<td>9.58</td>
+<td>9.49</td>
+</tr>
+	<tr>
+<td>밥정                                     </td>
+<td>186114</td>
+<td>다큐멘터리, 드라마                             </td>
+<td>한국          </td>
+<td>82분  </td>
+<td> 2020.10.07 개봉                                                                            </td>
+<td>박혜령                                     </td>
+<td>임지호(본인)더보기                                                                                         </td>
+<td>[국내] 전체 관람가                   </td>
+<td>5% </td>
+<td>⋯</td>
+<td>9.53</td>
+<td>9.70</td>
+<td>20    </td>
+<td>9.75</td>
+<td>9.69</td>
+<td>10.0</td>
+<td>9.43</td>
+<td>9.80</td>
+<td>10.0</td>
+<td>9.75</td>
+</tr>
+	<tr>
+<td>장민호 드라마 최종회                     </td>
+<td>213746</td>
+<td>공연실황                                       </td>
+<td>한국          </td>
+<td>106분 </td>
+<td> 2022.01.24 개봉                                                                            </td>
+<td>NA                                         </td>
+<td>장민호더보기                                                                                               </td>
+<td>[국내] 전체 관람가                   </td>
+<td>0% </td>
+<td>⋯</td>
+<td>9.89</td>
+<td>9.89</td>
+<td>9     </td>
+<td>9.00</td>
+<td>10.0</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>10.0</td>
+<td>9.75</td>
+<td>10.0</td>
+</tr>
+	<tr>
+<td>디지몬 어드벤처 라스트 에볼루션 : 인연   </td>
+<td>192613</td>
+<td>애니메이션, 모험                               </td>
+<td>일본          </td>
+<td>114분 </td>
+<td> 2021.02.17 개봉                                                                            </td>
+<td>타구치 토모히사                            </td>
+<td>하나에 나츠키(야가미 타이치), 호소야 요시마사(이시다 야마토), 사카모토 치카(아구몬)더보기                  </td>
+<td>[국내] 12세 관람가                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>8.80</td>
+<td>NA  </td>
+<td>NA    </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>베일리 어게인                            </td>
+<td>144906</td>
+<td>모험, 코미디, 드라마                           </td>
+<td>미국          </td>
+<td>100분 </td>
+<td> 2018.11.22 개봉                                                                            </td>
+<td>라세 할스트롬                              </td>
+<td>조시 게드(베일리/ 엘리/ 티노/ 버디 목소리), 데니스 퀘이드(이든), K.J. 아파(십대 이든)더보기                </td>
+<td>[국내] 전체 관람가 [해외] PG도움말   </td>
+<td>3% </td>
+<td>⋯</td>
+<td>9.35</td>
+<td>9.42</td>
+<td>463   </td>
+<td>9.36</td>
+<td>9.44</td>
+<td>9.71</td>
+<td>9.52</td>
+<td>9.36</td>
+<td>9.14</td>
+<td>9.58</td>
+</tr>
+	<tr>
+<td>원더                                     </td>
+<td>151196</td>
+<td>드라마                                         </td>
+<td>미국          </td>
+<td>113분 </td>
+<td>2021.02.11 재개봉,  2017.12.27 개봉                                                         </td>
+<td>스티븐 크보스키                            </td>
+<td>제이콥 트렘블레이(어기 풀먼), 줄리아 로버츠(이자벨 풀먼), 오웬 윌슨(네이트 풀먼)더보기                     </td>
+<td>[국내] 전체 관람가 [해외] PG도움말   </td>
+<td>2% </td>
+<td>⋯</td>
+<td>9.33</td>
+<td>9.43</td>
+<td>319   </td>
+<td>9.37</td>
+<td>9.46</td>
+<td>10.0</td>
+<td>9.45</td>
+<td>9.47</td>
+<td>9.32</td>
+<td>9.56</td>
+</tr>
+	<tr>
+<td>아일라                                   </td>
+<td>169240</td>
+<td>드라마, 전쟁                                   </td>
+<td>한국, 터키    </td>
+<td>123분 </td>
+<td> 2018.06.21 개봉                                                                            </td>
+<td>잔 울카이                                  </td>
+<td>김설(아일라), 이스마일 하지오글루(슐레이만)더보기                                                          </td>
+<td>[국내] 15세 관람가                   </td>
+<td>0% </td>
+<td>⋯</td>
+<td>9.44</td>
+<td>9.13</td>
+<td>70    </td>
+<td>8.81</td>
+<td>9.32</td>
+<td>0.00</td>
+<td>9.45</td>
+<td>8.74</td>
+<td>9.33</td>
+<td>8.17</td>
+</tr>
+	<tr>
+<td>극장판 바이올렛 에버가든                 </td>
+<td>196843</td>
+<td>애니메이션, 드라마, 판타지                     </td>
+<td>일본          </td>
+<td>140분 </td>
+<td> 2020.11.12 개봉                                                                            </td>
+<td>이시다테 타이치                            </td>
+<td>이시카와 유이(바이올렛 에버가든 목소리), 나미카와 다이스케(길베르트 부겐빌리아 목소리)더보기               </td>
+<td>[국내] 전체 관람가                   </td>
+<td>17%</td>
+<td>⋯</td>
+<td>9.46</td>
+<td>9.68</td>
+<td>436   </td>
+<td>9.69</td>
+<td>9.67</td>
+<td>9.95</td>
+<td>9.66</td>
+<td>9.62</td>
+<td>9.42</td>
+<td>9.86</td>
+</tr>
+	<tr>
+<td>먼 훗날 우리                             </td>
+<td>175092</td>
+<td>드라마, 멜로/로맨스                            </td>
+<td>중국          </td>
+<td>120분 </td>
+<td>NA                                                                                          </td>
+<td>유약영                                     </td>
+<td>정백연, 주동우, 톈좡좡더보기                                                                               </td>
+<td>NA                                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.20</td>
+<td>NA  </td>
+<td>NA    </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>당갈                                     </td>
+<td>157243</td>
+<td>드라마, 액션                                   </td>
+<td>인도          </td>
+<td>161분 </td>
+<td> 2018.04.25 개봉                                                                            </td>
+<td>니테쉬 티와리                              </td>
+<td>아미르 칸(마하비르 싱 포갓), 파티마 사나 셰이크(기타), 산야 말호트라(바비타)더보기                         </td>
+<td>[국내] 12세 관람가                   </td>
+<td>6% </td>
+<td>⋯</td>
+<td>9.36</td>
+<td>9.62</td>
+<td>306   </td>
+<td>9.26</td>
+<td>9.73</td>
+<td>9.65</td>
+<td>9.79</td>
+<td>9.50</td>
+<td>8.85</td>
+<td>9.38</td>
+</tr>
+	<tr>
+<td>포드 V 페라리                            </td>
+<td>181710</td>
+<td>액션, 드라마                                   </td>
+<td>미국          </td>
+<td>152분 </td>
+<td> 2019.12.04 개봉                                                                            </td>
+<td>제임스 맨골드                              </td>
+<td>맷 데이먼(캐롤 셸비), 크리스찬 베일(켄 마일스)더보기                                                       </td>
+<td>[국내] 12세 관람가                   </td>
+<td>2% </td>
+<td>⋯</td>
+<td>9.42</td>
+<td>9.31</td>
+<td>1,112 </td>
+<td>9.34</td>
+<td>9.25</td>
+<td>9.57</td>
+<td>9.40</td>
+<td>9.24</td>
+<td>9.41</td>
+<td>8.90</td>
+</tr>
+	<tr>
+<td>주전장                                   </td>
+<td>179518</td>
+<td>다큐멘터리                                     </td>
+<td>미국          </td>
+<td>121분 </td>
+<td> 2019.07.25 개봉                                                                            </td>
+<td>미키 데자키                                </td>
+<td>NA                                                                                                         </td>
+<td>[국내] 전체 관람가                   </td>
+<td>3% </td>
+<td>⋯</td>
+<td>8.85</td>
+<td>9.67</td>
+<td>317   </td>
+<td>9.64</td>
+<td>9.68</td>
+<td>9.90</td>
+<td>9.64</td>
+<td>9.65</td>
+<td>9.82</td>
+<td>9.47</td>
+</tr>
+	<tr>
+<td>그대, 고맙소 : 김호중 생애 첫 팬미팅 무비</td>
+<td>196828</td>
+<td>공연실황                                       </td>
+<td>한국          </td>
+<td>80분  </td>
+<td> 2020.09.29 개봉                                                                            </td>
+<td>오윤동                                     </td>
+<td>김호중더보기                                                                                               </td>
+<td>[국내] 전체 관람가                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.91</td>
+<td>NA  </td>
+<td>NA    </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>쇼생크 탈출                              </td>
+<td>17421 </td>
+<td>드라마                                         </td>
+<td>미국          </td>
+<td>142분 </td>
+<td>2016.02.24 재개봉,  1995.01.28 개봉                                                         </td>
+<td>프랭크 다라본트                            </td>
+<td>팀 로빈스(앤디 듀프레인), 모건 프리먼(엘리스 보이드 레드 레딩)더보기                                       </td>
+<td>[국내] 15세 관람가 [해외] R도움말    </td>
+<td>0% </td>
+<td>⋯</td>
+<td>8.68</td>
+<td>9.88</td>
+<td>17    </td>
+<td>10.0</td>
+<td>9.75</td>
+<td>0.00</td>
+<td>9.86</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>0.00</td>
+</tr>
+	<tr>
+<td>터미네이터 2:오리지널                    </td>
+<td>10200 </td>
+<td>SF, 액션, 스릴러                               </td>
+<td>미국, 프랑스  </td>
+<td>137분 </td>
+<td>2019.10.24 재개봉, 2013.11.14 재개봉,  1991.07.06 개봉                                      </td>
+<td>제임스 카메론                              </td>
+<td>아놀드 슈왈제네거(터미네이터)더보기                                                                        </td>
+<td>[국내] 15세 관람가 [해외] R도움말    </td>
+<td>0% </td>
+<td>⋯</td>
+<td>9.00</td>
+<td>9.51</td>
+<td>39    </td>
+<td>9.42</td>
+<td>9.88</td>
+<td>0.00</td>
+<td>9.92</td>
+<td>9.92</td>
+<td>8.75</td>
+<td>9.33</td>
+</tr>
+	<tr>
+<td>덕구                                     </td>
+<td>154667</td>
+<td>드라마                                         </td>
+<td>한국          </td>
+<td>91분  </td>
+<td> 2018.04.05 개봉                                                                            </td>
+<td>방수인                                     </td>
+<td>이순재(덕구할배), 정지훈(덕구)더보기                                                                       </td>
+<td>[국내] 전체 관람가                   </td>
+<td>3% </td>
+<td>⋯</td>
+<td>9.18</td>
+<td>9.30</td>
+<td>265   </td>
+<td>9.12</td>
+<td>9.40</td>
+<td>10.0</td>
+<td>9.23</td>
+<td>9.46</td>
+<td>9.14</td>
+<td>9.08</td>
+</tr>
+	<tr>
+<td>클래식                                   </td>
+<td>35939 </td>
+<td>멜로/로맨스, 드라마                            </td>
+<td>한국          </td>
+<td>132분 </td>
+<td> 2003.01.30 개봉                                                                            </td>
+<td>곽재용                                     </td>
+<td>손예진(지혜/주희), 조승우(준하), 조인성(상민)더보기                                                        </td>
+<td>[국내] 12세 관람가                   </td>
+<td>7% </td>
+<td>⋯</td>
+<td>9.40</td>
+<td>9.79</td>
+<td>14    </td>
+<td>9.86</td>
+<td>9.71</td>
+<td>10.0</td>
+<td>9.62</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>0.00</td>
+</tr>
+	<tr>
+<td>나 홀로 집에                             </td>
+<td>10016 </td>
+<td>모험, 범죄, 가족, 코미디                       </td>
+<td>미국          </td>
+<td>105분 </td>
+<td> 1991.07.06 개봉                                                                            </td>
+<td>크리스 콜럼버스                            </td>
+<td>맥컬리 컬킨(케빈 맥콜리스터), 조 페시(좀도둑 해리 림), 다니엘 스턴(좀도둑 마브 머챈츠)더보기               </td>
+<td>[국내] 전체 관람가 [해외] PG도움말   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>8.47</td>
+<td>NA  </td>
+<td>NA    </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>라이언 일병 구하기                       </td>
+<td>18988 </td>
+<td>전쟁, 액션, 드라마                             </td>
+<td>미국          </td>
+<td>170분 </td>
+<td> 1998.09.12 개봉                                                                            </td>
+<td>스티븐 스필버그                            </td>
+<td>톰 행크스(존 밀러 대위), 에드워드 번즈(Pvt. 리처드 레이번), 톰 시즈모어(Sgt. 마이클 호바스)더보기          </td>
+<td>[국내] 15세 관람가 [해외] R도움말    </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.15</td>
+<td>NA  </td>
+<td>NA    </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>월-E                                     </td>
+<td>69105 </td>
+<td>애니메이션, SF, 가족, 코미디, 멜로/로맨스, 모험</td>
+<td>미국          </td>
+<td>104분 </td>
+<td> 2008.08.06 개봉                                                                            </td>
+<td>앤드류 스탠튼                              </td>
+<td>벤 버트(월-E / M-O 목소리), 엘리사 나이트(이브 목소리), 제프 갈린(선장 목소리)더보기                       </td>
+<td>[국내] 전체 관람가 [해외] G도움말    </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.25</td>
+<td>NA  </td>
+<td>NA    </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>빽 투 더 퓨쳐                            </td>
+<td>10002 </td>
+<td>SF, 코미디                                     </td>
+<td>미국          </td>
+<td>120분 </td>
+<td>2015.10.21 재개봉,  1987.07.17 개봉                                                         </td>
+<td>로버트 저메키스                            </td>
+<td>마이클 J. 폭스(마티 맥플라이), 크리스토퍼 로이드(에메트 브라운 박사), 리 톰슨(로레인 베인스 맥플라이)더보기</td>
+<td>[국내] 12세 관람가 [해외] PG도움말   </td>
+<td>2% </td>
+<td>⋯</td>
+<td>8.82</td>
+<td>9.39</td>
+<td>49    </td>
+<td>9.64</td>
+<td>9.19</td>
+<td>10.0</td>
+<td>9.23</td>
+<td>9.78</td>
+<td>9.62</td>
+<td>8.00</td>
+</tr>
+	<tr>
+<td>보헤미안 랩소디                          </td>
+<td>156464</td>
+<td>드라마                                         </td>
+<td>미국, 영국    </td>
+<td>134분 </td>
+<td> 2018.10.31 개봉                                                                            </td>
+<td>브라이언 싱어                              </td>
+<td>라미 말렉(프레디 머큐리), 루시 보인턴(메리 오스틴), 귈림 리(브라이언 메이)더보기                           </td>
+<td>[국내] 12세 관람가                   </td>
+<td>3% </td>
+<td>⋯</td>
+<td>9.36</td>
+<td>9.45</td>
+<td>13,104</td>
+<td>9.39</td>
+<td>9.50</td>
+<td>9.45</td>
+<td>9.47</td>
+<td>9.47</td>
+<td>9.46</td>
+<td>9.35</td>
+</tr>
+	<tr>
+<td>사운드 오브 뮤직                         </td>
+<td>10102 </td>
+<td>멜로/로맨스, 뮤지컬, 드라마                    </td>
+<td>미국          </td>
+<td>172분 </td>
+<td>2017.02.02 재개봉, 2012.01.23 재개봉, 1995.09.30 재개봉, 1978.02.04 재개봉,  1969.10.29 개봉</td>
+<td>로버트 와이즈                              </td>
+<td>줄리 앤드류스(마리아), 크리스토퍼 플러머(캡틴 조지 본 트랩), 엘레노 파커(남작 부인)더보기                  </td>
+<td>[국내] 전체 관람가 [해외] NR도움말   </td>
+<td>10%</td>
+<td>⋯</td>
+<td>8.99</td>
+<td>9.60</td>
+<td>10    </td>
+<td>10.0</td>
+<td>9.50</td>
+<td>10.0</td>
+<td>9.50</td>
+<td>0.00</td>
+<td>10.0</td>
+<td>0.00</td>
+</tr>
+	<tr>
+<td>포레스트 검프                            </td>
+<td>17159 </td>
+<td>드라마, 코미디                                 </td>
+<td>미국          </td>
+<td>142분 </td>
+<td>2016.09.07 재개봉,  1994.10.15 개봉                                                         </td>
+<td>로버트 저메키스                            </td>
+<td>톰 행크스(포레스트 검프)더보기                                                                             </td>
+<td>[국내] 12세 관람가 [해외] PG-13도움말</td>
+<td>5% </td>
+<td>⋯</td>
+<td>8.80</td>
+<td>9.52</td>
+<td>120   </td>
+<td>9.56</td>
+<td>9.48</td>
+<td>9.67</td>
+<td>9.42</td>
+<td>9.66</td>
+<td>9.57</td>
+<td>10.0</td>
+</tr>
+	<tr>
+<td>글래디에이터                             </td>
+<td>29217 </td>
+<td>액션, 드라마                                   </td>
+<td>미국, 영국    </td>
+<td>154분 </td>
+<td> 2000.06.03 개봉                                                                            </td>
+<td>리들리 스콧                                </td>
+<td>러셀 크로우(막시무스), 호아킨 피닉스(코모두스), 코니 닐슨(루실라)더보기                                    </td>
+<td>[국내] 15세 관람가 [해외] R도움말    </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.12</td>
+<td>NA  </td>
+<td>NA    </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>타이타닉                                 </td>
+<td>18847 </td>
+<td>멜로/로맨스, 드라마                            </td>
+<td>미국          </td>
+<td>194분 </td>
+<td>2018.02.01 재개봉, 2012.04.05 재개봉,  1998.02.20 개봉                                      </td>
+<td>제임스 카메론                              </td>
+<td>레오나르도 디카프리오(잭 도슨), 케이트 윈슬렛(로즈 드윗 부카더)더보기                                      </td>
+<td>[국내] 15세 관람가 [해외] PG-13도움말</td>
+<td>14%</td>
+<td>⋯</td>
+<td>9.08</td>
+<td>9.88</td>
+<td>269   </td>
+<td>9.92</td>
+<td>9.86</td>
+<td>9.82</td>
+<td>9.92</td>
+<td>9.91</td>
+<td>9.65</td>
+<td>9.92</td>
+</tr>
+	<tr>
+<td>위대한 쇼맨                              </td>
+<td>106360</td>
+<td>드라마, 뮤지컬                                 </td>
+<td>미국          </td>
+<td>104분 </td>
+<td>2020.05.21 재개봉,  2017.12.20 개봉                                                         </td>
+<td>마이클 그레이시                            </td>
+<td>휴 잭맨(P.T. 바넘), 잭 에프론(필립 칼라일), 미셸 윌리엄스(채러티 바넘)더보기                               </td>
+<td>[국내] 12세 관람가 [해외] PG도움말   </td>
+<td>6% </td>
+<td>⋯</td>
+<td>9.46</td>
+<td>9.31</td>
+<td>3,877 </td>
+<td>9.42</td>
+<td>9.24</td>
+<td>9.34</td>
+<td>9.37</td>
+<td>9.29</td>
+<td>9.11</td>
+<td>9.18</td>
+</tr>
+	<tr>
+<td>인생은 아름다워                          </td>
+<td>22126 </td>
+<td>드라마, 코미디                                 </td>
+<td>이탈리아      </td>
+<td>116분 </td>
+<td>2016.04.13 재개봉,  1999.03.06 개봉                                                         </td>
+<td>로베르토 베니니                            </td>
+<td>로베르토 베니니(귀도), 니콜레타 브라스키(도라)더보기                                                       </td>
+<td>[국내] 전체 관람가 [해외] PG-13도움말</td>
+<td>0% </td>
+<td>⋯</td>
+<td>8.35</td>
+<td>9.54</td>
+<td>28    </td>
+<td>9.38</td>
+<td>9.67</td>
+<td>0.00</td>
+<td>9.73</td>
+<td>9.67</td>
+<td>9.00</td>
+<td>9.00</td>
+</tr>
+	<tr>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋱</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+<td>⋮</td>
+</tr>
+	<tr>
+<td>에이리언 2                   </td>
+<td>10038 </td>
+<td>SF, 공포, 스릴러, 액션                                     </td>
+<td>미국                                </td>
+<td>137분 </td>
+<td> 1986.12.24 개봉                                                         </td>
+<td>제임스 카메론                   </td>
+<td>시고니 위버(엘렌 리플리), 마이클 빈(Cpl. 드웨인 힉스), 폴 레이저(카터 버크)더보기                                      </td>
+<td>[국내] 15세 관람가 [해외] R도움말    </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.33</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>로망                         </td>
+<td>182348</td>
+<td>멜로/로맨스                                                </td>
+<td>한국                                </td>
+<td>112분 </td>
+<td> 2019.04.03 개봉                                                         </td>
+<td>이창근                          </td>
+<td>이순재(조남봉), 정영숙(이매자), 조한철(조진수)더보기                                                                   </td>
+<td>[국내] 전체 관람가                   </td>
+<td>4% </td>
+<td>⋯</td>
+<td>8.77</td>
+<td>8.98 </td>
+<td>83 </td>
+<td>8.83</td>
+<td>9.08</td>
+<td>9.33</td>
+<td>9.31</td>
+<td>8.89</td>
+<td>8.80</td>
+<td>8.20</td>
+</tr>
+	<tr>
+<td>미세스 다웃파이어            </td>
+<td>16210 </td>
+<td>코미디, 가족, 드라마                                       </td>
+<td>미국                                </td>
+<td>125분 </td>
+<td> 1994.01.22 개봉                                                         </td>
+<td>크리스 콜럼버스                 </td>
+<td>로빈 윌리엄스(다니엘/미세스 다웃파이어), 샐리 필드(미란다)더보기                                                       </td>
+<td>[국내] 12세 관람가 [해외] PG-13도움말</td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.19</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>더 록                        </td>
+<td>17135 </td>
+<td>액션                                                       </td>
+<td>미국                                </td>
+<td>131분 </td>
+<td> 1996.07.13 개봉                                                         </td>
+<td>마이클 베이                     </td>
+<td>숀 코네리(존 패트릭 메이슨), 니콜라스 케이지(닥터 스탠리 굿스피드), 에드 해리스(프란시스 X. 험멜 장군)더보기           </td>
+<td>[국내] 15세 관람가 [해외] R도움말    </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.22</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>울지마 톤즈                  </td>
+<td>76667 </td>
+<td>다큐멘터리                                                 </td>
+<td>한국                                </td>
+<td>91분  </td>
+<td> 2010.09.09 개봉                                                         </td>
+<td>구수환                          </td>
+<td>이금희(나레이션), 이태석(본인)더보기                                                                                   </td>
+<td>[국내] 전체 관람가                   </td>
+<td>0% </td>
+<td>⋯</td>
+<td>9.30</td>
+<td>10.00</td>
+<td>1  </td>
+<td>0.00</td>
+<td>10.0</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>10.0</td>
+<td>0.00</td>
+</tr>
+	<tr>
+<td>다크 나이트                  </td>
+<td>62586 </td>
+<td>액션, 범죄, 드라마, 미스터리                               </td>
+<td>미국                                </td>
+<td>152분 </td>
+<td>2020.07.01 재개봉, 2017.07.12 재개봉, 2009.02.19 재개봉,  2008.08.06 개봉</td>
+<td>크리스토퍼 놀란                 </td>
+<td>크리스찬 베일(브루스 웨인/배트맨), 히스 레저(조커), 아론 에크하트(하비 덴트/투 페이스)더보기                           </td>
+<td>[국내] 15세 관람가 [해외] PG-13도움말</td>
+<td>17%</td>
+<td>⋯</td>
+<td>9.12</td>
+<td>9.65 </td>
+<td>46 </td>
+<td>9.78</td>
+<td>9.36</td>
+<td>9.88</td>
+<td>9.68</td>
+<td>9.62</td>
+<td>9.00</td>
+<td>9.00</td>
+</tr>
+	<tr>
+<td>아마데우스                   </td>
+<td>10114 </td>
+<td>드라마                                                     </td>
+<td>미국                                </td>
+<td>180분 </td>
+<td>2015.10.29 재개봉,  1985.11.23 개봉                                      </td>
+<td>밀로스 포만                     </td>
+<td>톰 헐스(볼프강 아마데우스 모짜르트), F. 머레이 아브라함(안토니오 살리에리), 엘리자베스 베리지(콘스탄츠 모짜르트)더보기 </td>
+<td>[국내] 12세 관람가 [해외] PG도움말   </td>
+<td>3% </td>
+<td>⋯</td>
+<td>8.95</td>
+<td>9.70 </td>
+<td>151</td>
+<td>9.75</td>
+<td>9.68</td>
+<td>10.0</td>
+<td>9.64</td>
+<td>9.75</td>
+<td>9.77</td>
+<td>9.67</td>
+</tr>
+	<tr>
+<td>알라딘                       </td>
+<td>13008 </td>
+<td>애니메이션, 뮤지컬, 코미디, 가족, 모험, 드라마, 멜로/로맨스</td>
+<td>미국                                </td>
+<td>90분  </td>
+<td> 1993.07.03 개봉                                                         </td>
+<td>존 머스커, 론 클레멘츠          </td>
+<td>스콧 와인거(알라딘/알리바브와 왕자 목소리), 로빈 윌리엄스(램프의 요정 지니 목소리), 린다 라킨(쟈스민 공주 목소리)더보기</td>
+<td>[국내] 전체 관람가 [해외] G도움말    </td>
+<td>NA </td>
+<td>⋯</td>
+<td>8.97</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>자산어보                     </td>
+<td>189075</td>
+<td>드라마                                                     </td>
+<td>한국                                </td>
+<td>126분 </td>
+<td> 2021.03.31 개봉                                                         </td>
+<td>이준익                          </td>
+<td>설경구(정약전), 변요한(창대)더보기                                                                                     </td>
+<td>[국내] 12세 관람가                   </td>
+<td>1% </td>
+<td>⋯</td>
+<td>9.55</td>
+<td>9.03 </td>
+<td>323</td>
+<td>8.83</td>
+<td>9.24</td>
+<td>10.0</td>
+<td>9.12</td>
+<td>8.80</td>
+<td>8.99</td>
+<td>9.27</td>
+</tr>
+	<tr>
+<td>빌리 엘리어트                </td>
+<td>31013 </td>
+<td>드라마, 가족, 코미디                                       </td>
+<td>영국, 프랑스                        </td>
+<td>110분 </td>
+<td>2017.01.18 재개봉,  2001.02.17 개봉                                      </td>
+<td>스티븐 달드리                   </td>
+<td>제이미 벨(빌리 엘리어트), 줄리 월터스(윌킨슨 부인), 게리 루이스(아버지 재키 엘리어트)더보기                            </td>
+<td>[국내] 12세 관람가 [해외] R도움말    </td>
+<td>4% </td>
+<td>⋯</td>
+<td>8.66</td>
+<td>9.75 </td>
+<td>79 </td>
+<td>9.76</td>
+<td>9.74</td>
+<td>10.0</td>
+<td>9.69</td>
+<td>9.85</td>
+<td>9.70</td>
+<td>9.33</td>
+</tr>
+	<tr>
+<td>두 교황                      </td>
+<td>189111</td>
+<td>드라마                                                     </td>
+<td>미국, 영국, 이탈리아, 아르헨티나    </td>
+<td>126분 </td>
+<td> 2019.12.11 개봉                                                         </td>
+<td>페르난도 메이렐레스             </td>
+<td>안소니 홉킨스(교황 베네딕토 16세), 조나단 프라이스(교황 프란치스코)더보기                                              </td>
+<td>[국내] 12세 관람가                   </td>
+<td>0% </td>
+<td>⋯</td>
+<td>9.58</td>
+<td>9.32 </td>
+<td>131</td>
+<td>9.26</td>
+<td>9.36</td>
+<td>0.00</td>
+<td>8.95</td>
+<td>9.31</td>
+<td>9.46</td>
+<td>9.47</td>
+</tr>
+	<tr>
+<td>그대를 사랑합니다            </td>
+<td>73476 </td>
+<td>드라마                                                     </td>
+<td>한국                                </td>
+<td>118분 </td>
+<td> 2011.02.17 개봉                                                         </td>
+<td>추창민                          </td>
+<td>이순재(김만석), 윤소정(송이뿐), 송재호(장군봉)더보기                                                                   </td>
+<td>[국내] 15세 관람가                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>8.79</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>아이 엠 샘                   </td>
+<td>34227 </td>
+<td>드라마                                                     </td>
+<td>미국                                </td>
+<td>132분 </td>
+<td> 2002.10.18 개봉                                                         </td>
+<td>제시 넬슨                       </td>
+<td>숀 펜(샘 도슨), 미셸 파이퍼(리타 해리슨)더보기                                                                         </td>
+<td>[국내] 12세 관람가 [해외] PG-13도움말</td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.24</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>언터처블: 1%의 우정          </td>
+<td>87566 </td>
+<td>코미디, 드라마                                             </td>
+<td>프랑스                              </td>
+<td>112분 </td>
+<td> 2012.03.22 개봉                                                         </td>
+<td>올리비에르 나카체, 에릭 토레다노</td>
+<td>프랑수아 클루제(필립), 오마 사이(드리스)더보기                                                                         </td>
+<td>[국내] 12세 관람가                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.46</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>피아니스트                   </td>
+<td>35187 </td>
+<td>드라마, 전쟁                                               </td>
+<td>프랑스, 독일, 폴란드, 영국, 네덜란드</td>
+<td>148분 </td>
+<td>2015.06.18 재개봉,  2003.01.03 개봉                                      </td>
+<td>로만 폴란스키                   </td>
+<td>애드리언 브로디(블라디슬로프 스필만), 토마스 크레취만(빌름 호젠펠트)더보기                                             </td>
+<td>[국내] 12세 관람가 [해외] R도움말    </td>
+<td>8% </td>
+<td>⋯</td>
+<td>9.23</td>
+<td>9.51 </td>
+<td>53 </td>
+<td>9.61</td>
+<td>9.43</td>
+<td>9.25</td>
+<td>9.58</td>
+<td>9.33</td>
+<td>9.67</td>
+<td>10.0</td>
+</tr>
+	<tr>
+<td>오세암                       </td>
+<td>34181 </td>
+<td>애니메이션, 드라마                                         </td>
+<td>한국                                </td>
+<td>75분  </td>
+<td> 2003.05.01 개봉                                                         </td>
+<td>성백엽                          </td>
+<td>김서영(길손이 목소리), 박선영(감이 목소리)더보기                                                                       </td>
+<td>[국내] 전체 관람가                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>8.51</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>언더독                       </td>
+<td>144318</td>
+<td>애니메이션                                                 </td>
+<td>한국                                </td>
+<td>102분 </td>
+<td> 2019.01.16 개봉                                                         </td>
+<td>오성윤, 이춘백                  </td>
+<td>디오(뭉치 목소리), 박소담(밤이 목소리), 박철민(짱아 목소리)더보기                                                      </td>
+<td>[국내] 전체 관람가                   </td>
+<td>3% </td>
+<td>⋯</td>
+<td>9.18</td>
+<td>9.47 </td>
+<td>362</td>
+<td>9.53</td>
+<td>9.44</td>
+<td>9.60</td>
+<td>9.65</td>
+<td>9.32</td>
+<td>9.46</td>
+<td>9.74</td>
+</tr>
+	<tr>
+<td>천공의 성 라퓨타             </td>
+<td>18782 </td>
+<td>애니메이션, 판타지, 모험                                   </td>
+<td>일본                                </td>
+<td>124분 </td>
+<td> 2004.04.30 개봉                                                         </td>
+<td>미야자키 하야오                 </td>
+<td>타나카 마유미(파즈 목소리), 요코자와 케이코(쉬타 목소리), 하츠이 코토에(돌라 목소리)더보기                             </td>
+<td>[국내] 전체 관람가                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>8.43</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>프리 윌리                    </td>
+<td>16466 </td>
+<td>가족, 모험, 드라마                                         </td>
+<td>미국                                </td>
+<td>112분 </td>
+<td> 1994.08.06 개봉                                                         </td>
+<td>사이먼 윈서                     </td>
+<td>케이코(윌리), 제이슨 제임스 리처(제시), 로리 페티(래 린들리)더보기                                                     </td>
+<td>[국내] 전체 관람가 [해외] PG도움말   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>8.95</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>아이언 자이언트              </td>
+<td>25915 </td>
+<td>애니메이션, SF, 액션, 가족                                 </td>
+<td>미국                                </td>
+<td>90분  </td>
+<td>2019.10.09 재개봉,  2000.05 개봉                                         </td>
+<td>브래드 버드                     </td>
+<td>제니퍼 애니스톤(애니 휴즈 목소리), 빈 디젤(아이언 자이언트 목소리), 엘리 마리엔탈(호가드 휴즈 목소리)더보기            </td>
+<td>[국내] 전체 관람가 [해외] PG도움말   </td>
+<td>0% </td>
+<td>⋯</td>
+<td>9.06</td>
+<td>9.47 </td>
+<td>15 </td>
+<td>9.33</td>
+<td>9.67</td>
+<td>0.00</td>
+<td>9.50</td>
+<td>9.00</td>
+<td>9.75</td>
+<td>0.00</td>
+</tr>
+	<tr>
+<td>업                           </td>
+<td>52120 </td>
+<td>애니메이션, 가족, 모험, 코미디, 액션                       </td>
+<td>미국                                </td>
+<td>101분 </td>
+<td> 2009.07.29 개봉                                                         </td>
+<td>피트 닥터, 밥 피터슨            </td>
+<td>에드워드 애스너(칼 프레드릭슨), 조던 나가이(러셀 목소리), 크리스토퍼 플러머(찰스 먼츠 목소리)더보기                    </td>
+<td>[국내] 전체 관람가 [해외] PG도움말   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.05</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>라푼젤                       </td>
+<td>75470 </td>
+<td>애니메이션, 코미디, 가족, 판타지, 뮤지컬, 멜로/로맨스      </td>
+<td>미국                                </td>
+<td>100분 </td>
+<td> 2011.02.10 개봉                                                         </td>
+<td>네이슨 그레노, 바이론 하워드    </td>
+<td>맨디 무어(라푼젤 목소리), 제커리 레비(플린 라이더 목소리)더보기                                                        </td>
+<td>[국내] 전체 관람가 [해외] PG도움말   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.10</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>시네마 천국                  </td>
+<td>10001 </td>
+<td>드라마, 멜로/로맨스                                        </td>
+<td>프랑스, 이탈리아                    </td>
+<td>124분 </td>
+<td>2020.04.22 재개봉, 2013.09.26 재개봉, 1993.11.13 재개봉,  1990.07.07 개봉</td>
+<td>쥬세페 토르나토레               </td>
+<td>마르코 레오나르디(청년 살바토레), 필립 느와레(알프레도), 자끄 페렝(중년 살바토레)더보기                                </td>
+<td>[국내] 전체 관람가 [해외] PG도움말   </td>
+<td>9% </td>
+<td>⋯</td>
+<td>9.17</td>
+<td>9.63 </td>
+<td>32 </td>
+<td>9.73</td>
+<td>9.57</td>
+<td>9.67</td>
+<td>9.40</td>
+<td>9.88</td>
+<td>10.0</td>
+<td>9.75</td>
+</tr>
+	<tr>
+<td>프리퀀시                     </td>
+<td>29657 </td>
+<td>범죄, 드라마, SF, 스릴러                                   </td>
+<td>미국                                </td>
+<td>117분 </td>
+<td> 2000.11.25 개봉                                                         </td>
+<td>그레고리 호블릿                 </td>
+<td>데니스 퀘이드(프랭크 설리반), 제임스 카비젤(존 설리반)더보기                                                           </td>
+<td>[국내] 12세 관람가 [해외] PG-13도움말</td>
+<td>NA </td>
+<td>⋯</td>
+<td>8.97</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>해리 포터와 죽음의 성물 - 2부</td>
+<td>47528 </td>
+<td>모험, 판타지, 미스터리                                     </td>
+<td>영국, 미국                          </td>
+<td>131분 </td>
+<td> 2011.07.13 개봉                                                         </td>
+<td>데이빗 예이츠                   </td>
+<td>다니엘 래드클리프(해리 포터), 엠마 왓슨(헤르미온느), 루퍼트 그린트(론 위즐리)더보기                                    </td>
+<td>[국내] 전체 관람가 [해외] PG-13도움말</td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.10</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>달링                         </td>
+<td>152655</td>
+<td>드라마, 멜로/로맨스                                        </td>
+<td>영국                                </td>
+<td>118분 </td>
+<td> 2018.04.12 개봉                                                         </td>
+<td>앤디 서키스                     </td>
+<td>앤드류 가필드(로빈), 클레어 포이(다이애나)더보기                                                                       </td>
+<td>[국내] 12세 관람가 [해외] PG-13도움말</td>
+<td>0% </td>
+<td>⋯</td>
+<td>9.47</td>
+<td>9.08 </td>
+<td>59 </td>
+<td>9.46</td>
+<td>8.83</td>
+<td>0.00</td>
+<td>9.36</td>
+<td>9.00</td>
+<td>8.33</td>
+<td>9.00</td>
+</tr>
+	<tr>
+<td>드래곤 길들이기              </td>
+<td>70457 </td>
+<td>애니메이션, 모험, 코미디, 가족, 판타지                     </td>
+<td>미국                                </td>
+<td>98분  </td>
+<td>2019.01.17 재개봉,  2010.05.20 개봉                                      </td>
+<td>딘 데블로이스, 크리스 샌더스    </td>
+<td>제이 바루첼(히컵 목소리), 제라드 버틀러(스토이크 목소리), 아메리카 페레라(아스트리드 목소리)더보기                     </td>
+<td>[국내] 전체 관람가 [해외] PG도움말   </td>
+<td>0% </td>
+<td>⋯</td>
+<td>8.98</td>
+<td>8.00 </td>
+<td>1  </td>
+<td>0.00</td>
+<td>8.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>8.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+	<tr>
+<td>러브 유어셀프 인 서울        </td>
+<td>180220</td>
+<td>공연실황                                                   </td>
+<td>한국                                </td>
+<td>113분 </td>
+<td> 2019.01.26 개봉                                                         </td>
+<td>NA                              </td>
+<td>RM(본인), 진(본인), 슈가(본인)더보기                                                                                   </td>
+<td>[국내] 전체 관람가                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>8.85</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>소원                         </td>
+<td>103535</td>
+<td>드라마                                                     </td>
+<td>한국                                </td>
+<td>122분 </td>
+<td> 2013.10.02 개봉                                                         </td>
+<td>이준익                          </td>
+<td>설경구(동훈), 엄지원(미희), 이레(소원)더보기                                                                           </td>
+<td>[국내] 12세 관람가                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>9.13</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+	<tr>
+<td>브레이크 더 사일런스: 더 무비</td>
+<td>195975</td>
+<td>다큐멘터리                                                 </td>
+<td>한국                                </td>
+<td>89분  </td>
+<td> 2020.09.24 개봉                                                         </td>
+<td>박준수                          </td>
+<td>RM(본인), 진(본인), 슈가(본인)더보기                                                                                   </td>
+<td>[국내] 전체 관람가                   </td>
+<td>NA </td>
+<td>⋯</td>
+<td>8.78</td>
+<td>NA   </td>
+<td>NA </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+<td>NA  </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="stahangryum/Woo"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/Woo/crawling/r/2022/05/29/naver_movie.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Woo/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Woo/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Woo/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p></p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/Woo/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/Woo/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
