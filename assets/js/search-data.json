@@ -112,10 +112,10 @@
   
     
         ,"post10": {
-            "title": "Settings",
+            "title": "Initial Settings",
             "content": "작성중 | . Window Setting . https://www.youtube.com/watch?v=SgqgBPx8zEE . Anaconda Setting . https://www.anaconda.com/products/individual . conda create -n py39r41 python=3.9 . | conda activate py39r41 . | conda install -c conda-forge r-essentials=4.1 . | conda install -c conda-forge jupyterlab . | R . | install.packages(&quot;IRkernel&quot;) . | library(IRkernel) . | installspec() . | q() . | pip install numpy . | pip install pandas . | pip install SciPy . | pip install matplotlib . | conda install -c conda-forge rise . | etc . | . . Git Setting . Git . | Git Bash . | GitHub Desktop . | . !git add . !git commit -m . !git push .",
-            "url": "https://stahangryum.github.io/Woo/2022/03/15/initial_setting.html",
-            "relUrl": "/2022/03/15/initial_setting.html",
+            "url": "https://stahangryum.github.io/Woo/2022/03/15/settings.html",
+            "relUrl": "/2022/03/15/settings.html",
             "date": " • Mar 15, 2022"
         }
         
