@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "2021-1학기 수학 1 중간고사",
-            "content": "Problem 1 . $ displaystyle int dfrac{1}{9x^2 + 2ax + 5} dx$ 를 역치환을 활용하여 부정적분을 계산한다면 어떠한 삼각함수를 역치환에 활용할지 치환방법만 구체적으로 적고, 풀이과정은 적지 않는다. . Problem 2 . 주어진 적분을 하여라. 단, 답은 반드시 x에 관해 정리해서 마무리하고, 풀이과정은 자세히 적는다. . $ displaystyle int dfrac{2x^4 + 6x^3 + 15x^2 + x - 21}{x^2(x^2+2x+7)}dx$ . Problem 3 . 주어진 적분을 하여라. 단, 답은 반드시 x에 관해 정리해서 마무리하고, 풀이과정은 자세히 적는다. . $ displaystyle int xsin^{-1}x^2dx$ . Problem 5 . 주어진 부정적분 $ displaystyle int dfrac{x^2}{ sqrt{4-2x-x^2}}dx$의 풀이과정을 자세히 적고 답을 x에 관하여 정리하라. . Problem 6 . $ displaystyle int dfrac{x^2-5+6}{(2x+1)(x-4)^2}dx$를 찾아라. . Problem 7 . $ displaystyle int _ frac{1}{x^2+5} ^{ frac{ pi}{2}} sqrt{ sin{x} + 3}$를 찾아라. .",
+            "content": "Problem 1 . $ displaystyle int dfrac{1}{9x^2 + 6x + 5} dx$ 를 역치환을 활용하여 부정적분을 계산한다면 어떠한 삼각함수를 역치환에 활용할지 치환방법만 구체적으로 적고, 풀이과정은 적지 않는다. . Problem 2 . 주어진 적분을 하여라. 단, 답은 반드시 x에 관해 정리해서 마무리하고, 풀이과정은 자세히 적는다. . $ displaystyle int dfrac{2x^4 + 6x^3 + 15x^2 + x - 21}{x^2(x^2+2x+7)}dx$ . Problem 3 . 주어진 적분을 하여라. 단, 답은 반드시 x에 관해 정리해서 마무리하고, 풀이과정은 자세히 적는다. . $ displaystyle int xsin^{-1}x^2dx$ . Problem 5 . 주어진 부정적분 $ displaystyle int dfrac{x^2}{ sqrt{4-2x-x^2}}dx$의 풀이과정을 자세히 적고 답을 x에 관하여 정리하라. . Problem 6 . $ displaystyle int dfrac{x^2-5+6}{(2x+1)(x-4)^2}dx$를 찾아라. . Problem 7 . $ displaystyle int _ frac{1}{x^2+5} ^{ frac{ pi}{2}} sqrt{ sin{x} + 3}$를 찾아라. .",
             "url": "https://stahangryum.github.io/Woo/mathematics/2022/06/04/calculus_one_final.html",
             "relUrl": "/mathematics/2022/06/04/calculus_one_final.html",
             "date": " • Jun 4, 2022"
