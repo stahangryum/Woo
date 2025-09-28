@@ -56,3 +56,7 @@ jobs:
       with:
         deploy_key: ${{ secrets.SSH_DEPLOY_KEY }}
         publish_dir: ./_site
+        
+    - name: Update RubyGems
+      run: |
+        docker run --rm fastai/fastpages-jekyll gem update --system
